@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.js": "/rc-landingpage/static/js/main.02c7c455.js",
-    "index.html": "/rc-landingpage/index.html",
-    "main.02c7c455.js.map": "/rc-landingpage/static/js/main.02c7c455.js.map"
+    "main.js": "/RC-landingPage/static/js/main.420fa6ae.js",
+    "index.html": "/RC-landingPage/index.html",
+    "main.420fa6ae.js.map": "/RC-landingPage/static/js/main.420fa6ae.js.map"
   },
   "entrypoints": [
-    "static/js/main.02c7c455.js"
+    "static/js/main.420fa6ae.js"
   ]
 }
