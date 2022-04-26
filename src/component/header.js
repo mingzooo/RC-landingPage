@@ -7,8 +7,8 @@ const Header = () => {
         <MainHeader>
             <div className='rc-logo'>라이징캠프 로고</div>
             <div className='header-right notoBold'>
-                <div className='one-track'>1:1 TRACK</div>
-                <div className='reg-button'>신청하기</div>
+                <div className='one-track' onClick={()=>window.open('https://www.notion.so/softsquared/1-1-992d14e2d0ac4398b3a9972c8550af4f#72724ecbeca9431cadff3d53e4bd6806 ','_blank')}>1:1 TRACK</div>
+                <div className='reg-button' onClick={()=>window.open('https://forms.gle/NcFCngiVvRfoM6t6A ','_blank')}>신청하기</div>
             </div>
         </MainHeader>
     </HeaderWrap>
@@ -48,6 +48,7 @@ const MainHeader = styled.div`
         font-size: 1.25rem;
         color:#ffffff;
         margin-right: 2.4375rem;
+        cursor: pointer;
     }
 
     .reg-button{
@@ -59,6 +60,7 @@ const MainHeader = styled.div`
         font-size: 1.25rem;
         text-align: center;
         line-height: 3.75rem;
+        cursor: pointer;
     }
 `;
 
