@@ -77,8 +77,9 @@ export const GlobalStyle = createGlobalStyle`
     }
     @font-face {
         font-family: 'Hanson';
-        font-weight: 700;
         src: url('../src/fonts/hanson-bold/Hanson-Bold.otf'),
+        url('../src/fonts/hanson-bold/Hanson-Bold.eot'),
+        url('../src/fonts/hanson-bold/Hanson-Bold.woff'),
         url('../src/fonts/hanson-bold/Hanson-Bold.ttf');
     }
 
