@@ -2,6 +2,9 @@ import React from "react";
 import styled from "styled-components";
 import ReactPlayer from 'react-player';
 
+import quote_right from '../assets/ic_text_ddaom_right.png';
+import quote_left from '../assets/ic_text_ddaom_left.png';
+
 const RcInfo = () => {
   return (
     <Wrap>
@@ -14,8 +17,12 @@ const RcInfo = () => {
           라이징캠프를 나가주셔도 됩니다.
         </span>
         <ReactPlayer url='https://www.youtube.com/watch?v=POgtd-SID48' playing={false} controls width='61.25rem' height='34.5rem'/>
-        <div className="notoBold quote">라이징 캠프는 <br/>진짜로 외주할 수 있는 실력까지 만들어드려요.</div>
-        <Box>
+        <img className="left-quote" src={quote_left}/>
+        <div style={{display:"flex", flexDirection:"row", position:"relative", marginRight:"auto", width:"38.75rem"}}>
+          <div className="notoBold quote">라이징 캠프는 <br/>진짜로 외주할 수 있는 실력까지 만들어드려요.</div>
+          <img className="right-quote" src={quote_right}/>
+        </div>
+        <Box style={{marginTop:"7.8125rem"}}>
           <div className="text">
             <div className="notoBold red-text">
             01. 코딩, 과연 이론이 중요한 걸까요?
@@ -69,6 +76,7 @@ const ContentWrap = styled.div`
 
   .left-quote{
     margin-top: 6.25rem;
+    margin-right: auto;
     font-size: 7.875rem;
     color: #FE4A00;
   }
@@ -77,7 +85,13 @@ const ContentWrap = styled.div`
     font-size: 1.875rem;
     color: #FE4A00;
     margin-right: auto;
-    margin-bottom: 7.8125rem;
+  }
+
+  .right-quote{
+    height: 50%;
+    position:absolute;
+    bottom:0;
+    right: 0;
   }
 `;
 
