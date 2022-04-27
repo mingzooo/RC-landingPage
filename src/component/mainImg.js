@@ -14,8 +14,8 @@ const ImgWrap = styled.div`
     height: 61.125rem;
     background-color: #fe4a00;
     display: flex;
-    align-items: center;
     justify-content: center;
+    position: relative;
 `;
 
 const RegFloatingButton = styled.div`
@@ -23,7 +23,6 @@ const RegFloatingButton = styled.div`
   height: 5.375rem;
   background-color: #000000;
   color: #ffffff;
-  position: fixed;
   border-radius: 4.6875rem;
   display: flex;
   align-items: center;
@@ -31,6 +30,9 @@ const RegFloatingButton = styled.div`
   font-size: 1.5rem;
   z-index: 9999;
   cursor: pointer;
+  position: absolute;
+  bottom: 7.25rem;
+  position: fixed;
 `;
 
 export default MainImg
