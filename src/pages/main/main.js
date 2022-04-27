@@ -1,4 +1,5 @@
 import React from 'react'
+import Class from '../../component/class'
 import FriendRecommend from '../../component/friendRecommend'
 import Header from '../../component/header'
 import MainImg from '../../component/mainImg'
@@ -16,6 +17,7 @@ const Main = () => {
         <Result/>
         <FriendRecommend/>
         <Reviews/>
+        <Class/>
     </PageWrap>
   )
 }
