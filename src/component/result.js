@@ -6,7 +6,7 @@ const Result = () => {
     <Page>
         <ContentWrap>
             <TitleWrap>
-                <div className='hansonBold title-text'>
+                <div className='title-text'>
                     RISING<br/>CAMP<br/>RESULT.
                 </div>
                 <div className='title-right'>
@@ -42,6 +42,8 @@ const TitleWrap = styled.div`
         font-size: 6rem;
         color: #ffffff;
         line-height: 6rem;
+
+        font-family: 'Hanson';
     }
 
     .title-right{

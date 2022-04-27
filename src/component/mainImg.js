@@ -4,7 +4,7 @@ import styled from 'styled-components'
 const MainImg = () => {
   return (
     <ImgWrap>
-    <RegFloatingButton className='notoBold'>4기 신청하기</RegFloatingButton>
+      <RegFloatingButton className='notoBold'>4기 신청하기</RegFloatingButton>
     </ImgWrap>
   )
 }
