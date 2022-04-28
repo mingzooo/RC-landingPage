@@ -2,6 +2,7 @@ import React from 'react'
 import Class from '../../component/class'
 import Curriculum from '../../component/curriculum'
 import Differentiation from '../../component/differentiation'
+import Faq from '../../component/faq'
 import FriendRecommend from '../../component/friendRecommend'
 import Header from '../../component/header'
 import MainImg from '../../component/mainImg'
@@ -30,6 +31,7 @@ const Main = () => {
         <Mentor/>
         <Curriculum/>
         <Tuition/>
+        <Faq/>
     </PageWrap>
   )
 }
