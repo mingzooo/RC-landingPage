@@ -159,7 +159,7 @@ const StudyContainer = styled.div`
 
 const HashTag = styled.div`
   width: fit-content;
-  padding:0.25rem;
+  padding:0.3125rem;
   background: #FFFFFF;
   border-radius: 0.4375rem;
   margin-right: 0.5rem;

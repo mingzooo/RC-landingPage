@@ -4,7 +4,9 @@ import Differentiation from '../../component/differentiation'
 import FriendRecommend from '../../component/friendRecommend'
 import Header from '../../component/header'
 import MainImg from '../../component/mainImg'
+import Mentor from '../../component/mentor'
 import RcInfo from '../../component/rcInfo'
+import Recommendation from '../../component/recommendation'
 import Result from '../../component/result'
 import Reviews from '../../component/reviews'
 import Study from '../../component/study'
@@ -22,6 +24,8 @@ const Main = () => {
         <Class/>
         <Study/>
         <Differentiation/>
+        <Recommendation/>
+        <Mentor/>
     </PageWrap>
   )
 }
