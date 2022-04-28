@@ -11,6 +11,7 @@ import Recommendation from '../../component/recommendation'
 import Result from '../../component/result'
 import Reviews from '../../component/reviews'
 import Study from '../../component/study'
+import Tuition from '../../component/tuition'
 import { PageWrap } from '../../shared/styled'
 
 const Main = () => {
@@ -28,6 +29,7 @@ const Main = () => {
         <Recommendation/>
         <Mentor/>
         <Curriculum/>
+        <Tuition/>
     </PageWrap>
   )
 }
