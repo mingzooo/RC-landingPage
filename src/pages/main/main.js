@@ -1,5 +1,6 @@
 import React from 'react'
 import Class from '../../component/class'
+import Curriculum from '../../component/curriculum'
 import Differentiation from '../../component/differentiation'
 import FriendRecommend from '../../component/friendRecommend'
 import Header from '../../component/header'
@@ -26,6 +27,7 @@ const Main = () => {
         <Differentiation/>
         <Recommendation/>
         <Mentor/>
+        <Curriculum/>
     </PageWrap>
   )
 }
