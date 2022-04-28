@@ -1,5 +1,6 @@
 import React from 'react'
 import Class from '../../component/class'
+import Differentiation from '../../component/differentiation'
 import FriendRecommend from '../../component/friendRecommend'
 import Header from '../../component/header'
 import MainImg from '../../component/mainImg'
@@ -20,6 +21,7 @@ const Main = () => {
         <Reviews/>
         <Class/>
         <Study/>
+        <Differentiation/>
     </PageWrap>
   )
 }
