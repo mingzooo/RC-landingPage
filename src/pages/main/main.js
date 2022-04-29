@@ -12,6 +12,7 @@ import RcInfo from '../../component/rcInfo'
 import Recommendation from '../../component/recommendation'
 import Result from '../../component/result'
 import Reviews from '../../component/reviews'
+import RisingTest from '../../component/risingTest'
 import Study from '../../component/study'
 import Tuition from '../../component/tuition'
 import { PageWrap } from '../../shared/styled'
@@ -26,6 +27,7 @@ const Main = () => {
         <FriendRecommend/>
         <Reviews/>
         <Class/>
+        <RisingTest/>
         <Study/>
         <Differentiation/>
         <Recommendation/>
