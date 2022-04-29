@@ -63,43 +63,53 @@ const Class = () => {
             </WhiteBox>
           </div>
         </CompareBox>
-        <DetailWrap>
-          <div className="left-wrap">
-            <div className="notoBold left-title">
-              하루 3시간 · 일주일에 1번 · 총 2달 수업
-            </div>
-            <div className="notoRegular left-text">
-              2달 안에 외주까지 가능할 정도의 실력을 키울 수 있는 이유?
-              <br />
-              <span className="notoBold">
-                “교육 기간만 잡아먹는 커리큘럼”, 싹 다 걷어냈습니다.
-              </span>
-              &nbsp;라이징캠프에서는
-              <span className="notoBold">&nbsp;실무에서 중요한 개발</span>을
-              알려드립니다.
-            </div>
-            <div
-              className="notoRegular left-text"
-              style={{ marginTop: "2rem" }}
-            >
-              🗸 생산성을 높여주는 라이브러리 사용 및 개발 경험
-              <br />
-              🗸 실무 일정 및 태스크 관리 경험 <br />
-              🗸 클라이언트와 소통하는 방법 <br />
-              🗸 개발 작업 정리 방법
-            </div>
+        <TuitionDetailWrap>
+          <div className="notoBold big-text">
+            하루 3시간, <br />
+            일주일에 1번,
+            <br /> 총 2달 수업
           </div>
-          <div className="right-wrap">
-            <div className="notoBold right-title">&lt; 라이징 테스트 &gt;</div>
-            <div className="notoRegular right-text">
-              라이징테스트는 쏘카, 배민 등 실제 서비스를 프론트엔드, 백엔드가
-              한팀이 되어 2주동안 클론을 만들어보는 실전 프로젝트입니다.
-              <br />
-              테스트를 통과하면? 라이징캠프 수료는 물론, 실무 프로젝트에 참여할
-              수 있는 기회를 얻을 수 있습니다.
-            </div>
+          <div className="notoRegular small-text">
+            2달 안에 외주까지 가능할 정도의 실력을 키울 수 있는 이유?
+            <br />
+            <span className="notoBold">
+              “교육 기간만 잡아먹는 커리큘럼”, 싹 다 걷어냈습니다.
+            </span>
+            <br /> 라이징캠프에서는&nbsp;
+            <span className="notoBold">실무에서 중요한 개발</span>을
+            알려드립니다.
+            <BoxWrap>
+              <div className="notoMedium box">
+                🗸 생산성을 높여주는&nbsp;
+                <span style={{ color: "#fe4a00" }}>
+                  라이브러리 사용 및 개발&nbsp;
+                </span>
+                경험
+              </div>
+              <div className="notoMedium box">
+                🗸 생산성을 높여주는{" "}
+                <span style={{ color: "#fe4a00" }}>
+                  라이브러리 사용 및 개발
+                </span>{" "}
+                경험
+              </div>
+              <div className="notoMedium box">
+                🗸 생산성을 높여주는{" "}
+                <span style={{ color: "#fe4a00" }}>
+                  라이브러리 사용 및 개발
+                </span>{" "}
+                경험
+              </div>
+              <div className="notoMedium box">
+                🗸 생산성을 높여주는{" "}
+                <span style={{ color: "#fe4a00" }}>
+                  라이브러리 사용 및 개발
+                </span>{" "}
+                경험
+              </div>
+            </BoxWrap>
           </div>
-        </DetailWrap>
+        </TuitionDetailWrap>
       </ContentWrap>
     </Page>
   );
@@ -244,54 +254,48 @@ const WhiteBox = styled.div`
   }
 `;
 
-const DetailWrap = styled.div`
+const TuitionDetailWrap = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-top: 18.625rem;
-  margin-bottom: 11.75rem;
+  color: #fe4a00;
+  margin: 10rem 0 9.5rem 0;
 
-  .left-wrap {
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-    width: 25.1875rem;
+  .big-text {
+    width: 18.0625rem;
+    font-size: 3rem;
+    line-height: 4.25rem;
   }
 
-  .left-title {
-    font-size: 1.25rem;
+  .small-text {
     color: #000000;
-    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    line-height: 2.6875rem;
+    width: 48.6875rem;
   }
+`;
 
-  .left-text {
+const BoxWrap = styled.div`
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 2.25rem;
+
+  .box {
+    width: 23.75rem;
+    height: 4.5rem;
+    background: #ffffff;
+    box-shadow: -0.5rem 0.8125rem 0.875rem 0.8125rem rgba(223, 223, 223, 0.2);
+    border-radius: 0.625rem;
+
     font-size: 1rem;
-    line-height: 1.8125rem;
-    color: #000000;
-  }
+    line-height: 4.5rem;
 
-  .right-wrap {
-    width: 36.5625rem;
-    height: 13.875rem;
-    background: #e6e6e6;
-    border-radius: 1.25rem;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
     justify-content: center;
-  }
-
-  .right-title {
-    font-size: 1rem;
-    color: #000000;
-  }
-
-  .right-text {
-    width: 27.6875rem;
-    font-size: 15px;
-    line-height: 1.6875rem;
-    color: #000000;
-    margin-top: 1.25rem;
+    margin-bottom: 1.5625rem;
   }
 `;
 
