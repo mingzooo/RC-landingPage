@@ -72,6 +72,9 @@ const ContentWrap = styled.div`
   width: 73.75rem;
   display: flex;
   flex-direction: column;
+  @media (max-width: 75rem) {
+    width: 22.5rem;
+  }
 `;
 
 const Title = styled.div`
@@ -79,6 +82,9 @@ const Title = styled.div`
   flex-direction: column;
   align-items: left;
   margin-top: 10.1875rem;
+  @media (max-width: 75rem) {
+    margin-top: 3.375rem;
+  }
 
   .title-text {
     font-family: "Hanson";
@@ -87,18 +93,30 @@ const Title = styled.div`
     line-height: 6rem;
     text-align: left;
     text-transform: uppercase;
+    @media (max-width: 75rem) {
+      font-size: 1.875rem;
+      line-height: 1.875rem;
+    }
   }
 
   .middle-text {
     font-size: 1.5rem;
     color: #4f4f4f;
     margin: 1.5625rem 0 0.8125rem 0;
+    @media (max-width: 75rem) {
+      font-size: 0.75rem;
+      margin: 0.625rem 0 0.5rem 0;
+    }
   }
 
   .bottom-text {
     font-size: 2.25rem;
     line-height: 3.6rem;
     text-align: left;
+    @media (max-width: 75rem) {
+      font-size: 0.875rem;
+      line-height: 1.375rem;
+    }
   }
 `;
 
@@ -107,6 +125,10 @@ const ContainerWrap = styled.div`
   flex-direction: row;
   justify-content: space-between;
   margin-top: 5.3125rem;
+  @media (max-width: 75rem) {
+    flex-direction: column;
+    margin-top: 1.5625rem;
+  }
 `;
 
 const Container = styled.div`
@@ -117,18 +139,29 @@ const Container = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  @media (max-width: 75rem) {
+    margin-bottom: 1.5625rem;
+  }
 
   .wrap {
     display: flex;
     flex-direction: column;
     width: 20.625rem;
     margin: 52px 0 87.9392px 0;
+    @media (max-width: 75rem) {
+      width: 16.5625rem;
+      justify-content: center;
+    }
   }
 
   img {
     width: 20.5031rem;
     height: 13.7094rem;
     border-radius: 1.125rem;
+    @media (max-width: 75rem) {
+      width: 16.5625rem;
+      height: 11.0625rem;
+    }
   }
 
   .title-text {
@@ -136,12 +169,18 @@ const Container = styled.div`
     line-height: 2rem;
     color: #fe4a00;
     margin: 1.4819rem 0 1.5rem 0;
+    @media (max-width: 75rem) {
+      font-size: 1.125rem;
+    }
   }
 
   .detail-text {
-    font-size: 22px;
+    font-size: 1.375rem;
     line-height: 1.8125rem;
     color: #000000;
+    @media (max-width: 75rem) {
+      font-size: 0.875rem;
+    }
   }
 `;
 

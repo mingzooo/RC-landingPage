@@ -78,6 +78,9 @@ const Container = styled.div`
   background: ${(props)=>(props.isClicked?'#FFECE4':'#ffffff')};
   border-radius: 20px;
   cursor: pointer;
+  @media (max-width: 75rem) {
+    margin-right: 1.125rem;
+  }
 `;
 
 const ContentWrap = styled.div`

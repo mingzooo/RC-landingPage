@@ -137,6 +137,9 @@ const ContentWrap = styled.div`
   width: 73.75rem;
   display: flex;
   flex-direction: column;
+  @media (max-width: 75rem) {
+    width: 22.5rem;
+  }
 `;
 
 const Title = styled.div`
@@ -170,6 +173,10 @@ const TrackWrap = styled.div`
   flex-direction: row;
   justify-content: space-between;
   margin: 3.8125rem 0;
+  @media (max-width: 75rem) {
+    overflow-x: hidden;
+    width: 100%;
+  }
 `;
 
 export default Curriculum;

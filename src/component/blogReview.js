@@ -114,7 +114,7 @@ const DetailWrap = styled.div`
     justify-content: space-between;
     height: 20.625rem;
     @media (max-width: 75rem) {
-      height: 12.5rem;
+      height: 11.875rem;
     }
   }
 

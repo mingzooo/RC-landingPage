@@ -93,6 +93,9 @@ const ContentWrap = styled.div`
   width: 73.75rem;
   display: flex;
   flex-direction: column;
+  @media (max-width: 75rem) {
+    width: 22.5rem;
+  }
 `;
 
 const Title = styled.div`
@@ -135,6 +138,9 @@ const MentorWrap = styled.div`
   flex-wrap: wrap;
   margin: 6.6875rem 0 6.25rem 0;
   justify-content: space-between;
+  @media (max-width: 75rem) {
+    flex-direction: column;
+  }
 `;
 
 export default Mentor;

@@ -112,6 +112,9 @@ const ContentWrap = styled.div`
   width: 73.75rem;
   display: flex;
   flex-direction: column;
+  @media (max-width: 75rem) {
+    width: 22.5rem;
+  }
 `;
 
 const Title = styled.div`
@@ -127,18 +130,30 @@ const Title = styled.div`
     line-height: 6rem;
     text-align: left;
     text-transform: uppercase;
+    @media (max-width: 75rem) {
+      font-size: 1.875rem;
+      line-height: 1.875rem;
+    }
   }
 
   .middle-text {
     font-size: 1.5rem;
     color: #4f4f4f;
     margin: 1.5rem 0 0.8125rem 0;
+    @media (max-width: 75rem) {
+      font-size: 0.75rem;
+      margin: 0.625rem 0 0.5rem 0;
+    }
   }
 
   .bottom-text {
     font-size: 2.25rem;
     line-height: 3.6rem;
     text-align: left;
+    @media (max-width: 75rem) {
+      font-size: 0.875rem;
+      line-height: 1.375rem;
+    }
   }
 `;
 
@@ -157,10 +172,22 @@ const RecommendContainer = styled.div`
   box-shadow: 0.75rem 0.9375rem 3.5rem rgba(139, 139, 139, 0.07);
   border-radius: 1.25rem;
   margin-bottom: 2.1875rem;
+  @media (max-width: 75rem) {
+    flex-direction: column;
+    width: 19.6875rem;
+    height: 27.5rem;
+    justify-content: center;
+  }
 
   img {
     width: 50%;
     border-radius: 1.25rem 0 0 1.25rem;
+    @media (max-width: 75rem) {
+      height: 40%;
+      width: 100%;
+      object-fit: cover;
+      border-radius: 1.25rem 1.25rem 0 0;
+    }
   }
 
   .recommend-text {
@@ -169,17 +196,29 @@ const RecommendContainer = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    @media (max-width: 75rem) {
+      height: 50%;
+      width: 100%;
+      text-align: center;
+    }
   }
 `;
 
 const RecommendText = styled.div`
   width: 28.125rem;
+  @media (max-width: 75rem) {
+    width: 18.9375rem;
+  }
 
   .red-text {
     font-size: 1.875rem;
     line-height: 160%;
     color: #fe4a00;
     margin-bottom: 1.25rem;
+    @media (max-width: 75rem) {
+      font-size: 1rem;
+      margin-bottom: 0.5625rem;
+    }
   }
 
   .black-text {
@@ -187,6 +226,9 @@ const RecommendText = styled.div`
     font-size: 1rem;
     line-height: 180%;
     color: #000000;
+    @media (max-width: 75rem) {
+      font-size: 0.8125rem;
+    }
   }
 `;
 
