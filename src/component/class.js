@@ -28,17 +28,15 @@ const Class = () => {
           <div className="red-box">
             <RedBox>
               <div className="notoBold white-fill">진짜로 "배우는" 수업</div>
+              <div className="notoMedium white-outline">실무 중심 수업</div>
               <div className="notoMedium white-outline">
-                Step 01. 커리큘럼이 들어갑니다.
+                스스로 코드를 짤 수 있는 수업
               </div>
               <div className="notoMedium white-outline">
-                Step 01. 커리큘럼이 들어갑니다.
+                개발자가 될 수 있는 수업
               </div>
               <div className="notoMedium white-outline">
-                Step 01. 커리큘럼이 들어갑니다.
-              </div>
-              <div className="notoMedium white-outline">
-                Step 01. 커리큘럼이 들어갑니다.
+                스스로 답을 찾게 만들어주는 수업
               </div>
             </RedBox>
           </div>
@@ -48,18 +46,14 @@ const Class = () => {
               <div className="notoBold grey-text">
                 교육 기간만 잡아먹는 커리큘럼
               </div>
+              <div className="notoMedium grey-box">문법 중심 수업</div>
               <div className="notoMedium grey-box">
-                Step 01. 커리큘럼이 들어갑니다.
+                A-Z까지 모두 다 알려주는 수업
               </div>
               <div className="notoMedium grey-box">
-                Step 01. 커리큘럼이 들어갑니다.
+                코드를 따라할 수 있는 수업
               </div>
-              <div className="notoMedium grey-box">
-                Step 01. 커리큘럼이 들어갑니다.
-              </div>
-              <div className="notoMedium grey-box">
-                Step 01. 커리큘럼이 들어갑니다.
-              </div>
+              <div className="notoMedium grey-box">답을 쉽게 알려주는 수업</div>
             </WhiteBox>
           </div>
         </CompareBox>
@@ -80,33 +74,18 @@ const Class = () => {
             알려드립니다.
             <BoxWrap>
               <div className="notoMedium box">
-                🗸 생산성을 높여주는&nbsp;
-                <span style={{ color: "#fe4a00" }}>
-                  라이브러리 사용 및 개발&nbsp;
+                🗸&nbsp;
+                <span style={{ color: "#000000" }}>
+                  생산성을 높여주는&nbsp;
                 </span>
-                경험
+                라이브러리 사용 및 개발&nbsp;
+                <span style={{ color: "#000000" }}>경험</span>
               </div>
               <div className="notoMedium box">
-                🗸 생산성을 높여주는{" "}
-                <span style={{ color: "#fe4a00" }}>
-                  라이브러리 사용 및 개발
-                </span>{" "}
-                경험
+                🗸 실무 일정&nbsp;<span style={{color:"#000000"}}>및 테스크 관리 경험</span>
               </div>
-              <div className="notoMedium box">
-                🗸 생산성을 높여주는{" "}
-                <span style={{ color: "#fe4a00" }}>
-                  라이브러리 사용 및 개발
-                </span>{" "}
-                경험
-              </div>
-              <div className="notoMedium box">
-                🗸 생산성을 높여주는{" "}
-                <span style={{ color: "#fe4a00" }}>
-                  라이브러리 사용 및 개발
-                </span>{" "}
-                경험
-              </div>
+              <div className="notoMedium box">🗸 클라이언트와 소통<spans style={{color:"#000000"}}>하는 방법</spans></div>
+              <div className="notoMedium box">🗸 개발 작업 정리&nbsp; <span style={{color:"#000000"}}>방법</span></div>
             </BoxWrap>
           </div>
         </TuitionDetailWrap>
@@ -224,7 +203,7 @@ const RedBox = styled.div`
     height: 3.9375rem;
     border: 0.0625rem solid #ffffff;
     border-radius: 0.625rem;
-    font-size: 16px;
+    font-size: 1.375rem;
     line-height: 3.9375rem;
     color: #ffffff;
   }
@@ -283,7 +262,7 @@ const BoxWrap = styled.div`
   margin-top: 2.25rem;
 
   .box {
-    width: 23.75rem;
+    width: 22.5rem;
     height: 4.5rem;
     background: #ffffff;
     box-shadow: -0.5rem 0.8125rem 0.875rem 0.8125rem rgba(223, 223, 223, 0.2);
@@ -291,10 +270,11 @@ const BoxWrap = styled.div`
 
     font-size: 1rem;
     line-height: 4.5rem;
+    color: #fe4a00;
+    padding-left: 1.4375rem;
 
     display: flex;
     flex-direction: row;
-    justify-content: center;
     margin-bottom: 1.5625rem;
   }
 `;

@@ -59,7 +59,7 @@ const ContentWrap = styled.div`
   .big-pic {
     z-index: -100;
     width: 23.75rem;
-    height: 35.4375rem;
+    height: 40.4375rem;
   }
 
   .small-pic {
