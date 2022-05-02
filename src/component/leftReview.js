@@ -1,30 +1,25 @@
 import React from "react";
 import styled from "styled-components";
 
-import big_Rec from "../assets/Big_Rec.png";
-import small_Rec from "../assets/small-Rec.png";
-
-const LeftReview = () => {
+const LeftReview = ({name, img_a, img_b, img_c, title, detail, who}) => {
   return (
     <Wrap>
-      <div className="name">KAKAO</div>
+      <div className="name">{name}</div>
       <ContentWrap>
-        <img src={big_Rec} className="big-pic" />
+        <img src={img_a} className="big-pic" />
         <div className="content-wrap">
-          <div>
-            <img src={small_Rec} className="small-pic" />
-            <img src={small_Rec} className="small-pic" />
+          <div style={{ display:'flex', flexDirection:"row", justifyContent:'space-between'}}>
+            <img src={img_b} className="small-pic" />
+            <img src={img_c} className="small-pic" />
           </div>
           <div className="notoBold title-text">
-            제가 비전공자라서,
-            <br />
-            네이버 입사는 꿈도 못꿨었어요.
+            {title}
           </div>
           <div className="notoRegular article">
-            후기가 들어갑니다. 후기가 들어갑니다. 후기가 들어갑니다. 후기가
-            들어갑니다. 후기가 들어갑니다. 후기가 들어갑니다. 후기가 들어갑니다.
-            후기가 들어갑니다. 후기가 들어갑니다. 후기가 들어갑니다. 후기가
-            들어갑니다.
+            {detail}
+          </div>
+          <div className="notoRegular article" style={{color:'#7D7D7D', marginTop:'0'}}>
+            {who}
           </div>
         </div>
       </ContentWrap>
@@ -54,30 +49,33 @@ const ContentWrap = styled.div`
 
   .big-pic {
     z-index: -100;
+    width: 23.75rem;
+    height: 35.4375rem;
   }
 
   .small-pic {
     width: 20.5rem;
     height: 14.4375rem;
-    margin-left: 1.5rem;
   }
 
   .content-wrap {
     display: flex;
     flex-direction: column;
+    margin-left: 5rem;
+    width: 42.5625rem;
   }
 
   .title-text {
     font-size: 3rem;
     line-height: 4.29rem;
-    margin-left: -10.625rem;
     margin-top: 2rem;
+    width: 39.5625rem;
   }
 
   .article {
     width: 37.4375rem;
     font-size: 1.5rem;
-    margin-top: 1.9375rem;
+    margin-top: 1.3125rem;
   }
 `;
 
