@@ -41,6 +41,9 @@ const HeaderWrap = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  @media (max-width: 75rem) {
+    height: 4.5625rem;
+  }
 `;
 
 const MainHeader = styled.div`
@@ -49,9 +52,8 @@ const MainHeader = styled.div`
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  border: 1px solid #ffffff;
   @media (max-width: 75rem) {
-    width: 360px;
+    width: 22.5rem;
   }
 
   .rc-logo {
@@ -72,6 +74,10 @@ const MainHeader = styled.div`
     color: #ffffff;
     margin-right: 2.4375rem;
     cursor: pointer;
+    @media (max-width: 75rem) {
+      font-size: 0.875rem;
+      margin-right: 1.875rem;
+    }
   }
 
   .reg-button {
@@ -84,6 +90,12 @@ const MainHeader = styled.div`
     text-align: center;
     line-height: 3.75rem;
     cursor: pointer;
+    @media (max-width: 75rem) {
+      font-size: 0.875rem;
+      width: 4.8125rem;
+      height: 2rem;
+      line-height: 2rem;
+    }
   }
 `;
 

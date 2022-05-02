@@ -36,7 +36,9 @@ const ImgWrap = styled.div`
     }
 
     .img-m{
-
+      width: 22.5rem;
+      height: 42.625rem;
+      object-fit: contain;
     }
 
     @media(max-width: 75rem){

@@ -551,6 +551,9 @@ const ContentWrap = styled.div`
   width: 73.75rem;
   display: flex;
   flex-direction: column;
+  @media (max-width: 75rem) {
+    width: 22.5rem;
+  }
 `;
 
 const TitleWrap = styled.div`
@@ -558,6 +561,9 @@ const TitleWrap = styled.div`
   flex-direction: row;
   margin: 11rem 0 7.875rem 0;
   position: relative;
+  @media (max-width: 75rem) {
+    
+  }
 
   .title-text {
     font-size: 6rem;
@@ -565,6 +571,10 @@ const TitleWrap = styled.div`
     line-height: 6rem;
 
     font-family: "Hanson";
+    @media (max-width: 75rem) {
+    font-size: 1.375rem;
+    line-height: 1.4375rem;
+  }
   }
 
   .title-right {
@@ -574,6 +584,9 @@ const TitleWrap = styled.div`
     display: flex;
     flex-direction: column;
     color: #ffffff;
+    @media (max-width: 75rem) {
+    right: 0;
+  }
   }
 `;
 
