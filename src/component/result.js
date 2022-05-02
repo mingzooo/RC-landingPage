@@ -62,7 +62,7 @@ const Result = () => {
                   <div style={{height:'2.0456rem',borderLeft:"1px solid white"}}/>
                   <div style={{height:'2.0456rem', borderRight:"1px solid white"}}/>
                 </div>
-                <MiddleContainer />
+                <div style={{padding:"0 2.5rem"}}><MiddleContainer /></div>
                 <div id="grid" style={{border:"0.5px solid white", padding:"0 2.5rem"}}>
                   <div style={{height:'2.0456rem',borderLeft:"1px solid white"}}/>
                   <div style={{height:'2.0456rem', borderRight:"1px solid white"}}/>
@@ -433,7 +433,7 @@ const MiddleContainerWrap = styled.div`
   font-size: 1.5rem;
   line-height: 2.375rem;
   text-align: center;
-  border: 1px solid white;
+  border: 0.5px solid white;
   align-items: center;
 
   .featureWrap {
