@@ -1,0 +1,155 @@
+{
+    "android": [
+        {
+            "id": 1,
+            "title": "1주차 | OT & 플랫폼",
+            "detail": "라이징 캠프 OT, 플랫폼이란? 개발자로서의 자세,Manifests, Palette,Layout 학습 및 Front-end 를 다루게 됩니다."
+        },
+        {
+            "id": 2,
+            "title": "2주차 | Life Cycle",
+            "detail": "본격적인 프로그래밍을 진행하기 전, 생명주기를 이해하고 활용법을 숙지하는 단계입니다."
+        },
+        {
+            "id": 3,
+            "title": "3주차 | ListView",
+            "detail": "Listview 의 이해와 토론을 바탕으로 Adapter의 개념을 학습하며, 실습을 통한 Listview 프로그래밍을 진행합니다."
+        },
+        {
+            "id": 4,
+            "title": "4주차 | Multi-Thread",
+            "detail": "Multi-Thread에 대한 개념,Synchronous Vs ASynchronous 에 대한 이해를 바탕으로 토론 및 실습을 통한 쓰레드 프로그래밍 학습합니다."
+        },
+        {
+            "id": 5,
+            "title": "5주차 | Network Intro & API",
+            "detail": "개괄적인 서버 와 클라이언트 개요, http method, packet 구조, API에 대한 이해 및 실습을 통한 서버 통신을 학습합니다."
+        },
+        {
+            "id": 6,
+            "title": "6주차 | Token & Restful",
+            "detail": "RESTful API 및 로그인 방식의 이해(Session-Cookie, oAuth, JWT)에 대해 학습합니다."
+        },
+        {
+            "id": 7,
+            "title": "7~8주차 | 라이징테스트",
+            "detail": "팀 빌딩, git & template 세미나, 클론 코딩, 주 1회 개발팀장 주관 코드 리뷰와 같이 수업이 진행되며, 주 1회 수업, 과제 수행 후 수업 마다 점검 받는 시스템으로 진행됩니다. 과제의 경우 수강생의 수준에 따라 점검을 진행하며"
+        }
+       
+    ],
+    "ios": [
+        {
+            "id": 1,
+            "title": "1주차 | OT & 플랫폼",
+            "detail": "라이징 캠프 OT, 플랫폼이란? 개발자로서의 자세,Info.Plist, Auto Layout 학습 및 Front-end 를 다루게 됩니다."
+        },
+        {
+            "id": 2,
+            "title": "2주차 | Life Cycle",
+            "detail": " 본격적인 프로그래밍을 진행하기 전, 생명주기를 이해하고 활용법을 숙지하는 단계입니다."
+        },
+        {
+            "id": 3,
+            "title": "3주차 | ListView",
+            "detail": "TableView 의 이해와 토론을 바탕으로 Protocol,Delegate 패턴의 개념을 학습하며, 실습을 통한 TableView 프로그래밍을 진행합니다."
+        },
+        {
+            "id": 4,
+            "title": "4주차 | Multi-Thread",
+            "detail": "Multi-Thread에 대한 개념,Synchronous Vs ASynchronous 에 대한 이해를 바탕으로 토론 및 실습을 통한 쓰레드 프로그래밍 학습합니다."
+        },
+        {
+            "id": 5,
+            "title": "5주차 | Network Intro & API",
+            "detail": "개괄적인 서버 와 클라이언트 개요, http method, packet 구조, API에 대한 이해 및 실습을 통한 서버 통신을 학습합니다."
+        },
+        {
+            "id": 6,
+            "title": "6주차 | Token & Restful",
+            "detail": "RESTful API 및 로그인 방식의 이해(Session-Cookie, oAuth, JWT)에 대해 학습합니다."
+        },
+        {
+            "id": 7,
+            "title": "7~8주차 | 라이징테스트",
+            "detail": "팀 빌딩, git & template 세미나, 클론 코딩, 주 1회 개발팀장 주관 코드 리뷰와 같이 수업이 진행되며, 주 1회 수업, 과제 수행 후 수업 마다 점검 받는 시스템으로 진행됩니다. 과제의 경우 수강생의 수준에 따라 점검을 진행하며"
+        }
+       
+    ],
+    "server": [
+        {
+            "id": 1,
+            "title": "라이징 캠프 OT, 플랫폼이란?",
+            "detail": "개발자로서의 자세,Manifests, Palette,Layout 학습 및 Front-end 를 다루게 됩니다."
+        },
+        {
+            "id": 2,
+            "title": "라이징 캠프 OT, 플랫폼이란?",
+            "detail": "개발자로서의 자세,Manifests, Palette,Layout 학습 및 Front-end 를 다루게 됩니다."
+        },
+        {
+            "id": 3,
+            "title": "라이징 캠프 OT, 플랫폼이란?",
+            "detail": "개발자로서의 자세,Manifests, Palette,Layout 학습 및 Front-end 를 다루게 됩니다."
+        },
+        {
+            "id": 4,
+            "title": "라이징 캠프 OT, 플랫폼이란?",
+            "detail": "개발자로서의 자세,Manifests, Palette,Layout 학습 및 Front-end 를 다루게 됩니다."
+        },
+        {
+            "id": 5,
+            "title": "라이징 캠프 OT, 플랫폼이란?",
+            "detail": "개발자로서의 자세,Manifests, Palette,Layout 학습 및 Front-end 를 다루게 됩니다."
+        },
+        {
+            "id": 6,
+            "title": "라이징 캠프 OT, 플랫폼이란?",
+            "detail": "개발자로서의 자세,Manifests, Palette,Layout 학습 및 Front-end 를 다루게 됩니다."
+        },
+        {
+            "id": 7,
+            "title": "라이징 캠프 OT, 플랫폼이란?",
+            "detail": "개발자로서의 자세,Manifests, Palette,Layout 학습 및 Front-end 를 다루게 됩니다."
+        }
+       
+    ],
+    "web": [
+        {
+            "id": 1,
+            "title": "라이징 캠프 OT, 플랫폼이란?",
+            "detail": "개발자로서의 자세,Manifests, Palette,Layout 학습 및 Front-end 를 다루게 됩니다."
+        },
+        {
+            "id": 2,
+            "title": "라이징 캠프 OT, 플랫폼이란?",
+            "detail": "개발자로서의 자세,Manifests, Palette,Layout 학습 및 Front-end 를 다루게 됩니다."
+        },
+        {
+            "id": 3,
+            "title": "라이징 캠프 OT, 플랫폼이란?",
+            "detail": "개발자로서의 자세,Manifests, Palette,Layout 학습 및 Front-end 를 다루게 됩니다."
+        },
+        {
+            "id": 4,
+            "title": "라이징 캠프 OT, 플랫폼이란?",
+            "detail": "개발자로서의 자세,Manifests, Palette,Layout 학습 및 Front-end 를 다루게 됩니다."
+        },
+        {
+            "id": 5,
+            "title": "라이징 캠프 OT, 플랫폼이란?",
+            "detail": "개발자로서의 자세,Manifests, Palette,Layout 학습 및 Front-end 를 다루게 됩니다."
+        },
+        {
+            "id": 6,
+            "title": "라이징 캠프 OT, 플랫폼이란?",
+            "detail": "개발자로서의 자세,Manifests, Palette,Layout 학습 및 Front-end 를 다루게 됩니다."
+        },
+        {
+            "id": 7,
+            "title": "라이징 캠프 OT, 플랫폼이란?",
+            "detail": "개발자로서의 자세,Manifests, Palette,Layout 학습 및 Front-end 를 다루게 됩니다."
+        }
+       
+    ]
+    
+}
