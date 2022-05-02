@@ -62,7 +62,12 @@ const Footer = () => {
           <div className="right-text">
             <div>이용약관</div>
             <div style={{ marginLeft: "2.375rem" }}>개인정보 처리방침</div>
-            <div style={{ marginLeft: "2.375rem" }}>환불약관</div>
+            <div style={{ marginLeft: "2.375rem", cursor:"pointer" }} onClick={() =>
+                  window.open(
+                    "https://www.notion.so/softsquared/bfcc55fb4f1a496fbb6ffcacb10c9558",
+                    "_blank"
+                  )
+                }>환불약관</div>
           </div>
         </FooterBottom>
       </FooterContentWrap>

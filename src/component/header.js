@@ -1,11 +1,13 @@
 import React from 'react';
 import styled from 'styled-components';
 
+import rc_logo from '../assets/img_risingcamp_logo_pc.png';
+
 const Header = () => {
   return (
     <HeaderWrap>
         <MainHeader>
-            <div className='rc-logo'>라이징캠프 로고</div>
+            <img className='rc-logo' src={rc_logo}/>
             <div className='header-right notoBold'>
                 <div className='one-track' onClick={()=>window.open('https://www.notion.so/softsquared/1-1-992d14e2d0ac4398b3a9972c8550af4f#72724ecbeca9431cadff3d53e4bd6806 ','_blank')}>1:1 TRACK</div>
                 <div className='reg-button' onClick={()=>window.open('https://forms.gle/NcFCngiVvRfoM6t6A ','_blank')}>신청하기</div>
@@ -32,10 +34,7 @@ const MainHeader = styled.div`
     align-items: center;
 
     .rc-logo{
-        width:8.375rem;
-        height: 2.25rem;
-        color:white;
-        line-height: 2.25rem;
+        width:12.75rem;
     }
 
     .header-right{

@@ -2,7 +2,10 @@ import React from "react";
 import styled from "styled-components";
 import "./style.css";
 
-import result1 from "../assets/result1.png";
+import mockup_a from "../assets/img_mockup_a.png";
+import mockup_b from "../assets/img_mockup_b.png";
+import mockup_c from "../assets/img_mockup_c.png";
+import mockup_d from "../assets/img_mockup_d.png";
 import activity from "../assets/img_activity.png";
 import cmc from "../assets/img_cmc.png";
 
@@ -40,115 +43,286 @@ const Result = () => {
             }}
           >
             <div>
-                <div id="grid" style={{ position: "relative", padding:"0 2.5rem"}}>
-                  <Circle
-                    style={{ borderRadius: "0 6rem 6rem 0" }}
+              {/* result1 */}
+              <div
+                id="grid"
+                style={{ position: "relative", padding: "0 2.5rem" }}
+              >
+                <Circle style={{ borderRadius: "0 6rem 6rem 0" }} />
+                <div
+                  style={{
+                    border: "0.5px solid white",
+                    padding: "2.875rem",
+                    display: "flex",
+                    flexDirection: "column",
+                    justifyContent: "center",
+                  }}
+                >
+                  <div className="number">01</div>
+                  <div className="title notoBold">
+                    외주로 용돈 벌면서,
+                    <br />
+                    포트폴리오 쌓아요.
+                  </div>
+                  <div className="detail notoRegular">
+                    참고: 프로젝트 갯수가 제한되어있다보니 수료생분 모두가 다
+                    외주를 진행할 수 없다는 점, 솔직하게 말씀 드립니다. 그래도
+                    염려치 마세요. ‘외주할 수 있는 실력’이 쌓이는 것은 변하지
+                    않습니다.
+                  </div>
+                </div>
+                <div
+                  style={{
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    border: "0.5px solid white",
+                    padding: "2.5rem 0",
+                  }}
+                >
+                  <img
+                    src={mockup_a}
+                    style={{ width: "29.7369rem", height: "29.25rem" }}
                   />
-                  <Left1 />
-                  <Right1 />
-                  <Circle
-                    style={{ borderRadius: "6rem 0 0 6rem", right:"0"}}
+                </div>
+                <Circle style={{ borderRadius: "6rem 0 0 6rem", right: "0" }} />
+              </div>
+              <div id="grid">
+                <div
+                  style={{
+                    height: "2.0456rem",
+                    borderRight: "0.5px solid white",
+                  }}
+                />
+                <div
+                  style={{
+                    height: "2.0456rem",
+                    borderLeft: "0.5px solid white",
+                  }}
+                />
+              </div>
+              {/* result2 */}
+              <div
+                id="grid"
+                style={{ border: "0.5px solid white", padding: "0 2.5rem" }}
+              >
+                <div
+                  style={{
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    border: "0.5px solid white",
+                    padding: "2.5rem 0",
+                  }}
+                >
+                  <img
+                    src={mockup_b}
+                    style={{ width: "29.7369rem", height: "29.25rem" }}
                   />
                 </div>
-                <div id="grid">
-                  <div style={{height:'2.0456rem',borderRight:"0.5px solid white"}}/>
-                  <div style={{height:'2.0456rem',borderLeft:"0.5px solid white"}}/>
+                <div
+                  style={{
+                    border: "0.5px solid white",
+                    padding: "2.875rem",
+                    display: "flex",
+                    flexDirection: "column",
+                    justifyContent: "center",
+                  }}
+                >
+                  <div className="number">02</div>
+                  <div className="title notoBold">
+                    실력이 되니까,
+                    <br />
+                    그냥 창업해버렸어요.
+                  </div>
+                  <div className="detail notoRegular">
+                    대학교 3학년 때 라이징캠프의 교육 듣고 앱런칭!
+                    <br />
+                    라이징캠프 수료생의 대표사례를 소개합니다.
+                  </div>
                 </div>
-                <div id="grid" style={{border:"0.5px solid white", padding:"0 2.5rem"}}>
-                  <Right1 />
-                  <Left1 />
+              </div>
+              <div
+                id="grid"
+                style={{ border: "0.5px solid white", padding: "0 2.5rem" }}
+              >
+                <div
+                  style={{ height: "2.0456rem", borderLeft: "1px solid white" }}
+                />
+                <div
+                  style={{
+                    height: "2.0456rem",
+                    borderRight: "1px solid white",
+                  }}
+                />
+              </div>
+              <div style={{ padding: "0 2.5313rem" }}>
+                <MiddleContainer />
+              </div>
+              {/* result3 */}
+              <div
+                id="grid"
+                style={{ border: "0.5px solid white", padding: "0 2.5rem" }}
+              >
+                <div
+                  style={{ height: "2.0456rem", borderLeft: "1px solid white" }}
+                />
+                <div
+                  style={{
+                    height: "2.0456rem",
+                    borderRight: "1px solid white",
+                  }}
+                />
+              </div>
+              <div
+                id="grid"
+                style={{ position: "relative", padding: "0 2.5313rem" }}
+              >
+                <Circle style={{ borderRadius: "0 6rem 6rem 0" }} />
+                <div
+                  style={{
+                    border: "0.5px solid white",
+                    padding: "2.875rem",
+                    display: "flex",
+                    flexDirection: "column",
+                    justifyContent: "center",
+                  }}
+                >
+                  <div className="number">03</div>
+                  <div className="title notoBold">
+                    네카라쿠배 취업?
+                    <br />
+                    저도 되더라구요.
+                  </div>
+                  <div className="detail notoRegular">
+                    라이징캠프는 취업을 목표로 하지 않습니다.
+                    <br />
+                    그럼에도 자연스레 스펙이 쌓일 수 밖에 없습니다. <br />
+                    라이징캠프에서 올바른 개발 공부 습관을 기르니까요.
+                    <br />
+                    잘만 따라와 주세요. 취업 관리는 덤으로 해드립니다.
+                  </div>
                 </div>
-                <div id="grid" style={{border:"0.5px solid white", padding:"0 2.5rem"}}>
-                  <div style={{height:'2.0456rem',borderLeft:"1px solid white"}}/>
-                  <div style={{height:'2.0456rem', borderRight:"1px solid white"}}/>
-                </div>
-                <div style={{padding:"0 2.5313rem"}}><MiddleContainer /></div>
-                <div id="grid" style={{border:"0.5px solid white", padding:"0 2.5rem"}}>
-                  <div style={{height:'2.0456rem',borderLeft:"1px solid white"}}/>
-                  <div style={{height:'2.0456rem', borderRight:"1px solid white"}}/>
-                </div>
-                <div id="grid" style={{ position: "relative", padding:"0 2.5313rem" }}>
-                  <Circle
-                    style={{ borderRadius: "0 6rem 6rem 0"}}
+                <div
+                  style={{
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    border: "0.5px solid white",
+                    padding: "2.5rem 0",
+                  }}
+                >
+                  <img
+                    src={mockup_c}
+                    style={{ width: "29.7369rem", height: "29.25rem" }}
                   />
-                  <Left1 />
-                  <Right1 />
-                  <Circle
-                    style={{ borderRadius: "6rem 0 0 6rem", right: "0" }}/>
                 </div>
-                <div id="grid">
-                  <div style={{height:'2.0456rem',border:"0.5px solid white"}}/>
-                  <div style={{height:'2.0456rem',border:"0.5px solid white"}}/>
+                <Circle style={{ borderRadius: "6rem 0 0 6rem", right: "0" }} />
+              </div>
+              <div id="grid">
+                <div
+                  style={{ height: "2.0456rem", border: "0.5px solid white" }}
+                />
+                <div
+                  style={{ height: "2.0456rem", border: "0.5px solid white" }}
+                />
+              </div>
+              {/* result4 */}
+              <div
+                id="grid"
+                style={{ border: "0.5px solid white", padding: "0 2.5rem" }}
+              >
+                <div
+                  style={{
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    border: "0.5px solid white",
+                    padding: "2.5rem 0",
+                  }}
+                >
+                  <img
+                    src={mockup_d}
+                    style={{ width: "29.7369rem", height: "29.25rem" }}
+                  />
                 </div>
-                <div id="grid" style={{border:"0.5px solid white", padding:"0 2.5rem"}}>
-                  <Right1 />
-                  <Left1 />
+                <div
+                  style={{
+                    border: "0.5px solid white",
+                    padding: "2rem",
+                    display: "flex",
+                    flexDirection: "column",
+                    justifyContent: "center",
+                  }}
+                >
+                  <div className="number">04</div>
+                  <div className="title notoBold">
+                    좋은 자극을 받는 개발자
+                    <br />
+                    커뮤니티를 얻었어요.
+                  </div>
+                  <div className="detail notoRegular">
+                    “내 주변 5명의 평균이 곧 나 자신"이라는 말이 있죠.
+                    <br />
+                    배움에 목마른 구성원들로 만들어진 라이징캠프 커뮤니티. 혼자
+                    말고 함께 성장해요.
+                  </div>
                 </div>
-                <div id="grid" style={{border:"0.5px solid white", padding:"0 2.5rem"}}>
-                  <div style={{height:'2.0456rem',borderRight:"0.5px solid white",borderLeft:"1px solid white"}}/>
-                  <div style={{height:'2.0456rem',borderLeft:"0.5px solid white", borderRight:"1px solid white"}}/>
-                </div>
-                <div id="grid" style={{border:"0.5px solid white", padding:"0 2.5rem"}}>
-                  <Left2 />
-                  <Right2 />
-                </div>
-                <div id="grid" style={{border:"0.5px solid white", padding:"0 2.5rem"}}>
-                  <div style={{height:'2.0456rem',borderRight:"0.5px solid white",borderLeft:"1.5px solid white"}}/>
-                  <div style={{height:'2.0456rem',borderLeft:"0.5px solid white", borderRight:"1px solid white"}}/>
-                </div>
-                <div id="grid" style={{padding:"0 2.5313rem"}}>
-                  <Right3 />
-                  <Left3 />
-                </div>
+              </div>
+              <div
+                id="grid"
+                style={{ border: "0.5px solid white", padding: "0 2.5rem" }}
+              >
+                <div
+                  style={{
+                    height: "2.0456rem",
+                    borderRight: "0.5px solid white",
+                    borderLeft: "1px solid white",
+                  }}
+                />
+                <div
+                  style={{
+                    height: "2.0456rem",
+                    borderLeft: "0.5px solid white",
+                    borderRight: "1px solid white",
+                  }}
+                />
+              </div>
+              <div
+                id="grid"
+                style={{ border: "0.5px solid white", padding: "0 2.5rem" }}
+              >
+                <Left2 />
+                <Right2 />
+              </div>
+              <div
+                id="grid"
+                style={{ border: "0.5px solid white", padding: "0 2.5rem" }}
+              >
+                <div
+                  style={{
+                    height: "2.0456rem",
+                    borderRight: "0.5px solid white",
+                    borderLeft: "1.5px solid white",
+                  }}
+                />
+                <div
+                  style={{
+                    height: "2.0456rem",
+                    borderLeft: "0.5px solid white",
+                    borderRight: "1px solid white",
+                  }}
+                />
+              </div>
+              <div id="grid" style={{ padding: "0 2.5313rem" }}>
+                <Right3 />
+                <Left3 />
+              </div>
             </div>
           </div>
         </ContainerWrap>
       </ContentWrap>
     </Page>
-  );
-};
-
-const Left1 = () => {
-  return (
-    <div
-      style={{
-        border: "0.5px solid white",
-        padding: "2.875rem",
-        display: "flex",
-        flexDirection: "column",
-        justifyContent: "center",
-      }}
-    >
-      <div className="number">01</div>
-      <div className="title notoBold">
-        외주로 용돈 벌면서,
-        <br />
-        포트폴리오 쌓아요.
-      </div>
-      <div className="detail notoRegular">
-        참고: 프로젝트 갯수가 제한되어있다보니 수료생분 모두가 다 외주를 진행할
-        수 없다는 점, 솔직하게 말씀 드립니다. 그래도 염려치 마세요. ‘외주할 수
-        있는 실력’이 쌓이는 것은 변하지 않습니다.
-      </div>
-    </div>
-  );
-};
-
-const Right1 = () => {
-  return (
-    <div
-      style={{
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "center",
-        border: "0.5px solid white"
-      }}
-    >
-      <img
-        src={result1}
-        style={{ width: "29.7369rem", height: "33.6875rem" }}
-      />
-    </div>
   );
 };
 
@@ -226,7 +400,11 @@ const Left2 = () => {
         >
           <div className="notoMedium club-box">딴딴클럽</div>
           <div className="notoRegular">
-            소개가 들어갑니다. 소개가 들어갑니다.
+            루틴을 만들고
+            <br />
+            31일동안 인증하는
+            <br />
+            챌린지
           </div>
         </div>
         <div
@@ -235,12 +413,14 @@ const Left2 = () => {
             flexDirection: "column",
             textAlign: "center",
             alignItems: "center",
-            width: "8.125rem",
+            width: "9.625rem",
           }}
         >
           <div className="notoMedium club-box">머신러닝</div>
           <div className="notoRegular">
-            소개가 들어갑니다. 소개가 들어갑니다.
+            다양한 액티비티와
+            <br />
+            운동을 함께하는<br/>커뮤니티
           </div>
         </div>
         <div
@@ -249,12 +429,12 @@ const Left2 = () => {
             flexDirection: "column",
             textAlign: "center",
             alignItems: "center",
-            width: "8.125rem",
+            width: "9.625rem",
           }}
         >
-          <div className="notoMedium club-box">딴딴클럽</div>
+          <div className="notoMedium club-box">반딧불이 원정대</div>
           <div className="notoRegular">
-            소개가 들어갑니다. 소개가 들어갑니다.
+          1일 1커밋으로 <br/>깃허브를 초록색으로 <br/>채워나가는 챌린지
           </div>
         </div>
         <div
@@ -263,12 +443,12 @@ const Left2 = () => {
             flexDirection: "column",
             textAlign: "center",
             alignItems: "center",
-            width: "8.125rem",
+            width: "10rem",
           }}
         >
-          <div className="notoMedium club-box">딴딴클럽</div>
+          <div className="notoMedium club-box">위클리 스크럼</div>
           <div className="notoRegular">
-            소개가 들어갑니다. 소개가 들어갑니다.
+          같이 수강하는 팀원들과 <br/>데일리로 진행상황을 <br/>공유하는 회의
           </div>
         </div>
         <div
@@ -277,12 +457,12 @@ const Left2 = () => {
             flexDirection: "column",
             textAlign: "center",
             alignItems: "center",
-            width: "8.125rem",
+            width: "10rem",
           }}
         >
-          <div className="notoMedium club-box">딴딴클럽</div>
+          <div className="notoMedium club-box">알고리즘 캠프</div>
           <div className="notoRegular">
-            소개가 들어갑니다. 소개가 들어갑니다.
+          코딩테스트를 위한<br/>알고리즘 교육 프로그램
           </div>
         </div>
       </ClubWrap>
@@ -302,7 +482,7 @@ const Right2 = () => {
         borderLeft: "0.5px solid white",
       }}
     >
-      <img src={activity} style={{width: '29.0625rem', height: '22.25rem'}}/>
+      <img src={activity} style={{ width: "29.0625rem", height: "22.25rem" }} />
     </div>
   );
 };
@@ -352,10 +532,10 @@ const Right3 = () => {
         alignItems: "center",
         justifyContent: "center",
         border: "0.5px solid white",
-        padding: "2.5rem 0"
+        padding: "2.5rem 0",
       }}
     >
-      <img src={cmc} style={{width: '29.0625rem', height: '22.25rem'}}/>
+      <img src={cmc} style={{ width: "29.0625rem", height: "22.25rem" }} />
     </div>
   );
 };
@@ -464,13 +644,13 @@ const ClubWrap = styled.div`
   justify-content: space-evenly;
 
   .club-box {
-    width: 4.4375rem;
     height: 1.6875rem;
     background: #ffffff;
     border-radius: 0.4375rem;
     font-size: 1rem;
     line-height: 1.625rem;
     color: #fe4a00;
+    padding: 0.1875rem 0.375rem;
     margin: 1.5rem 0 0.4375rem 0;
   }
 `;
