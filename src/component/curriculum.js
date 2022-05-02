@@ -174,8 +174,13 @@ const TrackWrap = styled.div`
   justify-content: space-between;
   margin: 3.8125rem 0;
   @media (max-width: 75rem) {
-    overflow-x: hidden;
+    overflow-x: scroll;
     width: 100%;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    &::-webkit-scrollbar{
+      display: none;
+    }
   }
 `;
 
