@@ -44,7 +44,7 @@ const Footer = () => {
               />
             </div>
           </div>
-          <div style={{ display: "flex", flexDirection: "row" }}>
+          <div className="footerTextWrap">
             <FooterText>
               <div className="title-text">CONTACT US</div>
               <div className="notoRegular text">
@@ -96,6 +96,9 @@ const FooterWrap = styled.div`
   flex-direction: column;
   align-items: center;
   position: relative;
+  @media (max-width: 75rem) {
+    height: max-content;
+  }
 
   .ic-up {
     position: absolute;
@@ -104,6 +107,11 @@ const FooterWrap = styled.div`
     top: -3.5rem;
     right: 18.75rem;
     cursor: pointer;
+
+    @media (max-width: 75rem) {
+      top: -5rem;
+      right: 12.5rem;
+    }
   }
 `;
 
@@ -112,6 +120,9 @@ const FooterContentWrap = styled.div`
   display: flex;
   flex-direction: column;
   margin-top: 6.9375rem;
+  @media (max-width: 75rem) {
+    width: 18.75rem;
+  }
 `;
 
 const FooterTop = styled.div`
@@ -123,12 +134,29 @@ const FooterTop = styled.div`
     width: 4.3125rem;
     height: 4.3125rem;
     margin-bottom: 1.0625rem;
+    @media (max-width: 75rem) {
+      width: 2.8125rem;
+      height: 2.8125rem;
+    }
   }
 
   .sns-logo {
     width: 2.875rem;
     height: 2.875rem;
     cursor: pointer;
+    @media (max-width: 75rem) {
+      width: 1.875rem;
+      height: 1.875rem;
+    }
+  }
+
+  .footerTextWrap {
+    display: flex;
+    flex-direction: row;
+
+    @media (max-width: 75rem) {
+      flex-direction: column;
+    }
   }
 `;
 
@@ -137,6 +165,9 @@ const FooterText = styled.div`
   flex-direction: column;
   color: #ffffff;
   margin-right: 3.3125rem;
+  @media (max-width: 75rem) {
+    margin-right: 1.8125rem;
+  }
 
   .title-text {
     font-family: "Hanson";
@@ -146,27 +177,40 @@ const FooterText = styled.div`
     line-height: 1.25rem;
     text-transform: uppercase;
     margin-bottom: 1rem;
+    @media (max-width: 75rem) {
+      margin-bottom: 0.375rem;
+    }
   }
 
   .text {
     font-size: 1.125rem;
     line-height: 2.25rem;
     color: #d5d5d5;
+    @media (max-width: 75rem) {
+      font-size: 0.875rem;
+    }
   }
 `;
 
 const FooterBottom = styled.div`
   margin-top: 7.5rem;
-  font-size: 18px;
+  font-size: 1.125rem;
   line-height: 2.25rem;
   color: #d5d5d5;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  @media (max-width: 75rem) {
+    flex-direction: column;
+    font-size: 0.75rem;
+  }
 
   .right-text {
     display: flex;
     flex-direction: row;
+    @media (max-width: 75rem) {
+      flex-direction: column;
+    }
   }
 `;
 
