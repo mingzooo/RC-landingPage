@@ -3,20 +3,19 @@ import styled from "styled-components";
 
 import summer from "../assets/img_risingcamp_summer.png";
 
-const MentorComponent = () => {
+const MentorComponent = ({img, name, detail, hashtag1, hashtag2}) => {
   return (
     <MentorWrap>
-      <img src={summer} />
+      <img src={img} />
       <MentorDetail>
         <div className="mentor">MENTOR</div>
-        <div className="name">SUMMER</div>
+        <div className="name">{name}</div>
         <div className="notoBold detail-text">
-          끊임없이 의심하고 끊임없이 탐구하세요! 스스로 문제를 해결할 수 있도록
-          끝까지 도와드립니다.
+          {detail}
         </div>
         <HashTagWrap>
-            <div className="notoMedium hashtag">#자신감</div>
-            <div className="notoMedium hashtag">#문제해결능력</div>
+            <div className="notoMedium hashtag">{hashtag1}</div>
+            <div className="notoMedium hashtag">{hashtag2}</div>
         </HashTagWrap>
       </MentorDetail>
     </MentorWrap>
@@ -36,7 +35,7 @@ const MentorWrap = styled.div`
 `;
 
 const MentorDetail = styled.div`
-  width: 13.875rem;
+  width: 15.125rem;
   margin-left: 2.5469rem;
 
   .mentor {
