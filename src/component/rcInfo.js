@@ -61,6 +61,10 @@ const ContentWrap = styled.div`
   flex-direction: column;
   align-items: center;
   width: 61.25rem;
+  @media (max-width: 75rem) {
+    width: 22.5rem;
+  }
+
 
   .sorry-text {
     margin-top: 4.6875rem;
