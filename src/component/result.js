@@ -62,7 +62,7 @@ const Result = () => {
                   <div style={{height:'2.0456rem',borderLeft:"1px solid white"}}/>
                   <div style={{height:'2.0456rem', borderRight:"1px solid white"}}/>
                 </div>
-                <div style={{padding:"0 2.5rem"}}><MiddleContainer /></div>
+                <div style={{padding:"0 2.5313rem"}}><MiddleContainer /></div>
                 <div id="grid" style={{border:"0.5px solid white", padding:"0 2.5rem"}}>
                   <div style={{height:'2.0456rem',borderLeft:"1px solid white"}}/>
                   <div style={{height:'2.0456rem', borderRight:"1px solid white"}}/>
@@ -96,7 +96,7 @@ const Result = () => {
                   <div style={{height:'2.0456rem',borderRight:"0.5px solid white",borderLeft:"1.5px solid white"}}/>
                   <div style={{height:'2.0456rem',borderLeft:"0.5px solid white", borderRight:"1px solid white"}}/>
                 </div>
-                <div id="grid" style={{padding:"0 2.5rem"}}>
+                <div id="grid" style={{padding:"0 2.5313rem"}}>
                   <Right3 />
                   <Left3 />
                 </div>
