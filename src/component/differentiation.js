@@ -74,6 +74,7 @@ const ContentWrap = styled.div`
   flex-direction: column;
   @media (max-width: 75rem) {
     width: 22.5rem;
+    align-items: center;
   }
 `;
 
@@ -141,6 +142,7 @@ const Container = styled.div`
   align-items: center;
   @media (max-width: 75rem) {
     margin-bottom: 1.5625rem;
+    width: 19.6875rem;
   }
 
   .wrap {

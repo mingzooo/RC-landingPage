@@ -110,17 +110,29 @@ const Title = styled.div`
     font-size: 6rem;
     line-height: 6rem;
     text-transform: uppercase;
+    @media (max-width: 75rem) {
+      font-size: 1.875rem;
+      line-height: 1.875rem;
+    }
   }
 
   .middle-text {
     font-size: 1.5rem;
     color: #4f4f4f;
     margin: 1.5rem 0 0.8125rem 0;
+    @media (max-width: 75rem) {
+      font-size: 0.75rem;
+      margin: 0.8125rem 0 0.375rem 0;
+    }
   }
 
   .bottom-text {
     font-size: 2.25rem;
     line-height: 3.6rem;
+    @media (max-width: 75rem) {
+      font-size: 0.875rem;
+      line-height: 1.375rem;
+    }
   }
 
   .bottom {
@@ -129,6 +141,11 @@ const Title = styled.div`
     line-height: 2.25rem;
     text-align: center;
     color: #000000;
+    @media (max-width: 75rem) {
+      font-size: 0.75rem;
+      line-height: 1.375rem;
+      margin-top: 0.375rem;
+    }
   }
 `;
 
