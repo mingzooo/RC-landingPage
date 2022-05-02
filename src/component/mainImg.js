@@ -1,18 +1,19 @@
 import React from 'react'
 import styled from 'styled-components'
 
+import main from '../assets/img_banner.png';
+
 const MainImg = () => {
   return (
     <ImgWrap>
+      <img src={main} style={{width:"100%", height:"100%", objectFit:'cover'}}/>
       <RegFloatingButton className='notoBold'>4기 신청하기</RegFloatingButton>
     </ImgWrap>
   )
 }
 
 const ImgWrap = styled.div`
-    width: 100%;
     height: 61.125rem;
-    background-color: #fe4a00;
     display: flex;
     justify-content: center;
     position: relative;

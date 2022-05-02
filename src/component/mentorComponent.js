@@ -1,8 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 
-import summer from "../assets/img_risingcamp_summer.png";
-
 const MentorComponent = ({img, name, detail, hashtag1, hashtag2}) => {
   return (
     <MentorWrap>
