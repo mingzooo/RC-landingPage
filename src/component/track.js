@@ -1,23 +1,70 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
+import curriculum from "./curriculum.json";
 
-const Track = () => {
+const Track = ({img, track_eng, track_kor, detail, schedule, lang1, lang2, lang3, lang4, web, setTrack, isClicked, setAosClicked, setIosClicked, setServerClicked, setWebClicked }) => {
+
+  // const [isClicked,setIsClicked] = useState(false);
+
+  const onClickTrack = () => {
+    if(track_kor==="안드로이드 클래스"){
+      setTrack(curriculum.android);
+      if(isClicked===false){
+        setAosClicked(true);
+        setIosClicked(false);
+        setServerClicked(false);
+        setWebClicked(false);
+      }
+    }
+    if(track_kor==="iOS 클래스"){
+      setTrack(curriculum.ios);
+      if(isClicked===false){
+        setAosClicked(false);
+        setIosClicked(true);
+        setServerClicked(false);
+        setWebClicked(false);
+      }
+    }
+    if(track_kor==="서버 클래스"){
+      setTrack(curriculum.server);
+      if(isClicked===false){
+        setAosClicked(false);
+        setIosClicked(false);
+        setServerClicked(true);
+        setWebClicked(false);
+      }
+    }
+    if(track_kor==="웹 클래스"){
+      setTrack(curriculum.web);
+      if(isClicked===false){
+        setAosClicked(false);
+        setIosClicked(false);
+        setServerClicked(false);
+        setWebClicked(true);
+      }
+    }
+  };
+
   return (
-    <Container>
+    <Container onClick={onClickTrack} isClicked={isClicked}>
       <ContentWrap>
-        <img />
-        <div className="title-eng">android class</div>
-        <div className="notoBold title-kor">안드로이드 클래스</div>
+        <img src={img}/>
+        <div className="title-eng">{track_eng}</div>
+        <div className="notoBold title-kor">{track_kor}</div>
         <div className="notoRegular black-text" style={{marginBottom:"1.125rem"}}>
-          내가 만들어보고자 했던 서비스를 직접 구현해보며, 안드로이드 개발자로
-          성장해 나갑니다.
+          {detail}
         </div>
         <div className="notoBold red-text">수업일정</div>
-        <div className="notoRegular black-text">
-          매주 월요일 / 화요일 수업 예정
-        </div>
+        <BlackText web={web} className="notoRegular">
+          {schedule}
+        </BlackText>
         <div className="notoBold red-text">주요언어</div>
-        <img />
+        <div style={{display:'flex', flexDirection:"row", justifyContent:"space-between"}}>
+          <img src={lang1}/>
+          <img src={lang2}/>
+          <img src={lang3}/>
+          <img src={lang4}/>
+        </div>
       </ContentWrap>
     </Container>
   );
@@ -28,20 +75,23 @@ const Container = styled.div`
   height: 29.75rem;
   display: flex;
   align-items: center;
-  background: #ffffff;
+  background: ${(props)=>(props.isClicked?'#FFECE4':'#ffffff')};
   border-radius: 20px;
+  cursor: pointer;
 `;
 
 const ContentWrap = styled.div`
   width: fit-content;
-  padding: 0 1.875rem;
+  padding: 0 1.4375rem;
   display: flex;
   flex-direction: column;
 
   img {
     width: 3.0625rem;
     height: 3.0625rem;
-    background: #c4c4c4;
+    background: #ffffff;
+    width: object-fit;
+    background: transparent;
   }
 
   .title-eng {
@@ -51,8 +101,8 @@ const ContentWrap = styled.div`
     font-size: 1.75rem;
     line-height: 1.75rem;
     color: #fe4a00;
-    text-transform: uppercase;
     margin: 0.625rem 0 0.625rem 0;
+    width: 11.1875rem;
   }
 
   .title-kor {
@@ -68,13 +118,13 @@ const ContentWrap = styled.div`
     color: #fe4a00;
     margin: 0 0 0.375rem 0;
   }
+`;
 
-  .black-text {
-    font-size: 1rem;
-    line-height: 1.5rem;
-    color: #272727;
-    margin-bottom: 1.875rem;
-  }
+const BlackText = styled.div`
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: #272727;
+  margin-bottom: ${(props)=>((props.web) ? '0.625rem': '1.875rem')};
 `;
 
 export default Track;

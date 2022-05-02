@@ -35,7 +35,6 @@
             "title": "7~8주차 | 라이징테스트",
             "detail": "팀 빌딩, git & template 세미나, 클론 코딩, 주 1회 개발팀장 주관 코드 리뷰와 같이 수업이 진행되며, 주 1회 수업, 과제 수행 후 수업 마다 점검 받는 시스템으로 진행됩니다. 과제의 경우 수강생의 수준에 따라 점검을 진행하며"
         }
-       
     ],
     "ios": [
         {
@@ -73,83 +72,79 @@
             "title": "7~8주차 | 라이징테스트",
             "detail": "팀 빌딩, git & template 세미나, 클론 코딩, 주 1회 개발팀장 주관 코드 리뷰와 같이 수업이 진행되며, 주 1회 수업, 과제 수행 후 수업 마다 점검 받는 시스템으로 진행됩니다. 과제의 경우 수강생의 수준에 따라 점검을 진행하며"
         }
-       
     ],
     "server": [
         {
             "id": 1,
-            "title": "라이징 캠프 OT, 플랫폼이란?",
-            "detail": "개발자로서의 자세,Manifests, Palette,Layout 학습 및 Front-end 를 다루게 됩니다."
+            "title": "1주차 | OT & 서버 개요",
+            "detail": "서버 클라이언트의 큰 개념과 Linux에서 서버 환경 구축"
         },
         {
             "id": 2,
-            "title": "라이징 캠프 OT, 플랫폼이란?",
-            "detail": "개발자로서의 자세,Manifests, Palette,Layout 학습 및 Front-end 를 다루게 됩니다."
+            "title": "2주차 | Server & Client",
+            "detail": "Protocol, IP, Network, Routing, Port Forwarding, Domain, AWS 등의 전반적인 네트워크 인프라에 대해 개괄적으로 배우며 직접 서버를 구축하고, 간단한 홈페이지를 개발하는 방법론을 배우게 됩니다"
         },
         {
             "id": 3,
-            "title": "라이징 캠프 OT, 플랫폼이란?",
-            "detail": "개발자로서의 자세,Manifests, Palette,Layout 학습 및 Front-end 를 다루게 됩니다."
+            "title": "3주차 | DB, ERD 설계",
+            "detail": "복잡한 API의 작성을 위한 DBMS 쿼리 작성에 대해 다룹니다.수강생이 원하는 서비스(어플)을 정하고, 해당 DB 설계를 합니다.이후 커리큘럼부터는 실제 외주에 쓰이는 기법들과 현업에서 사용하는 템플릿 등을 공유하며 교육이 진행됩니다."
         },
         {
             "id": 4,
-            "title": "라이징 캠프 OT, 플랫폼이란?",
-            "detail": "개발자로서의 자세,Manifests, Palette,Layout 학습 및 Front-end 를 다루게 됩니다."
+            "title": "4주차 | Backend-language & Rest API",
+            "detail": "Backend Language에 대한 이해, http method, packet 구조, API에 대한 이해 등을 다루며 자신이 구축한 서버에서 로직을 작성하는 방법론을 배우게 됩니다"
         },
         {
             "id": 5,
-            "title": "라이징 캠프 OT, 플랫폼이란?",
-            "detail": "개발자로서의 자세,Manifests, Palette,Layout 학습 및 Front-end 를 다루게 됩니다."
+            "title": "5주차 | Cookie & Session, OAuth 2.0, JWT, validation, 서버 보안",
+            "detail": "로그인 방식의 이해, 자신이 지금까지 만든 API에 권한을 부여합니다. 강력한 Validation과 보안적 요소를 고려하는 개발방법을 배우게 됩니다."
         },
         {
             "id": 6,
-            "title": "라이징 캠프 OT, 플랫폼이란?",
-            "detail": "개발자로서의 자세,Manifests, Palette,Layout 학습 및 Front-end 를 다루게 됩니다."
+            "title": "6주차 | Paging & Regex & Test",
+            "detail": "Paging기법, 정규표현식, 실제 협업 개발 환경에 대한 이해 (Test, Dev 환경) 내용을 배웁니다."
         },
         {
             "id": 7,
-            "title": "라이징 캠프 OT, 플랫폼이란?",
-            "detail": "개발자로서의 자세,Manifests, Palette,Layout 학습 및 Front-end 를 다루게 됩니다."
+            "title": "7~8주차 | 라이징테스트",
+            "detail": "팀 빌딩, git & template 세미나, 클론 코딩, 주 1회 개발팀장 주관 코드 리뷰와 같이 수업이 진행되며, 주 1회 수업, 과제 수행 후 수업 마다 점검 받는 시스템으로 진행됩니다. 과제의 경우 수강생의 수준에 따라 점검을 진행하며"
         }
-       
     ],
     "web": [
         {
             "id": 1,
-            "title": "라이징 캠프 OT, 플랫폼이란?",
-            "detail": "개발자로서의 자세,Manifests, Palette,Layout 학습 및 Front-end 를 다루게 됩니다."
+            "title": "1주차 | OT & 기초지식",
+            "detail": "오리엔테이션, 개발자로서의 자세, 웹에 대한 기초지식 (html, css, javascript, es6) 을 다루게 됩니다."
         },
         {
             "id": 2,
-            "title": "라이징 캠프 OT, 플랫폼이란?",
-            "detail": "개발자로서의 자세,Manifests, Palette,Layout 학습 및 Front-end 를 다루게 됩니다."
+            "title": "2주차 | React Intro",
+            "detail": "리액트가 왜 탄생하게 되었는지를 생각해보며 리액트의 핵심 개념 (Component, VirtualDOM, JSX, Props/State, Hooks) 에 대하여 배우게 됩니다."
         },
         {
             "id": 3,
-            "title": "라이징 캠프 OT, 플랫폼이란?",
-            "detail": "개발자로서의 자세,Manifests, Palette,Layout 학습 및 Front-end 를 다루게 됩니다."
+            "title": "3주차 | Life Cycle & Page Transition",
+            "detail": "리액트에서의 생명주기와 페이지 이동하는 법을 이해하고 활용법을 숙지하는 단계입니다."
         },
         {
             "id": 4,
-            "title": "라이징 캠프 OT, 플랫폼이란?",
-            "detail": "개발자로서의 자세,Manifests, Palette,Layout 학습 및 Front-end 를 다루게 됩니다."
+            "title": "4주차 | Redux & Styled-Component & 반응형 웹 설계",
+            "detail": "Redux와 Styled-Component가 어디에서 필요한지를 이해하고 활용법에 대해 배우게 됩니다. 또한 반응형 웹을 설계하고 작업하는 방법에 대해 배우게 됩니다."
         },
         {
             "id": 5,
-            "title": "라이징 캠프 OT, 플랫폼이란?",
-            "detail": "개발자로서의 자세,Manifests, Palette,Layout 학습 및 Front-end 를 다루게 됩니다."
+            "title": "5주차 | Network Intro & API",
+            "detail": "개괄적인 서버 와 클라이언트 개요,HTTP 프로토콜에 대한 이해 및 API에 대한 이해 및 학습을 통한 서버 통신을 학습합니다."
         },
         {
             "id": 6,
-            "title": "라이징 캠프 OT, 플랫폼이란?",
-            "detail": "개발자로서의 자세,Manifests, Palette,Layout 학습 및 Front-end 를 다루게 됩니다."
+            "title": "6주차 | Token & Restful",
+            "detail": "RESTful API 및 로그인 방식의 이해(Session-Cookie, oAuth, JWT)에 대해 학습합니다."
         },
         {
             "id": 7,
-            "title": "라이징 캠프 OT, 플랫폼이란?",
-            "detail": "개발자로서의 자세,Manifests, Palette,Layout 학습 및 Front-end 를 다루게 됩니다."
+            "title": "7~8주차 | 라이징테스트",
+            "detail": "팀 빌딩, git & template 세미나, 클론 코딩, 주 1회 개발팀장 주관 코드 리뷰와 같이 수업이 진행되며, 주 1회 수업, 과제 수행 후 수업 마다 점검 받는 시스템으로 진행됩니다. 과제의 경우 수강생의 수준에 따라 점검을 진행하며"
         }
-       
     ]
-    
 }
