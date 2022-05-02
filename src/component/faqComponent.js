@@ -42,7 +42,7 @@ const QuestionBox = styled.div`
   margin-bottom: 1.1875rem;
 
   .question-text {
-    font-size: 1.125rem;
+    font-size: 1.5rem;
     line-height: 4.3125rem;
     color: #000000;
     margin-left: 1.75rem;
