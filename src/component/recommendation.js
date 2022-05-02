@@ -1,6 +1,10 @@
 import React from "react";
 import styled from "styled-components";
 
+import dev_a from "../assets/img_devteam_a.png";
+import dev_b from "../assets/img_devteam_b.png";
+import dev_c from "../assets/img_devteam_c.png";
+
 const Recommendation = () => {
   return (
     <Page>
@@ -20,7 +24,7 @@ const Recommendation = () => {
         </Title>
         <RecommendWrap>
           <RecommendContainer>
-            <img />
+            <img src={dev_a} />
             <div className="recommend-text">
               <RecommendText>
                 <div className="notoBold red-text">
@@ -34,50 +38,60 @@ const Recommendation = () => {
                   강하시고, 학습도 빠르셔서 즐겁게 프로젝트를 진행할 수
                   있었습니다!
                 </div>
-                <div className="notoRegular black-text" style={{color:'#929292'}}>
-                    -이오 개발팀
+                <div
+                  className="notoRegular black-text"
+                  style={{ color: "#929292" }}
+                >
+                  -이오 개발팀
                 </div>
               </RecommendText>
             </div>
           </RecommendContainer>
           <RecommendContainer>
-            <img />
+            <img src={dev_b} />
             <div className="recommend-text">
               <RecommendText>
                 <div className="notoBold red-text">
-                  무엇보다 커뮤니케이션
+                  프로젝트에 대한
                   <br />
-                  능력이 좋으셨어요.
+                  이해도가 높으셨습니다.
                 </div>
                 <div className="notoRegular black-text">
-                  의사소통도 정말 잘되고, 이슈에 대해 자세하게 글로 남겨주셔서
-                  디테일한 내용을 파악하기 쉬웠습니다. 개발적으로 성장의지도
-                  강하시고, 학습도 빠르셔서 즐겁게 프로젝트를 진행할 수
-                  있었습니다!
+                  기존에 진행중인 프로젝트를 추가 개발을 맡으셨는데, 기존 개발의
+                  기획이 어려움에도 불구하고, 오히려 기획을 더 제안 해주실
+                  정도로 업무 처리 능력이 좋으셨습니다. 그리고 개발중에 문제가
+                  생기면 먼저 슬랙에 물어보며 확인하는 과정을 꼭 거치쳤어요.
+                  덕분에 프로젝트 마감 지연없이 잘 마무리할 수 있었습니다.
                 </div>
-                <div className="notoRegular black-text" style={{color:'#929292'}}>
-                    -이오 개발팀
+                <div
+                  className="notoRegular black-text"
+                  style={{ color: "#929292" }}
+                >
+                  -유니스 개발팀
                 </div>
               </RecommendText>
             </div>
           </RecommendContainer>
           <RecommendContainer>
-            <img />
+            <img src={dev_c} />
             <div className="recommend-text">
               <RecommendText>
                 <div className="notoBold red-text">
-                  무엇보다 커뮤니케이션
-                  <br />
-                  능력이 좋으셨어요.
+                  커뮤니케이션부터 <br />
+                  유지보수까지 잘 이끌어주셨습니다.
                 </div>
                 <div className="notoRegular black-text">
-                  의사소통도 정말 잘되고, 이슈에 대해 자세하게 글로 남겨주셔서
-                  디테일한 내용을 파악하기 쉬웠습니다. 개발적으로 성장의지도
-                  강하시고, 학습도 빠르셔서 즐겁게 프로젝트를 진행할 수
-                  있었습니다!
+                  굉장히 빠듯한 일정이었음에도 불구하고 스콥 산정부터 소통,
+                  사후관리에 이르기까지 거의 완벽한 대응을 해주셨습니다.
+                  유지보수가 필요한 내용이 있어 향후에도 협업을 이어가고
+                  있습니다. 기획적인 배경을 이해하려는 노력으로 퀄리티
+                  관리해주시는 모습이 인상적이었습니다.
                 </div>
-                <div className="notoRegular black-text" style={{color:'#929292'}}>
-                    -이오 개발팀
+                <div
+                  className="notoRegular black-text"
+                  style={{ color: "#929292" }}
+                >
+                  -박단 DK
                 </div>
               </RecommendText>
             </div>
@@ -146,7 +160,6 @@ const RecommendContainer = styled.div`
 
   img {
     width: 50%;
-    background-color: #929292;
     border-radius: 1.25rem 0 0 1.25rem;
   }
 
@@ -154,15 +167,16 @@ const RecommendContainer = styled.div`
     width: 50%;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 `;
 
 const RecommendText = styled.div`
-  width: 26.25rem;
-  margin: 2.8125rem 0 0 4.875rem ;
+  width: 28.125rem;
 
   .red-text {
-    font-size: 1.5rem;
+    font-size: 1.875rem;
     line-height: 160%;
     color: #fe4a00;
     margin-bottom: 1.25rem;
@@ -170,7 +184,7 @@ const RecommendText = styled.div`
 
   .black-text {
     font-weight: 400;
-    font-size: 18px;
+    font-size: 1rem;
     line-height: 180%;
     color: #000000;
   }

@@ -1,7 +1,9 @@
 import React from "react";
 import styled from "styled-components";
 
-import pic from "../assets/blog-pic.png";
+import rc_outsource from "../assets/img_outsorce.png";
+import rc_makeus from "../assets/img_makeus.png";
+import rc_network from "../assets/img_network.png";
 
 const Differentiation = () => {
   return (
@@ -23,7 +25,7 @@ const Differentiation = () => {
         <ContainerWrap>
           <Container>
             <div className="wrap">
-              <img src={pic} />
+              <img src={rc_outsource} />
               <div className="notoBold title-text">1. 외주연계</div>
               <div className="notoRegular detail-text">
                 교육 이후 우수하게 수료하신 분들에게 외주 경험이 제공됩니다.
@@ -34,23 +36,23 @@ const Differentiation = () => {
           </Container>
           <Container>
             <div className="wrap">
-              <img src={pic} />
-              <div className="notoBold title-text">1. 외주연계</div>
+              <img src={rc_makeus} />
+              <div className="notoBold title-text">2. 메이커스 챌린지</div>
               <div className="notoRegular detail-text">
-                교육 이후 우수하게 수료하신 분들에게 외주 경험이 제공됩니다.
-                개발 팀장과 프로젝트 매니저와 함께 진행하며, 외주 수익금을
-                쉐어합니다.
+                전국 IT 관련 학과 학생들로 이루어진 동아리에서 앱런칭을 해볼 수
+                있습니다. “수익형” 앱 런칭, 혹은 “나만의” 앱 런칭을 해볼 준비가
+                되셨나요?
               </div>
             </div>
           </Container>
           <Container>
             <div className="wrap">
-              <img src={pic} />
-              <div className="notoBold title-text">1. 외주연계</div>
+              <img src={rc_network} />
+              <div className="notoBold title-text">3. 네트워킹</div>
               <div className="notoRegular detail-text">
-                교육 이후 우수하게 수료하신 분들에게 외주 경험이 제공됩니다.
-                개발 팀장과 프로젝트 매니저와 함께 진행하며, 외주 수익금을
-                쉐어합니다.
+                라이징캠프, 메이커스 동아리원들 모두가 속한 디스코드에서 함께
+                성장합니다. 디스코드 내의 지식in 채널, 든든한 공부 지원군이
+                되어드립니다.
               </div>
             </div>
           </Container>
