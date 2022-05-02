@@ -4,10 +4,18 @@ import styled from "styled-components";
 import comgong from "../assets/img_risingcamp_cgbro.png";
 import cg_face from "../assets/img_risingcamp_face.png";
 import cg_youtube from "../assets/img_risingcamp_youtube.png";
+import icon_up from "../assets/ic_risingcamp_up.png";
 
 const Footer = () => {
   return (
     <FooterWrap>
+      <img
+        src={icon_up}
+        className="ic-up"
+        onClick={() => {
+          window.scrollTo({ top: 0, behavior: "smooth" });
+        }}
+      />
       <FooterContentWrap>
         <FooterTop>
           <div>
@@ -62,12 +70,17 @@ const Footer = () => {
           <div className="right-text">
             <div>이용약관</div>
             <div style={{ marginLeft: "2.375rem" }}>개인정보 처리방침</div>
-            <div style={{ marginLeft: "2.375rem", cursor:"pointer" }} onClick={() =>
-                  window.open(
-                    "https://www.notion.so/softsquared/bfcc55fb4f1a496fbb6ffcacb10c9558",
-                    "_blank"
-                  )
-                }>환불약관</div>
+            <div
+              style={{ marginLeft: "2.375rem", cursor: "pointer" }}
+              onClick={() =>
+                window.open(
+                  "https://www.notion.so/softsquared/bfcc55fb4f1a496fbb6ffcacb10c9558",
+                  "_blank"
+                )
+              }
+            >
+              환불약관
+            </div>
           </div>
         </FooterBottom>
       </FooterContentWrap>
@@ -82,6 +95,16 @@ const FooterWrap = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
+
+  .ic-up {
+    position: absolute;
+    width: 5.0625rem;
+    height: 5rem;
+    top: -3.5rem;
+    right: 18.75rem;
+    cursor: pointer;
+  }
 `;
 
 const FooterContentWrap = styled.div`
