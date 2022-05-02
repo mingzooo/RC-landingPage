@@ -1,22 +1,20 @@
 import React from "react";
 import styled from "styled-components";
 
-const FaqComponent = () => {
+const FaqComponent = ({ question, answer, linkText, link }) => {
   return (
     <Wrap>
       <QuestionBox>
-        <div className="notoBold question-text">
-          Q. 저도 수업을 들을 수 있나요?
-        </div>
+        <div className="notoBold question-text">{question}</div>
       </QuestionBox>
-      <div className="notoRegular answer-text">
-        컴공 2~3학년 기준으로 클라이언트의 경우 객체 지향에 대한 이해 및
-        조건문과 반복문을 활용한 프로그래밍 경험, 서버의 경우 DB에 대한 기본적인
-        지식이 있다면 수강하시는데 큰 무리는 없습니다. 다만 웹 세션은
-        html,css,js 에 대한 기초 지식이 있어야 수강하기 수월하다는 점
-        참고해주세요 !
+      <div className="notoRegular answer-text">{answer}</div>
+      <div
+        className="notoBold"
+        onClick={() => window.open(`${link}`, "_blank")}
+        style={{ color: "#FE4A00", marginTop: "0.75rem", cursor: "pointer" }}
+      >
+        {linkText}
       </div>
-      <div className="notoBold" style={{color:"#FE4A00", marginTop:"0.75rem"}}>👉 선배들의 생생한 수강 후기 보러가기!</div>
     </Wrap>
   );
 };
@@ -42,7 +40,7 @@ const QuestionBox = styled.div`
   margin-bottom: 1.1875rem;
 
   .question-text {
-    font-size: 1.5rem;
+    font-size: 1.375rem;
     line-height: 4.3125rem;
     color: #000000;
     margin-left: 1.75rem;

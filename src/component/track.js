@@ -59,7 +59,7 @@ const Track = ({img, track_eng, track_kor, detail, schedule, lang1, lang2, lang3
           {schedule}
         </BlackText>
         <div className="notoBold red-text">주요언어</div>
-        <div style={{display:'flex', flexDirection:"row", justifyContent:"space-between"}}>
+        <div style={{display:'flex', flexDirection:"row", width:"90%", justifyContent:"space-between"}}>
           <img src={lang1}/>
           <img src={lang2}/>
           <img src={lang3}/>
