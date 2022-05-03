@@ -23,14 +23,14 @@ const MentorWrap = styled.div`
   flex-direction: row;
   align-items: center;
   margin-bottom: 5.04rem;
-  @media (max-width: 75rem) {
+  @media (max-width: 73.75rem) {
     margin-bottom: 1.6619rem;
   }
 
   img {
     width: 17.6406rem;
     height: 22.6806rem;
-    @media (max-width: 75rem) {
+    @media (max-width: 73.75rem) {
       width: 9.5388rem;
       height: 14.5231rem;
       object-fit: cover;
@@ -41,7 +41,7 @@ const MentorWrap = styled.div`
 const MentorDetail = styled.div`
   width: 15.125rem;
   margin-left: 2.5469rem;
-  @media (max-width: 75rem) {
+  @media (max-width: 73.75rem) {
     width: 9.3125rem;
   }
 
@@ -53,7 +53,7 @@ const MentorDetail = styled.div`
     font-size: 1rem;
     line-height: 1rem;
     -webkit-text-stroke: 0.0313rem #fe4a00;
-    @media (max-width: 75rem) {
+    @media (max-width: 73.75rem) {
     font-size: 0.75rem;
     line-height: 0.75rem;
   }
@@ -67,7 +67,7 @@ const MentorDetail = styled.div`
     line-height: 2rem;
     color: #fe4a00;
     margin: 0.75rem 0 1.0719rem 0;
-    @media (max-width: 75rem) {
+    @media (max-width: 73.75rem) {
     font-size: 1.5rem;
     margin: 0.1875rem 0 0.625rem 0;
     line-height: 1.5rem;
@@ -78,7 +78,7 @@ const MentorDetail = styled.div`
     font-size: 1rem;
     line-height: 1.625rem;
     color: #000000;
-    @media (max-width: 75rem) {
+    @media (max-width: 73.75rem) {
     font-size: 0.8125rem;
     line-height: 1.3125rem;
   }
@@ -90,7 +90,7 @@ const HashTagWrap = styled.div`
   flex-direction: row;
   margin-right: auto;
   margin-top: 1.1875rem;
-  @media (max-width: 75rem) {
+  @media (max-width: 73.75rem) {
     flex-direction: column;
     margin-top: 0;
   }
@@ -108,7 +108,7 @@ const HashTagWrap = styled.div`
     line-height: 1.875rem;
     color: #fe4a00;
 
-    @media (max-width: 75rem) {
+    @media (max-width: 73.75rem) {
     flex-direction: column;
     margin-top: 0.5625rem;
   }

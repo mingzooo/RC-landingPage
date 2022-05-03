@@ -93,7 +93,7 @@ const ContentWrap = styled.div`
   width: 73.75rem;
   display: flex;
   flex-direction: column;
-  @media (max-width: 75rem) {
+  @media (max-width: 73.75rem) {
     width: 22.5rem;
   }
 `;
@@ -110,7 +110,7 @@ const Title = styled.div`
     font-size: 6rem;
     line-height: 6rem;
     text-transform: uppercase;
-    @media (max-width: 75rem) {
+    @media (max-width: 73.75rem) {
       font-size: 1.875rem;
       line-height: 1.875rem;
     }
@@ -120,7 +120,7 @@ const Title = styled.div`
     font-size: 1.5rem;
     color: #4f4f4f;
     margin: 1.5rem 0 0.8125rem 0;
-    @media (max-width: 75rem) {
+    @media (max-width: 73.75rem) {
       font-size: 0.75rem;
       margin: 0.8125rem 0 0.375rem 0;
     }
@@ -129,7 +129,7 @@ const Title = styled.div`
   .bottom-text {
     font-size: 2.25rem;
     line-height: 3.6rem;
-    @media (max-width: 75rem) {
+    @media (max-width: 73.75rem) {
       font-size: 0.875rem;
       line-height: 1.375rem;
     }
@@ -141,7 +141,7 @@ const Title = styled.div`
     line-height: 2.25rem;
     text-align: center;
     color: #000000;
-    @media (max-width: 75rem) {
+    @media (max-width: 73.75rem) {
       font-size: 0.75rem;
       line-height: 1.375rem;
       margin-top: 0.375rem;
@@ -155,7 +155,7 @@ const MentorWrap = styled.div`
   flex-wrap: wrap;
   margin: 6.6875rem 0 6.25rem 0;
   justify-content: space-between;
-  @media (max-width: 75rem) {
+  @media (max-width: 73.75rem) {
     flex-direction: column;
     margin: 2.25rem 0 4.5625rem 0;
   }

@@ -109,7 +109,7 @@ const Container = styled.div`
   border-radius: 20px;
   cursor: pointer;
 
-  @media (max-width: 75rem) {
+  @media (max-width: 73.75rem) {
     margin-right: 1.125rem;
     width: 13.625rem;
     height: 20.875rem;
@@ -128,7 +128,7 @@ const ContentWrap = styled.div`
     background: #ffffff;
     width: object-fit;
     background: transparent;
-    @media (max-width: 75rem) {
+    @media (max-width: 73.75rem) {
       width: 2.1875rem;
       height: 2.1875rem;
     }
@@ -143,7 +143,7 @@ const ContentWrap = styled.div`
     color: #fe4a00;
     margin: 0.625rem 0 0.625rem 0;
     width: 11.1875rem;
-    @media (max-width: 75rem) {
+    @media (max-width: 73.75rem) {
       font-size: 1.125rem;
       line-height: 1.125rem;
       width: 6.875rem;
@@ -156,7 +156,7 @@ const ContentWrap = styled.div`
     line-height: 1.125rem;
     color: #fe4a00;
     margin-bottom: 1.125rem;
-    @media (max-width: 75rem) {
+    @media (max-width: 73.75rem) {
       font-size: 0.875rem;
       line-height: 0.875rem;
       margin-bottom: 0.125rem;
@@ -164,7 +164,7 @@ const ContentWrap = styled.div`
   }
 
   .black-text {
-    @media (max-width: 75rem) {
+    @media (max-width: 73.75rem) {
       font-size: 0.75rem;
       line-height: 1.125rem;
     }
@@ -174,7 +174,7 @@ const ContentWrap = styled.div`
     line-height: 1.5rem;
     color: #fe4a00;
     margin: 0 0 0.375rem 0;
-    @media (max-width: 75rem) {
+    @media (max-width: 73.75rem) {
       font-size: 0.875rem;
       line-height: 0.875rem;
     }
@@ -186,7 +186,7 @@ const BlackText = styled.div`
   line-height: 1.5rem;
   color: #272727;
   margin-bottom: ${(props) => (props.web ? "0.625rem" : "1.875rem")};
-  @media (max-width: 75rem) {
+  @media (max-width: 73.75rem) {
     font-size: 0.75rem;
     line-height: 1.125rem;
     margin-bottom: ${(props) => (props.web ? "0.625rem" : "0.3125rem")};

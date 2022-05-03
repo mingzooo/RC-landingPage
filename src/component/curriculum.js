@@ -138,7 +138,7 @@ const ContentWrap = styled.div`
   width: 73.75rem;
   display: flex;
   flex-direction: column;
-  @media (max-width: 75rem) {
+  @media (max-width: 73.75rem) {
     width: 22.5rem;
   }
 `;
@@ -156,7 +156,7 @@ const Title = styled.div`
     font-size: 6rem;
     line-height: 6rem;
     text-transform: uppercase;
-    @media (max-width: 75rem) {
+    @media (max-width: 73.75rem) {
       font-size: 1.875rem;
       line-height: 1.875rem;
     }
@@ -165,7 +165,7 @@ const Title = styled.div`
   .middle-text {
     font-size: 1.5rem;
     margin: 0.8125rem 0 0.75rem 0;
-    @media (max-width: 75rem) {
+    @media (max-width: 73.75rem) {
       font-size: 0.75rem;
       margin: 0.8125rem 0 0.375rem 0;
     }
@@ -174,7 +174,7 @@ const Title = styled.div`
   .bottom-text {
     font-size: 2.25rem;
     line-height: 3.6rem;
-    @media (max-width: 75rem) {
+    @media (max-width: 73.75rem) {
       font-size: 0.875rem;
       line-height: 1.375rem;
     }
@@ -186,7 +186,7 @@ const TrackWrap = styled.div`
   flex-direction: row;
   justify-content: space-between;
   margin: 3.8125rem 0;
-  @media (max-width: 75rem) {
+  @media (max-width: 73.75rem) {
     overflow-x: scroll;
     width: 100%;
     -ms-overflow-style: none;

@@ -34,7 +34,7 @@ const LeftReview = ({ name, img_a, img_b, img_c, title, detail, who }) => {
 
 const Wrap = styled.div`
   margin-top: 5.5625rem;
-  @media (max-width: 75rem) {
+  @media (max-width: 73.75rem) {
     margin-top: 0;
   }
   .name {
@@ -46,7 +46,7 @@ const Wrap = styled.div`
     -webkit-text-stroke: 0.1437rem #caf200;
     color: transparent;
     margin-bottom: 0.8125rem;
-    @media (max-width: 75rem) {
+    @media (max-width: 73.75rem) {
       font-size: 1.75rem;
       line-height: 1.75rem;
       -webkit-text-stroke: 0.0625rem #caf200;
@@ -64,7 +64,7 @@ const ContentWrap = styled.div`
     z-index: -100;
     width: 23.75rem;
     height: 40.4375rem;
-    @media (max-width: 75rem) {
+    @media (max-width: 73.75rem) {
       width: 6.4375rem;
       height: 12.5rem;
     }
@@ -73,7 +73,7 @@ const ContentWrap = styled.div`
   .small-pic {
     width: 20.5rem;
     height: 14.4375rem;
-    @media (max-width: 75rem) {
+    @media (max-width: 73.75rem) {
       width: 6.375rem;
       height: 4.5rem;
     }
@@ -84,7 +84,7 @@ const ContentWrap = styled.div`
     flex-direction: column;
     margin-left: 5rem;
     width: 42.5625rem;
-    @media (max-width: 75rem) {
+    @media (max-width: 73.75rem) {
       width: 13.125rem;
       margin-left: 0.4375rem;
     }
@@ -95,7 +95,7 @@ const ContentWrap = styled.div`
     line-height: 4.29rem;
     margin-top: 2rem;
     width: 39.5625rem;
-    @media (max-width: 75rem) {
+    @media (max-width: 73.75rem) {
       font-size: 0.875rem;
       line-height: 1.25rem;
       width: 13.125rem;
@@ -107,7 +107,7 @@ const ContentWrap = styled.div`
     width: 37.4375rem;
     font-size: 1.5rem;
     margin-top: 1.3125rem;
-    @media (max-width: 75rem) {
+    @media (max-width: 73.75rem) {
       font-size: 0.75rem;
       line-height: 1.1875rem;
       width: 13.125rem;

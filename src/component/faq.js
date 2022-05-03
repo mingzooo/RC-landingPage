@@ -88,7 +88,7 @@ const ContentWrap = styled.div`
   width: 73.75rem;
   display: flex;
   flex-direction: column;
-  @media (max-width: 75rem) {
+  @media (max-width: 73.75rem) {
     width: 22.5rem;
     align-items: center;
   }
@@ -99,7 +99,7 @@ const Title = styled.div`
   flex-direction: column;
   align-items: left;
   margin-top: 9.4375rem;
-  @media (max-width: 75rem) {
+  @media (max-width: 73.75rem) {
     width: 19.6875rem;
     margin-top: 2.375rem;
   }
@@ -111,7 +111,7 @@ const Title = styled.div`
     line-height: 6rem;
     text-align: left;
     text-transform: uppercase;
-    @media (max-width: 75rem) {
+    @media (max-width: 73.75rem) {
       font-size: 1.875rem;
       line-height: 1.875rem;
     }
@@ -121,7 +121,7 @@ const Title = styled.div`
     font-size: 1.5rem;
     color: #4f4f4f;
     margin: 1.5rem 0 0.8125rem 0;
-    @media (max-width: 75rem) {
+    @media (max-width: 73.75rem) {
       font-size: 0.75rem;
       margin: 0.8125rem 0 0.375rem 0;
     }
@@ -131,7 +131,7 @@ const Title = styled.div`
     font-size: 2.25rem;
     line-height: 3.6rem;
     text-align: left;
-    @media (max-width: 75rem) {
+    @media (max-width: 73.75rem) {
       font-size: 0.875rem;
       line-height: 1.375rem;
     }
@@ -144,7 +144,7 @@ const FaqWrap = styled.div`
   flex-wrap: wrap;
   justify-content: space-between;
   margin: 2.9375rem 0 15.625rem 0;
-  @media (max-width: 75rem) {
+  @media (max-width: 73.75rem) {
     flex-direction: column;
   }
 `;

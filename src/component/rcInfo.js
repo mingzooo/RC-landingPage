@@ -101,7 +101,7 @@ const ContentWrap = styled.div`
   align-items: center;
   width: 61.25rem;
   margin-bottom: 11.875rem;
-  @media (max-width: 75rem) {
+  @media (max-width: 73.75rem) {
     width: 22.5rem;
     margin-bottom: 3.125rem;
   }
@@ -110,7 +110,7 @@ const ContentWrap = styled.div`
     margin-top: 4.6875rem;
     font-size: 4rem;
     color: #fe4a00;
-    @media (max-width: 75rem) {
+    @media (max-width: 73.75rem) {
       font-size: 1.5rem;
       margin-top: 2.75rem;
     }
@@ -120,7 +120,7 @@ const ContentWrap = styled.div`
     margin: 0.25rem 0 2.8125rem 0;
     font-size: 2rem;
     text-align: center;
-    @media (max-width: 75rem) {
+    @media (max-width: 73.75rem) {
       font-size: 1rem;
     }
   }
@@ -129,7 +129,7 @@ const ContentWrap = styled.div`
     position: relative;
     width: 61.25rem;
     height: 34.5rem;
-    @media (max-width: 75rem) {
+    @media (max-width: 73.75rem) {
       width: 22.5rem;
       height: 12.5rem;
     }
@@ -140,7 +140,7 @@ const ContentWrap = styled.div`
     margin-right: auto;
     font-size: 7.875rem;
     color: #fe4a00;
-    @media (max-width: 75rem) {
+    @media (max-width: 73.75rem) {
       height: 1.25rem;
       margin-top: 2.5rem;
     }
@@ -150,7 +150,7 @@ const ContentWrap = styled.div`
     font-size: 1.875rem;
     color: #fe4a00;
     margin-right: auto;
-    @media (max-width: 75rem) {
+    @media (max-width: 73.75rem) {
       font-size: 1.25rem;
       width: 16.25rem;
     }
@@ -161,7 +161,7 @@ const ContentWrap = styled.div`
     position: absolute;
     bottom: 0;
     right: 0;
-    @media (max-width: 75rem) {
+    @media (max-width: 73.75rem) {
       font-size: 1.25rem;
       left: 7.5rem;
       height: 1.25rem;
@@ -183,7 +183,7 @@ const Box = styled.div`
     flex-direction: column;
     margin: 3.3125rem auto;
     text-align: left;
-    @media (max-width: 75rem) {
+    @media (max-width: 73.75rem) {
       width: 17.4375rem;
       margin: 1.375rem auto;
     }

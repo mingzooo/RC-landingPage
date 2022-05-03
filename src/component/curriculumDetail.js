@@ -65,7 +65,7 @@ const CurriculumBox = styled.div`
     line-height: 1.6875rem;
     color: #fe4a00;
     margin: 0 1.5rem;
-    @media (max-width: 75rem) {
+    @media (max-width: 73.75rem) {
     font-size: 0.875rem;
     line-height: 1.25rem;
   }

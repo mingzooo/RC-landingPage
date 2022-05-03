@@ -96,7 +96,7 @@ const FooterWrap = styled.div`
   flex-direction: column;
   align-items: center;
   position: relative;
-  @media (max-width: 75rem) {
+  @media (max-width: 73.75rem) {
     height: max-content;
   }
 
@@ -108,7 +108,7 @@ const FooterWrap = styled.div`
     right: 18.75rem;
     cursor: pointer;
 
-    @media (max-width: 75rem) {
+    @media (max-width: 73.75rem) {
       top: -5rem;
       right: 0;
       width: 3.2656rem;
@@ -122,7 +122,7 @@ const FooterContentWrap = styled.div`
   display: flex;
   flex-direction: column;
   margin-top: 6.9375rem;
-  @media (max-width: 75rem) {
+  @media (max-width: 73.75rem) {
     width: 18.75rem;
   }
 `;
@@ -136,7 +136,7 @@ const FooterTop = styled.div`
     width: 4.3125rem;
     height: 4.3125rem;
     margin-bottom: 1.0625rem;
-    @media (max-width: 75rem) {
+    @media (max-width: 73.75rem) {
       width: 2.8125rem;
       height: 2.8125rem;
     }
@@ -146,7 +146,7 @@ const FooterTop = styled.div`
     width: 2.875rem;
     height: 2.875rem;
     cursor: pointer;
-    @media (max-width: 75rem) {
+    @media (max-width: 73.75rem) {
       width: 1.875rem;
       height: 1.875rem;
     }
@@ -154,7 +154,7 @@ const FooterTop = styled.div`
 
   .sns-logo-left {
     margin-right: 1.4375rem;
-    @media (max-width: 75rem) {
+    @media (max-width: 73.75rem) {
       margin-right: 0.9375rem;
     }
   }
@@ -163,7 +163,7 @@ const FooterTop = styled.div`
     display: flex;
     flex-direction: row;
 
-    @media (max-width: 75rem) {
+    @media (max-width: 73.75rem) {
       flex-direction: column;
       margin-left: 1.25rem;
       margin-top: -1.25rem;
@@ -176,7 +176,7 @@ const FooterText = styled.div`
   flex-direction: column;
   color: #ffffff;
   margin-right: 3.3125rem;
-  @media (max-width: 75rem) {
+  @media (max-width: 73.75rem) {
     margin-right: 0;
   }
 
@@ -188,7 +188,7 @@ const FooterText = styled.div`
     line-height: 1.25rem;
     text-transform: uppercase;
     margin-bottom: 1rem;
-    @media (max-width: 75rem) {
+    @media (max-width: 73.75rem) {
       margin-bottom: 0.375rem;
       margin-top: 1.25rem;
     }
@@ -198,7 +198,7 @@ const FooterText = styled.div`
     font-size: 1.125rem;
     line-height: 2.25rem;
     color: #d5d5d5;
-    @media (max-width: 75rem) {
+    @media (max-width: 73.75rem) {
       font-size: 0.875rem;
       line-height: 1.75rem;
     }
@@ -213,7 +213,7 @@ const FooterBottom = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  @media (max-width: 75rem) {
+  @media (max-width: 73.75rem) {
     flex-direction: column;
     font-size: 0.75rem;
     margin-left: auto;
@@ -224,14 +224,14 @@ const FooterBottom = styled.div`
   .right-text {
     display: flex;
     flex-direction: row;
-    @media (max-width: 75rem) {
+    @media (max-width: 73.75rem) {
       flex-direction: column;
     }
   }
 
   .bottom-text {
     margin-left: 2.375rem;
-    @media (max-width: 75rem) {
+    @media (max-width: 73.75rem) {
       margin-left: 0;
     }
   }

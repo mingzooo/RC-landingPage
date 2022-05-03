@@ -41,7 +41,7 @@ const HeaderWrap = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  @media (max-width: 75rem) {
+  @media (max-width: 73.75rem) {
     height: 4.5625rem;
   }
 `;
@@ -52,13 +52,13 @@ const MainHeader = styled.div`
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  @media (max-width: 75rem) {
+  @media (max-width: 73.75rem) {
     width: 22.5rem;
   }
 
   .rc-logo {
     width: 12.75rem;
-    @media (max-width: 75rem) {
+    @media (max-width: 73.75rem) {
       width: 5.875rem;
     }
   }
@@ -74,7 +74,7 @@ const MainHeader = styled.div`
     color: #ffffff;
     margin-right: 2.4375rem;
     cursor: pointer;
-    @media (max-width: 75rem) {
+    @media (max-width: 73.75rem) {
       font-size: 0.875rem;
       margin-right: 1.875rem;
     }
@@ -90,7 +90,7 @@ const MainHeader = styled.div`
     text-align: center;
     line-height: 3.75rem;
     cursor: pointer;
-    @media (max-width: 75rem) {
+    @media (max-width: 73.75rem) {
       font-size: 0.875rem;
       width: 4.8125rem;
       height: 2rem;

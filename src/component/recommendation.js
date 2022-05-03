@@ -112,7 +112,7 @@ const ContentWrap = styled.div`
   width: 73.75rem;
   display: flex;
   flex-direction: column;
-  @media (max-width: 75rem) {
+  @media (max-width: 73.75rem) {
     width: 22.5rem;
     align-items: center;
   }
@@ -123,7 +123,7 @@ const Title = styled.div`
   flex-direction: column;
   align-items: left;
   margin-top: 9.4375rem;
-  @media (max-width: 75rem) {
+  @media (max-width: 73.75rem) {
     margin-top: 3.3125rem;
   }
 
@@ -134,7 +134,7 @@ const Title = styled.div`
     line-height: 6rem;
     text-align: left;
     text-transform: uppercase;
-    @media (max-width: 75rem) {
+    @media (max-width: 73.75rem) {
       font-size: 1.875rem;
       line-height: 1.875rem;
     }
@@ -144,7 +144,7 @@ const Title = styled.div`
     font-size: 1.5rem;
     color: #4f4f4f;
     margin: 1.5rem 0 0.8125rem 0;
-    @media (max-width: 75rem) {
+    @media (max-width: 73.75rem) {
       font-size: 0.75rem;
       margin: 0.625rem 0 0.5rem 0;
     }
@@ -154,7 +154,7 @@ const Title = styled.div`
     font-size: 2.25rem;
     line-height: 3.6rem;
     text-align: left;
-    @media (max-width: 75rem) {
+    @media (max-width: 73.75rem) {
       font-size: 0.875rem;
       line-height: 1.375rem;
     }
@@ -165,7 +165,7 @@ const RecommendWrap = styled.div`
   display: flex;
   flex-direction: column;
   margin: 4.4375rem 0 5.625rem 0;
-  @media (max-width: 75rem) {
+  @media (max-width: 73.75rem) {
     margin: 1.625rem 0 3.6875rem 0;
   }
 `;
@@ -179,7 +179,7 @@ const RecommendContainer = styled.div`
   box-shadow: 0.75rem 0.9375rem 3.5rem rgba(139, 139, 139, 0.07);
   border-radius: 1.25rem;
   margin-bottom: 2.1875rem;
-  @media (max-width: 75rem) {
+  @media (max-width: 73.75rem) {
     flex-direction: column;
     width: 19.6875rem;
     height: 27.5rem;
@@ -189,7 +189,7 @@ const RecommendContainer = styled.div`
   img {
     width: 50%;
     border-radius: 1.25rem 0 0 1.25rem;
-    @media (max-width: 75rem) {
+    @media (max-width: 73.75rem) {
       height: 40%;
       width: 100%;
       object-fit: cover;
@@ -203,7 +203,7 @@ const RecommendContainer = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    @media (max-width: 75rem) {
+    @media (max-width: 73.75rem) {
       height: 50%;
       width: 100%;
       text-align: center;
@@ -213,7 +213,7 @@ const RecommendContainer = styled.div`
 
 const RecommendText = styled.div`
   width: 28.125rem;
-  @media (max-width: 75rem) {
+  @media (max-width: 73.75rem) {
     width: 18.9375rem;
   }
 
@@ -222,7 +222,7 @@ const RecommendText = styled.div`
     line-height: 160%;
     color: #fe4a00;
     margin-bottom: 1.25rem;
-    @media (max-width: 75rem) {
+    @media (max-width: 73.75rem) {
       font-size: 1rem;
       margin-bottom: 0.5625rem;
     }
@@ -233,7 +233,7 @@ const RecommendText = styled.div`
     font-size: 1rem;
     line-height: 180%;
     color: #000000;
-    @media (max-width: 75rem) {
+    @media (max-width: 73.75rem) {
       font-size: 0.8125rem;
     }
   }

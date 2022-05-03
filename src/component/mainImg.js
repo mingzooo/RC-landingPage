@@ -26,7 +26,7 @@ const ImgWrap = styled.div`
   justify-content: center;
   position: relative;
 
-  @media screen and (min-width: 75rem) {
+  @media screen and (min-width: 73.75rem) {
     #pc-img {
       display: block;
     }
@@ -47,7 +47,7 @@ const ImgWrap = styled.div`
     object-fit: contain;
   }
 
-  @media (max-width: 75rem) {
+  @media (max-width: 73.75rem) {
     #pc-img {
       display: none;
     }
@@ -73,7 +73,7 @@ const RegFloatingButton = styled.div`
   bottom: 2.8125rem;
   position: fixed;
 
-  @media (max-width: 75rem) {
+  @media (max-width: 73.75rem) {
     width: 7.375rem;
     height: 2.4581rem;
     font-size: 0.875rem;

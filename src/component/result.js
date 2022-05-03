@@ -410,7 +410,7 @@ const ContentWrap = styled.div`
   width: 73.75rem;
   display: flex;
   flex-direction: column;
-  @media (max-width: 75rem) {
+  @media (max-width: 73.75rem) {
     width: 22.5rem;
   }
 `;
@@ -420,7 +420,7 @@ const TitleWrap = styled.div`
   flex-direction: row;
   margin: 11rem 0 7.875rem 0;
   position: relative;
-  @media (max-width: 75rem) {
+  @media (max-width: 73.75rem) {
     margin: 4.25rem 0 1.875rem 0;
   }
 
@@ -429,7 +429,7 @@ const TitleWrap = styled.div`
     color: #ffffff;
     line-height: 6rem;
     font-family: "Hanson";
-    @media (max-width: 75rem) {
+    @media (max-width: 73.75rem) {
       font-size: 1.375rem;
       line-height: 1.4375rem;
     }
@@ -442,7 +442,7 @@ const TitleWrap = styled.div`
     display: flex;
     flex-direction: column;
     color: #ffffff;
-    @media (max-width: 75rem) {
+    @media (max-width: 73.75rem) {
       font-size: 0.75rem;
       bottom: 0;
       right: 0;
@@ -452,7 +452,7 @@ const TitleWrap = styled.div`
     font-size: 1.5rem;
     color: #ffffff;
     margin: 0 0 0.8125rem 0;
-    @media (max-width: 75rem) {
+    @media (max-width: 73.75rem) {
       font-size: 0.75rem;
       margin: 0 0 0.5rem 0;
     }
@@ -461,7 +461,7 @@ const TitleWrap = styled.div`
     font-size: 2.25rem;
     line-height: 3.6rem;
     text-align: left;
-    @media (max-width: 75rem) {
+    @media (max-width: 73.75rem) {
       font-size: 0.875rem;
       line-height: 1.375rem;
     }
@@ -472,7 +472,7 @@ const ContainerWrap = styled.div`
   width: 100%;
   margin-bottom: 12.5rem;
 
-  @media (max-width: 75rem) {
+  @media (max-width: 73.75rem) {
     margin-bottom: 4.375rem;
     #grid-left {
       display: none;
@@ -485,7 +485,7 @@ const ContainerWrap = styled.div`
   .grid-right-top {
     height: 2.0456rem;
     border-left: 0.5px solid white;
-    @media (max-width: 75rem) {
+    @media (max-width: 73.75rem) {
       height: 0.5625rem;
     }
   }
@@ -494,7 +494,7 @@ const ContainerWrap = styled.div`
     height: 2.0456rem;
     border-left: 0.5px solid white;
     border-right: 1px solid white;
-    @media (max-width: 75rem) {
+    @media (max-width: 73.75rem) {
       height: 0.5625rem;
       border-left: 0.1px solid white;
       border-right: 0.1px solid white;
@@ -504,14 +504,14 @@ const ContainerWrap = styled.div`
   .top-box {
     border: 1px solid white;
     padding: 2.5rem 0;
-    @media (max-width: 75rem) {
+    @media (max-width: 73.75rem) {
       padding: 0.625rem 0;
     }
   }
   .inside-box {
     position: relative;
     padding: 0 2.5rem;
-    @media (max-width: 75rem) {
+    @media (max-width: 73.75rem) {
       padding: 0 0.5625rem;
     }
   }
@@ -525,7 +525,7 @@ const ContainerWrap = styled.div`
     line-height: 6rem;
     -webkit-text-stroke: 0.1062rem #caf200;
     color: transparent;
-    @media (max-width: 75rem) {
+    @media (max-width: 73.75rem) {
       font-size: 1.5rem;
       line-height: 1.5rem;
     }
@@ -534,7 +534,7 @@ const ContainerWrap = styled.div`
     font-size: 3rem;
     line-height: 3.8125rem;
     color: #caf200;
-    @media (max-width: 75rem) {
+    @media (max-width: 73.75rem) {
       font-size: 1.25rem;
       line-height: 1.5625rem;
     }
@@ -544,7 +544,7 @@ const ContainerWrap = styled.div`
     line-height: 2rem;
     color: #ffffff;
     margin-top: 1.1875rem;
-    @media (max-width: 75rem) {
+    @media (max-width: 73.75rem) {
       font-size: 0.875rem;
       line-height: 1.4375rem;
       margin-top: 1.5625rem;
@@ -554,7 +554,7 @@ const ContainerWrap = styled.div`
   .mock-up {
     width: 29.7369rem;
     height: 29.25rem;
-    @media (max-width: 75rem) {
+    @media (max-width: 73.75rem) {
       width: 13.8975rem;
       height: 13.67rem;
     }
@@ -570,14 +570,14 @@ const MiddleContainerWrap = styled.div`
   text-align: center;
   border: 0.5px solid white;
   align-items: center;
-  @media (max-width: 75rem) {
+  @media (max-width: 73.75rem) {
     font-size: 1rem;
     line-height: 1.4375rem;
   }
 
   .top-text {
     margin-top: 3.75rem;
-    @media (max-width: 75rem) {
+    @media (max-width: 73.75rem) {
       width: 12.5rem;
       font-size: 1rem;
     }
@@ -587,7 +587,7 @@ const MiddleContainerWrap = styled.div`
     display: flex;
     flex-direction: column;
     margin: 0 1.25rem;
-    @media (max-width: 75rem) {
+    @media (max-width: 73.75rem) {
       font-size: 0.75rem;
       margin: 0.5625rem 0;
       width: 9.375rem;
@@ -598,7 +598,7 @@ const MiddleContainerWrap = styled.div`
     display: flex;
     flex-direction: row;
     margin: 2.125rem 0 4.375rem 0;
-    @media (max-width: 75rem) {
+    @media (max-width: 73.75rem) {
       flex-wrap: wrap;
       justify-content: space-evenly;
     }
@@ -606,7 +606,7 @@ const MiddleContainerWrap = styled.div`
 
   .accumulate {
     font-size: 1.125rem;
-    @media (max-width: 75rem) {
+    @media (max-width: 73.75rem) {
       font-size: 0.75rem;
     }
   }
@@ -615,7 +615,7 @@ const MiddleContainerWrap = styled.div`
     font-size: 3rem;
     line-height: 4.8125rem;
     color: #caf200;
-    @media (max-width: 75rem) {
+    @media (max-width: 73.75rem) {
       font-size: 1.25rem;
       line-height: 2rem;
     }
@@ -629,7 +629,7 @@ const LeftContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  @media (max-width: 75rem) {
+  @media (max-width: 73.75rem) {
     padding: 0.5625rem;
   }
   .title {
@@ -638,7 +638,7 @@ const LeftContainer = styled.div`
     text-align: center;
     color: #caf200;
     margin-bottom: 0.9375rem;
-    @media (max-width: 75rem) {
+    @media (max-width: 73.75rem) {
       margin-bottom: 0.625rem;
       font-size: 0.875rem;
       line-height: 1.25rem;
@@ -649,7 +649,7 @@ const LeftContainer = styled.div`
     font-size: 1.75rem;
     line-height: 2.5rem;
     margin-bottom: 0.9375rem;
-    @media (max-width: 75rem) {
+    @media (max-width: 73.75rem) {
       margin-bottom: 0.5rem;
       font-size: 0.875rem;
       line-height: 1.25rem;
@@ -659,7 +659,7 @@ const LeftContainer = styled.div`
   .left3-detail {
     font-size: 1.25rem;
     margin-top: 1.25rem;
-    @media (max-width: 75rem) {
+    @media (max-width: 73.75rem) {
       margin-bottom: 0.5rem;
       font-size: 0.875rem;
       line-height: 1.25rem;
@@ -676,7 +676,7 @@ const RightContainer = styled.div`
   img {
     width: 29.0625rem;
     height: 22.25rem;
-    @media (max-width: 75rem) {
+    @media (max-width: 73.75rem) {
       width: 16.625rem;
       height: 12.6875rem;
     }
@@ -690,7 +690,7 @@ const ClubWrap = styled.div`
   color: #ffffff;
   font-size: 1rem;
   justify-content: space-evenly;
-  @media (max-width: 75rem) {
+  @media (max-width: 73.75rem) {
     font-size: 0.875rem;
   }
 
@@ -700,7 +700,7 @@ const ClubWrap = styled.div`
     text-align: center;
     align-items: center;
     width: 8.125rem;
-    @media (max-width: 75rem) {
+    @media (max-width: 73.75rem) {
       width: 8.6875rem;
     }
   }
@@ -714,7 +714,7 @@ const ClubWrap = styled.div`
     color: #fe4a00;
     padding: 0.1875rem 0.375rem;
     margin: 1.5rem 0 0.4375rem 0;
-    @media (max-width: 75rem) {
+    @media (max-width: 73.75rem) {
       font-size: 0.875rem;
       line-height: 1.375rem;
       height: 1.5625rem;
@@ -732,7 +732,7 @@ const Circle = styled.div`
   box-sizing: border-box;
   bottom: -7rem;
   z-index: 999;
-  @media (max-width: 75rem) {
+  @media (max-width: 73.75rem) {
     width: 1.625rem;
     height: 3.25rem;
     bottom: -2rem;

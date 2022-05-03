@@ -49,7 +49,7 @@ const ContentWrap = styled.div`
   width: 73.75rem;
   display: flex;
   flex-direction: column;
-  @media (max-width: 75rem) {
+  @media (max-width: 73.75rem) {
     width: 22.5rem;
     align-items: center;
   }
@@ -58,7 +58,7 @@ const ContentWrap = styled.div`
     margin-top: 4.4375rem;
     width: 73.75rem;
     height: 30.875rem;
-    @media (max-width: 75rem) {
+    @media (max-width: 73.75rem) {
       width: 19.6875rem;
       height: 8.25rem;
       margin-top: 1.5625rem;
@@ -79,7 +79,7 @@ const Title = styled.div`
     font-size: 6rem;
     line-height: 6rem;
     text-transform: uppercase;
-    @media (max-width: 75rem) {
+    @media (max-width: 73.75rem) {
       font-size: 1.875rem;
       line-height: 1.875rem;
     }
@@ -88,7 +88,7 @@ const Title = styled.div`
   .middle-text {
     font-size: 1.5rem;
     margin: 0.8125rem 0 0.75rem 0;
-    @media (max-width: 75rem) {
+    @media (max-width: 73.75rem) {
       font-size: 0.75rem;
       margin: 0.8125rem 0 0.375rem 0;
     }
@@ -97,7 +97,7 @@ const Title = styled.div`
   .bottom-text {
     font-size: 2.25rem;
     line-height: 3.6rem;
-    @media (max-width: 75rem) {
+    @media (max-width: 73.75rem) {
       font-size: 0.875rem;
       line-height: 1.375rem;
     }
@@ -110,7 +110,7 @@ const TuitionDetailWrap = styled.div`
   justify-content: space-between;
   color: #ffffff;
   margin: 3.875rem 0 9.5rem 0;
-  @media (max-width: 75rem) {
+  @media (max-width: 73.75rem) {
       margin: 1.5625rem 0 1.25rem 0;
       width: 19.6875rem;
     }
@@ -119,7 +119,7 @@ const TuitionDetailWrap = styled.div`
     width: 18rem;
     font-size: 4rem;
     line-height: 5.0625rem;
-    @media (max-width: 75rem) {
+    @media (max-width: 73.75rem) {
       font-size: 1.25rem;
       width: 5.8125rem;
       line-height: 1.5625rem;
@@ -130,7 +130,7 @@ const TuitionDetailWrap = styled.div`
     font-size: 1.5rem;
     line-height: 2.6875rem;
     width: 51.3125rem;
-    @media (max-width: 75rem) {
+    @media (max-width: 73.75rem) {
       font-size: 0.875rem;
       width: 12.875rem;
       line-height: 1.5625rem;

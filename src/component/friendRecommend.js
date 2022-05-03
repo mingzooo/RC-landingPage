@@ -96,7 +96,7 @@ const ContentWrap = styled.div`
   width: 73.75rem;
   display: flex;
   flex-direction: column;
-  @media (max-width: 75rem) {
+  @media (max-width: 73.75rem) {
     width: 22.5rem;
     align-items: center;
   }
@@ -107,7 +107,7 @@ const ContentWrap = styled.div`
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    @media (max-width: 75rem) {
+    @media (max-width: 73.75rem) {
       flex-direction: column;
     }
   }
@@ -118,7 +118,7 @@ const Title = styled.div`
   flex-direction: column;
   align-items: center;
   margin-top: 8.125rem;
-  @media (max-width: 75rem) {
+  @media (max-width: 73.75rem) {
     margin-top: 1.875rem;
   }
 
@@ -128,7 +128,7 @@ const Title = styled.div`
     font-size: 9rem;
     line-height: 9rem;
     text-align: center;
-    @media (max-width: 75rem) {
+    @media (max-width: 73.75rem) {
       font-size: 1.875rem;
       line-height: 1.875rem;
     }
@@ -138,7 +138,7 @@ const Title = styled.div`
     font-size: 1.5rem;
     color: #4f4f4f;
     margin: 2.5rem 0 0.8125rem 0;
-    @media (max-width: 75rem) {
+    @media (max-width: 73.75rem) {
       font-size: 0.75rem;
       margin: 0.625rem 0 0.5rem 0;
     }
@@ -149,7 +149,7 @@ const Title = styled.div`
     line-height: 3.6rem;
     text-align: center;
     margin-bottom: 2.5rem;
-    @media (max-width: 75rem) {
+    @media (max-width: 73.75rem) {
       font-size: 0.875rem;
       line-height: 1.375rem;
     }
