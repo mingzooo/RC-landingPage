@@ -22,13 +22,8 @@ const Result = () => {
             RESULT.
           </div>
           <div className="title-right">
-            <div
-              className="notoMedium"
-              style={{ fontSize: "1.5rem", marginBottom: "0.8125rem" }}
-            >
-              수강생분들이 얻어간 것
-            </div>
-            <div className="notoBold" style={{ fontSize: "2.25rem" }}>
+            <div className="notoMedium middle-text">수강생분들이 얻어간 것</div>
+            <div className="notoBold bottom-text">
               라이징캠프를 먼저 수강한 분들,
               <br /> <span style={{ color: "#CAF200" }}>이런결과</span>를
               얻어갔습니다.
@@ -430,6 +425,10 @@ const TitleWrap = styled.div`
   margin: 11rem 0 7.875rem 0;
   position: relative;
 
+  @media (max-width: 75rem) {
+      margin: 4.25rem 0 1.875rem 0 ;
+    }
+
   .title-text {
     font-size: 6rem;
     color: #ffffff;
@@ -451,7 +450,28 @@ const TitleWrap = styled.div`
     color: #ffffff;
     @media (max-width: 75rem) {
       font-size: 0.75rem;
+      bottom: 0;
       right: 0;
+    }
+  }
+
+  .middle-text {
+    font-size: 1.5rem;
+    color: #ffffff;
+    margin: 0 0 0.8125rem 0;
+    @media (max-width: 75rem) {
+      font-size: 0.75rem;
+      margin: 0 0 0.5rem 0;
+    }
+  }
+
+  .bottom-text {
+    font-size: 2.25rem;
+    line-height: 3.6rem;
+    text-align: left;
+    @media (max-width: 75rem) {
+      font-size: 0.875rem;
+      line-height: 1.375rem;
     }
   }
 `;

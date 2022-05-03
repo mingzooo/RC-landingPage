@@ -28,11 +28,10 @@ const Study = () => {
             <img src={pic_1} />
             <div className="notoBold title">토론 방식의 수업</div>
             <div className="notoRegular feature">
-              🗸 주 1회 3시간
+              ㆍ 주 1회 3시간
               <br />
-              🗸 1:6 소수정예
-              <br />
-              🗸 정확한 방향성 + 올바른 개발 습관화
+              ㆍ 1:6 소수정예
+              <br />ㆍ 정확한 방향성 + 올바른 개발 습관화
             </div>
             <div className="hashtag-flex">
               <HashTag className="notoRegular">#진짜로 이해될때까지!</HashTag>
@@ -43,11 +42,10 @@ const Study = () => {
             <img src={pic_2} />
             <div className="notoBold title">1:1 맞춤형 피드백</div>
             <div className="notoRegular feature">
-              🗸 이해한 점, 부족한 점 개별 체크
+              ㆍ 이해한 점, 부족한 점 개별 체크
               <br />
-              🗸 지식보다는 지혜를
-              <br />
-              🗸 문제의 근본적인 원인 파악
+              ㆍ 지식보다는 지혜를
+              <br />ㆍ 문제의 근본적인 원인 파악
             </div>
             <HashTag className="notoRegular">
               #나의 상황을 이해하는 멘토
@@ -57,11 +55,10 @@ const Study = () => {
             <img src={pic_3} />
             <div className="notoBold title">실무실력 UP</div>
             <div className="notoRegular feature">
-              🗸 실무 업무 프로세스 익히기
+              ㆍ 실무 업무 프로세스 익히기
               <br />
-              🗸 업무 일정 조율 방법
-              <br />
-              🗸 다른 개발자와 협업하는 방법
+              ㆍ 업무 일정 조율 방법
+              <br />ㆍ 다른 개발자와 협업하는 방법
             </div>
             <HashTag className="notoRegular">
               #나의 상황을 이해하는 멘토
@@ -71,11 +68,10 @@ const Study = () => {
             <img src={pic_4} />
             <div className="notoBold title">라이징테스트</div>
             <div className="notoRegular feature">
-              🗸 협업 스킬
+              ㆍ 협업 스킬
               <br />
-              🗸 실전 적용
-              <br />
-              🗸 수료 후 실제 프로젝트 투입 기회
+              ㆍ 실전 적용
+              <br />ㆍ 수료 후 실제 프로젝트 투입 기회
             </div>
             <HashTag className="notoRegular">#나의 잠재력 확인</HashTag>
           </StudyContainer>

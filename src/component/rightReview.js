@@ -15,14 +15,7 @@ const RightReview = ({ name, img_a, img_b, img_c, title, detail, who }) => {
           >
             {who}
           </div>
-          <div
-            style={{
-              marginTop: "2rem",
-              display: "flex",
-              flexDirection: "row",
-              justifyContent: "space-between",
-            }}
-          >
+          <div className="small-pic-wrap">
             <img src={img_b} className="small-pic" />
             <img src={img_c} className="small-pic" />
           </div>
@@ -36,8 +29,9 @@ const RightReview = ({ name, img_a, img_b, img_c, title, detail, who }) => {
 const Wrap = styled.div`
   margin-top: 5.5625rem;
   @media (max-width: 75rem) {
-      margin-top: 2.4375rem;
-    }
+    margin-top: 2.4375rem;
+    margin-bottom: 3.4375rem;
+  }
 
   .name {
     width: fit-content;
@@ -51,10 +45,10 @@ const Wrap = styled.div`
     margin-bottom: -2.5rem;
     margin-left: auto;
     @media (max-width: 75rem) {
-      font-size: 2.5rem;
-      line-height: 2.5rem;
+      font-size: 1.75rem;
+      line-height: 1.75rem;
       -webkit-text-stroke: 0.0625rem #caf200;
-      margin-bottom: -1rem;
+      margin-bottom: 0.5625rem;
     }
   }
 `;
@@ -71,6 +65,16 @@ const ContentWrap = styled.div`
     @media (max-width: 75rem) {
       width: 6.4375rem;
       height: 12.5rem;
+    }
+  }
+
+  .small-pic-wrap {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    @media (max-width: 75rem) {
+      margin-top: 0.375rem;
     }
   }
 

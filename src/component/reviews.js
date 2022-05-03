@@ -83,6 +83,10 @@ const Title = styled.div`
   align-items: left;
   margin-top: 5.375rem;
 
+  @media (max-width: 75rem) {
+    margin-top: 0;
+  }
+
   .title-text {
     font-family: "Hanson";
     color: #caf200;

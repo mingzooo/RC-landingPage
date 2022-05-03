@@ -45,7 +45,7 @@ const FriendRecommend = () => {
           />
           <BlogReview
             profile={profile_b}
-            name="디모 (라이징 캠프 WEB 리더 트랙)"
+            name="디모 (라이징 캠프 WEB리더 트랙)"
             detail1="평소에 알고있던 컴공선배 유튜브를 통해 지원하게 됐어요. 라캠에서 제일 좋았던 점은 멘토분들의&nbsp;"
             highlight1="실시간 질문 시스템"
             detail2="과"
@@ -108,8 +108,8 @@ const ContentWrap = styled.div`
     justify-content: space-between;
     align-items: center;
     @media (max-width: 75rem) {
-    flex-direction: column;
-  }
+      flex-direction: column;
+    }
   }
 `;
 
@@ -117,6 +117,9 @@ const Title = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  @media (max-width: 75rem) {
+    margin-top: 1.875rem;
+  }
 
   .title-text {
     font-family: "Hanson";

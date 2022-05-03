@@ -1,53 +1,60 @@
-import React from 'react'
-import styled from 'styled-components'
+import React from "react";
+import styled from "styled-components";
 
-import main from '../assets/img_banner.png';
-import main_m from '../assets/_img_m_banner.png';
+import main from "../assets/img_banner.png";
+import main_m from "../assets/_img_m_banner.png";
 
 const MainImg = () => {
   return (
     <ImgWrap>
-      <img id="pc-img" src={main} className="img-pc"/>
-      <img id="mobile-img" src={main_m} className="img-m"/>
-      <RegFloatingButton className='notoBold'>4기 신청하기</RegFloatingButton>
+      <img id="pc-img" src={main} className="img-pc" />
+      <img id="mobile-img" src={main_m} className="img-m" />
+      <RegFloatingButton
+        className="notoBold"
+        onClick={() =>
+          window.open("https://forms.gle/NcFCngiVvRfoM6t6A ", "_blank")
+        }
+      >
+        6기 신청하기
+      </RegFloatingButton>
     </ImgWrap>
-  )
-}
+  );
+};
 
 const ImgWrap = styled.div`
-    display: flex;
-    justify-content: center;
-    position: relative;
+  display: flex;
+  justify-content: center;
+  position: relative;
 
-    @media screen and (min-width: 75rem) {
-      #pc-img{
-        display: block;
-      }
-      #mobile-img{
-        display: none;
-      }
+  @media screen and (min-width: 75rem) {
+    #pc-img {
+      display: block;
     }
+    #mobile-img {
+      display: none;
+    }
+  }
 
-    .img-pc{
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
+  .img-pc {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 
-    .img-m{
-      width: 22.5rem;
-      height: 42.625rem;
-      object-fit: contain;
-    }
+  .img-m {
+    width: 22.5rem;
+    height: 42.625rem;
+    object-fit: contain;
+  }
 
-    @media(max-width: 75rem){
-      #pc-img{
-        display: none;
-      }
-      #mobile-img{
-        display: block;
-      }
+  @media (max-width: 75rem) {
+    #pc-img {
+      display: none;
     }
+    #mobile-img {
+      display: block;
+    }
+  }
 `;
 
 const RegFloatingButton = styled.div`
@@ -65,6 +72,13 @@ const RegFloatingButton = styled.div`
   position: absolute;
   bottom: 2.8125rem;
   position: fixed;
+
+  @media (max-width: 75rem) {
+    width: 7.375rem;
+    height: 2.4581rem;
+    font-size: 0.875rem;
+    line-height: 1.3125rem;
+  }
 `;
 
-export default MainImg
+export default MainImg;

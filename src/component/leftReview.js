@@ -35,9 +35,8 @@ const LeftReview = ({ name, img_a, img_b, img_c, title, detail, who }) => {
 const Wrap = styled.div`
   margin-top: 5.5625rem;
   @media (max-width: 75rem) {
-    margin-top: 2.5rem;
+    margin-top: 0;
   }
-  
   .name {
     font-family: "Hanson";
     font-style: normal;
@@ -49,11 +48,11 @@ const Wrap = styled.div`
     margin-bottom: -2.5rem;
     margin-left: 2.8125rem;
     @media (max-width: 75rem) {
-      font-size: 2.5rem;
-      line-height: 2.5rem;
+      font-size: 1.75rem;
+      line-height: 1.75rem;
       margin-left: 0;
       -webkit-text-stroke: 0.0625rem #caf200;
-      margin-bottom: -1rem;
+      margin-bottom: 0.5625rem;
     }
   }
 `;

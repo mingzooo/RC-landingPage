@@ -59,7 +59,7 @@ const ContainerWrap = styled.div`
   border-radius: 1.25rem;
   margin-bottom: 2.5rem;
   @media (max-width: 75rem) {
-    width: 18.75rem;
+    width: 18.125rem;
   }
 `;
 
@@ -69,8 +69,8 @@ const ContentWrap = styled.div`
   padding: 2.9375rem 2.125rem 3.4794rem 2.125rem;
   align-items: center;
   @media (max-width: 75rem) {
-      padding: 1.5rem;
-    }
+    padding: 1.5rem;
+  }
 
   .blog-pic {
     width: 31.2381rem;
@@ -80,6 +80,7 @@ const ContentWrap = styled.div`
     @media (max-width: 75rem) {
       width: 13.9375rem;
       height: 9.3125rem;
+      filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     }
   }
 `;
@@ -106,21 +107,22 @@ const DetailWrap = styled.div`
   font-size: 1.5rem;
   @media (max-width: 75rem) {
     font-size: 0.875rem;
+    margin-left: 0.375rem;
   }
 
   .text-wrap {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 20.625rem;
-    @media (max-width: 75rem) {
-      height: 11.875rem;
-    }
   }
 
   .profile {
     line-height: 2.4675rem;
     margin-bottom: 0.75rem;
+    @media (max-width: 75rem) {
+      margin-bottom: 0.4375rem;
+      line-height: 1.4375rem;
+    }
   }
 
   .detail {

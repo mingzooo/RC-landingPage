@@ -55,6 +55,7 @@ const MentorDetail = styled.div`
     -webkit-text-stroke: 0.0313rem #fe4a00;
     @media (max-width: 75rem) {
     font-size: 0.75rem;
+    line-height: 0.75rem;
   }
   }
 
@@ -69,6 +70,7 @@ const MentorDetail = styled.div`
     @media (max-width: 75rem) {
     font-size: 1.5rem;
     margin: 0.1875rem 0 0.625rem 0;
+    line-height: 1.5rem;
   }
   }
 
@@ -78,6 +80,7 @@ const MentorDetail = styled.div`
     color: #000000;
     @media (max-width: 75rem) {
     font-size: 0.8125rem;
+    line-height: 1.3125rem;
   }
   }
 `;
@@ -89,6 +92,7 @@ const HashTagWrap = styled.div`
   margin-top: 1.1875rem;
   @media (max-width: 75rem) {
     flex-direction: column;
+    margin-top: 0;
   }
 
   .hashtag {

@@ -20,11 +20,10 @@ const Footer = () => {
         <FooterTop>
           <div>
             <img className="comgongbro-logo" src={comgong} />
-            <div>
+            <div style={{ display: "flex", flexDirection: "row" }}>
               <img
-                className="sns-logo"
+                className="sns-logo sns-logo-left"
                 src={cg_face}
-                style={{ marginRight: "1.4375rem" }}
                 onClick={() =>
                   window.open(
                     "https://www.facebook.com/%EC%BB%B4%EA%B3%B5%EC%84%A0%EB%B0%B0-112624177204472 ",
@@ -69,9 +68,10 @@ const Footer = () => {
           <div>Copyright & Design by @softsquared</div>
           <div className="right-text">
             <div>이용약관</div>
-            <div style={{ marginLeft: "2.375rem" }}>개인정보 처리방침</div>
+            <div className="bottom-text">개인정보 처리방침</div>
             <div
-              style={{ marginLeft: "2.375rem", cursor: "pointer" }}
+              className="bottom-text"
+              style={{ cursor: "pointer" }}
               onClick={() =>
                 window.open(
                   "https://www.notion.so/softsquared/bfcc55fb4f1a496fbb6ffcacb10c9558",
@@ -111,6 +111,8 @@ const FooterWrap = styled.div`
     @media (max-width: 75rem) {
       top: -5rem;
       right: 12.5rem;
+      width: 3.2656rem;
+      height: 3.225rem;
     }
   }
 `;
@@ -150,12 +152,21 @@ const FooterTop = styled.div`
     }
   }
 
+  .sns-logo-left {
+    margin-right: 1.4375rem;
+    @media (max-width: 75rem) {
+      margin-right: 0.9375rem;
+    }
+  }
+
   .footerTextWrap {
     display: flex;
     flex-direction: row;
 
     @media (max-width: 75rem) {
       flex-direction: column;
+      margin-left: 1.25rem;
+      margin-top: -1.25rem;
     }
   }
 `;
@@ -166,7 +177,7 @@ const FooterText = styled.div`
   color: #ffffff;
   margin-right: 3.3125rem;
   @media (max-width: 75rem) {
-    margin-right: 1.8125rem;
+    margin-right: 0;
   }
 
   .title-text {
@@ -179,6 +190,7 @@ const FooterText = styled.div`
     margin-bottom: 1rem;
     @media (max-width: 75rem) {
       margin-bottom: 0.375rem;
+      margin-top: 1.25rem;
     }
   }
 
@@ -188,6 +200,7 @@ const FooterText = styled.div`
     color: #d5d5d5;
     @media (max-width: 75rem) {
       font-size: 0.875rem;
+      line-height: 1.75rem;
     }
   }
 `;
@@ -203,6 +216,8 @@ const FooterBottom = styled.div`
   @media (max-width: 75rem) {
     flex-direction: column;
     font-size: 0.75rem;
+    margin-left: auto;
+    margin-top: 2.25rem;
   }
 
   .right-text {
@@ -210,6 +225,13 @@ const FooterBottom = styled.div`
     flex-direction: row;
     @media (max-width: 75rem) {
       flex-direction: column;
+    }
+  }
+
+  .bottom-text {
+    margin-left: 2.375rem;
+    @media (max-width: 75rem) {
+      margin-left: 0;
     }
   }
 `;

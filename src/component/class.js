@@ -74,7 +74,6 @@ const Class = () => {
             알려드립니다.
             <BoxWrap>
               <div className="notoMedium box">
-                🗸&nbsp;
                 <span style={{ color: "#000000" }}>
                   생산성을 높여주는&nbsp;
                 </span>
@@ -82,15 +81,15 @@ const Class = () => {
                 <span style={{ color: "#000000" }}>경험</span>
               </div>
               <div className="notoMedium box">
-                🗸 실무 일정&nbsp;
+                실무 일정&nbsp;
                 <span style={{ color: "#000000" }}>및 테스크 관리 경험</span>
               </div>
               <div className="notoMedium box">
-                🗸 클라이언트와 소통
+                클라이언트와 소통
                 <spans style={{ color: "#000000" }}>하는 방법</spans>
               </div>
               <div className="notoMedium box">
-                🗸 개발 작업 정리&nbsp;{" "}
+                개발 작업 정리&nbsp;{" "}
                 <span style={{ color: "#000000" }}>방법</span>
               </div>
             </BoxWrap>
@@ -371,6 +370,8 @@ const BoxWrap = styled.div`
       height: 3.375rem;
       font-size: 0.8125rem;
       line-height: 3.375rem;
+      font-weight: bold;
+      margin-bottom: 0.625rem;
     }
   }
 `;
