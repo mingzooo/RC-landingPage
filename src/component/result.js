@@ -273,7 +273,7 @@ const Result = () => {
 const MiddleContainer = () => {
   return (
     <MiddleContainerWrap className="notoBold">
-      <div style={{ marginTop: "3.75rem" }}>
+      <div className="top-text">
         여태까지
         <br />
         라이징 캠프와 함께한 분들이 이렇게 이뤄냈어요.
@@ -290,16 +290,12 @@ const MiddleContainer = () => {
         <div className="featureWrap">
           <div>수료생 외주 프로젝트 매칭 수</div>
           <div className="green-text">300건+</div>
-          <div className="notoRegular" style={{ fontSize: "1.125rem" }}>
-            22년도 상반기 누적
-          </div>
+          <div className="notoRegular accumulate">22년도 상반기 누적</div>
         </div>
         <div className="featureWrap">
           <div>수료생 외주 수익 분배금</div>
           <div className="green-text">4억 6천만원</div>
-          <div className="notoRegular" style={{ fontSize: "1.125rem" }}>
-            22년도 상반기 누적
-          </div>
+          <div className="notoRegular accumulate">22년도 상반기 누적</div>
         </div>
       </div>
     </MiddleContainerWrap>
@@ -374,38 +370,24 @@ const Right2 = () => {
 
 const Left3 = () => {
   return (
-    <div
+    <LeftContainer
       style={{
         border: "0.5px solid white",
-        padding: "2.875rem",
-        display: "flex",
-        flexDirection: "column",
-        justifyContent: "center",
         textAlign: "center",
         color: "#ffffff",
       }}
     >
-      <div
-        style={{
-          fontSize: "1.75rem",
-          lineHeight: "2.5rem",
-          marginBottom: "0.9375rem",
-        }}
-        className="notoBold"
-      >
+      <div className="notoBold left3-title">
         수료생 중 141명,
         <br />
         <span style={{ color: "#CAF200" }}>CMC(메이커스챌린지)</span> 활동
       </div>
-      <div
-        className="notoRegular"
-        style={{ fontSize: "1.25rem", marginTop: "1.25rem" }}
-      >
+      <div className="notoRegular left3-detail">
         라이징캠프 수료생은 CMC 서류 합격 보장
         <br />
         (서류 합격률 5:1, 면접 합격률 3:1)
       </div>
-    </div>
+    </LeftContainer>
   );
 };
 
@@ -491,6 +473,7 @@ const ContainerWrap = styled.div`
   margin-bottom: 12.5rem;
 
   @media (max-width: 75rem) {
+    margin-bottom: 4.375rem;
     #grid-left {
       display: none;
     }
@@ -591,12 +574,15 @@ const MiddleContainerWrap = styled.div`
     font-size: 1rem;
     line-height: 1.4375rem;
   }
+
   .top-text {
     margin-top: 3.75rem;
     @media (max-width: 75rem) {
       width: 12.5rem;
+      font-size: 1rem;
     }
   }
+
   .featureWrap {
     display: flex;
     flex-direction: column;
@@ -604,8 +590,10 @@ const MiddleContainerWrap = styled.div`
     @media (max-width: 75rem) {
       font-size: 0.75rem;
       margin: 0.5625rem 0;
+      width: 9.375rem;
     }
   }
+
   .bottomContainerWrap {
     display: flex;
     flex-direction: row;
@@ -615,12 +603,14 @@ const MiddleContainerWrap = styled.div`
       justify-content: space-evenly;
     }
   }
+
   .accumulate {
     font-size: 1.125rem;
     @media (max-width: 75rem) {
       font-size: 0.75rem;
     }
   }
+
   .green-text {
     font-size: 3rem;
     line-height: 4.8125rem;
@@ -650,6 +640,27 @@ const LeftContainer = styled.div`
     margin-bottom: 0.9375rem;
     @media (max-width: 75rem) {
       margin-bottom: 0.625rem;
+      font-size: 0.875rem;
+      line-height: 1.25rem;
+    }
+  }
+
+  .left3-title {
+    font-size: 1.75rem;
+    line-height: 2.5rem;
+    margin-bottom: 0.9375rem;
+    @media (max-width: 75rem) {
+      margin-bottom: 0.5rem;
+      font-size: 0.875rem;
+      line-height: 1.25rem;
+    }
+  }
+
+  .left3-detail {
+    font-size: 1.25rem;
+    margin-top: 1.25rem;
+    @media (max-width: 75rem) {
+      margin-bottom: 0.5rem;
       font-size: 0.875rem;
       line-height: 1.25rem;
     }

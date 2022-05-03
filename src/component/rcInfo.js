@@ -61,7 +61,7 @@ const RcInfo = () => {
             </div>
           </div>
         </Box>
-        <Box style={{marginBottom: "12.0625rem" }}>
+        <Box>
           <div className="text">
             <div className="notoBold red-text">
               02. 코딩으로 먹고 살 수 있는
@@ -99,8 +99,10 @@ const ContentWrap = styled.div`
   flex-direction: column;
   align-items: center;
   width: 61.25rem;
+  margin-bottom: 11.875rem;
   @media (max-width: 75rem) {
     width: 22.5rem;
+    margin-bottom: 3.125rem;
   }
 
   .sorry-text {
