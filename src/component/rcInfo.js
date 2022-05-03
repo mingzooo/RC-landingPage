@@ -20,7 +20,7 @@ const RcInfo = () => {
           <ReactPlayer
             className="react-player"
             url="https://www.youtube.com/watch?v=POgtd-SID48"
-            playing={false}
+            playing
             controls
             width="100%"
             height="100%"

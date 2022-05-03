@@ -63,7 +63,7 @@ const RegFloatingButton = styled.div`
   z-index: 9999;
   cursor: pointer;
   position: absolute;
-  bottom: 5.625rem;
+  bottom: 2.8125rem;
   position: fixed;
 `;
 
