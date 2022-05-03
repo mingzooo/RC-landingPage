@@ -123,6 +123,9 @@ const Title = styled.div`
   flex-direction: column;
   align-items: left;
   margin-top: 9.4375rem;
+  @media (max-width: 75rem) {
+    margin-top: 3.3125rem;
+  }
 
   .title-text {
     font-family: "Hanson";
@@ -162,6 +165,9 @@ const RecommendWrap = styled.div`
   display: flex;
   flex-direction: column;
   margin: 4.4375rem 0 5.625rem 0;
+  @media (max-width: 75rem) {
+    margin: 1.625rem 0 3.6875rem 0;
+  }
 `;
 
 const RecommendContainer = styled.div`

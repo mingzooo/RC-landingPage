@@ -113,6 +113,7 @@ const ContentWrap = styled.div`
   flex-direction: column;
   @media (max-width: 75rem) {
     width: 22.5rem;
+    align-items: center;
   }
 `;
 
@@ -126,6 +127,8 @@ const Title = styled.div`
   @media (max-width: 75rem) {
     margin-top: 1.3125rem;
     flex-direction: column;
+    position: none;
+    width: 90%;
   }
 
   .title-text {

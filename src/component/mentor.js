@@ -157,6 +157,7 @@ const MentorWrap = styled.div`
   justify-content: space-between;
   @media (max-width: 75rem) {
     flex-direction: column;
+    margin: 2.25rem 0 4.5625rem 0;
   }
 `;
 

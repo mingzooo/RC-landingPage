@@ -16,14 +16,16 @@ const RcInfo = () => {
           <br />
           라이징캠프를 나가주셔도 됩니다.
         </span>
-        <ReactPlayer
-          className="react-player"
-          url="https://www.youtube.com/watch?v=POgtd-SID48"
-          playing={false}
-          controls
-          width="61.25rem"
-          height="34.5rem"
-        />
+        <div className="player-wrapper">
+          <ReactPlayer
+            className="react-player"
+            url="https://www.youtube.com/watch?v=POgtd-SID48"
+            playing={false}
+            controls
+            width="100%"
+            height="100%"
+          />
+        </div>
         <img className="left-quote" src={quote_left} />
         <div
           style={{
@@ -40,7 +42,7 @@ const RcInfo = () => {
           </div>
           <img className="right-quote" src={quote_right} />
         </div>
-        <Box style={{ marginTop: "7.8125rem"}} >
+        <Box style={{ marginTop: "7.8125rem" }}>
           <div className="text">
             <div className="notoBold red-text">
               01. 코딩, 과연 이론이 중요한 걸까요?
@@ -120,7 +122,10 @@ const ContentWrap = styled.div`
     }
   }
 
-  .react-player {
+  .player-wrapper {
+    position: relative;
+    width: 61.25rem;
+    height: 34.5rem;
     @media (max-width: 75rem) {
       width: 20rem;
       height: 11.25rem;
@@ -133,7 +138,7 @@ const ContentWrap = styled.div`
     font-size: 7.875rem;
     color: #fe4a00;
     @media (max-width: 75rem) {
-      font-size: 1.25rem;
+      height: 1.25rem;
       margin-top: 2.5rem;
     }
   }
@@ -156,8 +161,7 @@ const ContentWrap = styled.div`
     @media (max-width: 75rem) {
       font-size: 1.25rem;
       left: 7.5rem;
-      height: 2rem;
-      bottom: -0.625rem;
+      height: 1.25rem;
     }
   }
 `;
