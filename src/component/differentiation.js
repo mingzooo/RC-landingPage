@@ -178,7 +178,7 @@ const Container = styled.div`
 
   .detail-text {
     font-size: 1.375rem;
-    line-height: 1.8125rem;
+    line-height: 2rem;
     color: #000000;
     @media (max-width: 75rem) {
       font-size: 0.875rem;

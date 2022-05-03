@@ -142,4 +142,8 @@ export const PageWrap = styled.div`
   top: 0;
   left: 0;
   right: 0;
+  @media (max-width: 75rem) {
+    max-width: 22.5rem;
+    overflow-x: hidden;
+  }
 `;

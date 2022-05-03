@@ -85,6 +85,8 @@ const MentorDetail = styled.div`
 const HashTagWrap = styled.div`
   display: flex;
   flex-direction: row;
+  margin-right: auto;
+  margin-top: 1.1875rem;
   @media (max-width: 75rem) {
     flex-direction: column;
   }
