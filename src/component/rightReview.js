@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 
-
 const RightReview = ({ name, img_a, img_b, img_c, title, detail, who }) => {
   return (
     <Wrap>
@@ -36,6 +35,9 @@ const RightReview = ({ name, img_a, img_b, img_c, title, detail, who }) => {
 
 const Wrap = styled.div`
   margin-top: 5.5625rem;
+  @media (max-width: 75rem) {
+      margin-top: 2.4375rem;
+    }
 
   .name {
     width: fit-content;
@@ -48,6 +50,12 @@ const Wrap = styled.div`
     color: transparent;
     margin-bottom: -2.5rem;
     margin-left: auto;
+    @media (max-width: 75rem) {
+      font-size: 2.5rem;
+      line-height: 2.5rem;
+      -webkit-text-stroke: 0.0625rem #caf200;
+      margin-bottom: -1rem;
+    }
   }
 `;
 
@@ -60,11 +68,19 @@ const ContentWrap = styled.div`
     z-index: -100;
     width: 23.75rem;
     height: 40.4375rem;
+    @media (max-width: 75rem) {
+      width: 6.4375rem;
+      height: 12.5rem;
+    }
   }
 
   .small-pic {
     width: 20.5rem;
     height: 14.4375rem;
+    @media (max-width: 75rem) {
+      width: 6.375rem;
+      height: 4.5rem;
+    }
   }
 
   .content-wrap {
@@ -72,12 +88,21 @@ const ContentWrap = styled.div`
     flex-direction: column;
     align-items: flex-end;
     margin-right: 7.5rem;
+    @media (max-width: 75rem) {
+      width: 13.125rem;
+      margin-right: 0.4375rem;
+    }
   }
 
   .title-text {
     font-size: 3rem;
     line-height: 4.29rem;
     text-align: right;
+    @media (max-width: 75rem) {
+      font-size: 0.875rem;
+      line-height: 1.25rem;
+      width: 13.125rem;
+    }
   }
 
   .article {
@@ -85,6 +110,12 @@ const ContentWrap = styled.div`
     font-size: 1.5rem;
     margin-top: 1.9375rem;
     text-align: right;
+    @media (max-width: 75rem) {
+      font-size: 0.75rem;
+      line-height: 1.1875rem;
+      width: 13.75rem;
+      margin-top: 0.625rem;
+    }
   }
 `;
 

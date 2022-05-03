@@ -15,7 +15,6 @@ const MainImg = () => {
 }
 
 const ImgWrap = styled.div`
-    height: 61.125rem;
     display: flex;
     justify-content: center;
     position: relative;

@@ -110,6 +110,10 @@ const Title = styled.div`
     font-size: 6rem;
     line-height: 6rem;
     text-transform: uppercase;
+    @media (max-width: 75rem) {
+      font-size: 1.875rem;
+      line-height: 1.875rem;
+    }
   }
 
   .middle-text {

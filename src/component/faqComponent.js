@@ -27,6 +27,8 @@ const Wrap = styled.div`
   @media (max-width: 75rem) {
     width: 19.6875rem;
     margin-bottom: 1.5625rem;
+    font-size: 0.875rem;
+    line-height: 1.625rem;
   }
 
   .answer-text {

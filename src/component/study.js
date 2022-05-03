@@ -34,10 +34,10 @@ const Study = () => {
               <br />
               🗸 정확한 방향성 + 올바른 개발 습관화
             </div>
-           <div style={{display:"flex", flexDirection:"row"}}>
+            <div className="hashtag-flex">
               <HashTag className="notoRegular">#진짜로 이해될때까지!</HashTag>
               <HashTag className="notoRegular">#사고확장</HashTag>
-           </div>
+            </div>
           </StudyContainer>
           <StudyContainer>
             <img src={pic_2} />
@@ -49,7 +49,9 @@ const Study = () => {
               <br />
               🗸 문제의 근본적인 원인 파악
             </div>
-            <HashTag className="notoRegular">#나의 상황을 이해하는 멘토</HashTag>
+            <HashTag className="notoRegular">
+              #나의 상황을 이해하는 멘토
+            </HashTag>
           </StudyContainer>
           <StudyContainer>
             <img src={pic_3} />
@@ -61,7 +63,9 @@ const Study = () => {
               <br />
               🗸 다른 개발자와 협업하는 방법
             </div>
-            <HashTag className="notoRegular">#나의 상황을 이해하는 멘토</HashTag>
+            <HashTag className="notoRegular">
+              #나의 상황을 이해하는 멘토
+            </HashTag>
           </StudyContainer>
           <StudyContainer>
             <img src={pic_4} />
@@ -92,6 +96,10 @@ const ContentWrap = styled.div`
   width: 73.75rem;
   display: flex;
   flex-direction: column;
+  @media (max-width: 75rem) {
+    width: 22.5rem;
+    align-items: center;
+  }
 `;
 
 const Title = styled.div`
@@ -100,6 +108,9 @@ const Title = styled.div`
   align-items: left;
   margin-top: 9rem;
   position: relative;
+  @media (max-width: 75rem) {
+    margin-top: 3.0625rem;
+  }
 
   .title-text {
     font-family: "Hanson";
@@ -108,12 +119,20 @@ const Title = styled.div`
     line-height: 6rem;
     text-align: left;
     text-transform: uppercase;
+    @media (max-width: 75rem) {
+      font-size: 1.875rem;
+      line-height: 1.875rem;
+    }
   }
 
   .middle-text {
     font-size: 1.5rem;
     color: #ffffff;
     margin: 0.8125rem 0 0.75rem 0;
+    @media (max-width: 75rem) {
+      font-size: 0.75rem;
+      margin: 0.8125rem 0 0.375rem 0;
+    }
   }
 
   .bottom-text {
@@ -121,6 +140,10 @@ const Title = styled.div`
     color: #ffffff;
     line-height: 3.6rem;
     text-align: left;
+    @media (max-width: 75rem) {
+      font-size: 0.875rem;
+      line-height: 1.375rem;
+    }
   }
 `;
 
@@ -128,6 +151,11 @@ const ContainerWrap = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  @media (max-width: 75rem) {
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-bottom: 3.75rem;
+  }
 `;
 
 const StudyContainer = styled.div`
@@ -135,18 +163,30 @@ const StudyContainer = styled.div`
   display: flex;
   flex-direction: column;
   margin: 1.8125rem 0 12.25rem 0;
+  @media (max-width: 75rem) {
+    width: 9.375rem;
+    margin: 2.1875rem 0 0 0;
+  }
 
   img {
     width: 17.5rem;
     height: 10rem;
     background: #e3e3e3;
     margin-bottom: 1.3125rem;
+    @media (max-width: 75rem) {
+      width: 9.375rem;
+      height: 5.375rem;
+    }
   }
 
   .title {
     font-size: 1.125rem;
     line-height: 2rem;
     color: #ffffff;
+    @media (max-width: 75rem) {
+      font-size: 1rem;
+      line-height: 1.8125rem;
+    }
   }
 
   .feature {
@@ -154,20 +194,36 @@ const StudyContainer = styled.div`
     font-size: 16px;
     line-height: 1.8125rem;
     color: #ffffff;
+    @media (max-width: 75rem) {
+      font-size: 0.875rem;
+      line-height: 1.375rem;
+    }
+  }
+
+  .hashtag-flex {
+    display: flex;
+    flex-direction: row;
+    @media (max-width: 75rem) {
+      flex-direction: column;
+    }
   }
 `;
 
 const HashTag = styled.div`
   width: fit-content;
-  padding:0.3125rem;
-  background: #FFFFFF;
+  padding: 0.3125rem;
+  background: #ffffff;
   border-radius: 0.4375rem;
   margin-right: 0.5rem;
 
   font-size: 0.75rem;
   line-height: 1.375rem;
   color: #000000;
-
+  @media (max-width: 75rem) {
+    padding: 0.1875rem;
+    font-size: 0.75rem;
+    margin: 0 0 0.4375rem 0;
+  }
 `;
 
 export default Study;

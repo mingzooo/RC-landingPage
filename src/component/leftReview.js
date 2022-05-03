@@ -1,24 +1,29 @@
 import React from "react";
 import styled from "styled-components";
 
-const LeftReview = ({name, img_a, img_b, img_c, title, detail, who}) => {
+const LeftReview = ({ name, img_a, img_b, img_c, title, detail, who }) => {
   return (
     <Wrap>
       <div className="name">{name}</div>
       <ContentWrap>
         <img src={img_a} className="big-pic" />
         <div className="content-wrap">
-          <div style={{ display:'flex', flexDirection:"row", justifyContent:'space-between'}}>
+          <div
+            style={{
+              display: "flex",
+              flexDirection: "row",
+              justifyContent: "space-between",
+            }}
+          >
             <img src={img_b} className="small-pic" />
             <img src={img_c} className="small-pic" />
           </div>
-          <div className="notoBold title-text">
-            {title}
-          </div>
-          <div className="notoRegular article">
-            {detail}
-          </div>
-          <div className="notoRegular article" style={{color:'#7D7D7D', marginTop:'0'}}>
+          <div className="notoBold title-text">{title}</div>
+          <div className="notoRegular article">{detail}</div>
+          <div
+            className="notoRegular article"
+            style={{ color: "#7D7D7D", marginTop: "0" }}
+          >
             {who}
           </div>
         </div>
@@ -29,6 +34,10 @@ const LeftReview = ({name, img_a, img_b, img_c, title, detail, who}) => {
 
 const Wrap = styled.div`
   margin-top: 5.5625rem;
+  @media (max-width: 75rem) {
+    margin-top: 2.5rem;
+  }
+  
   .name {
     font-family: "Hanson";
     font-style: normal;
@@ -39,6 +48,13 @@ const Wrap = styled.div`
     color: transparent;
     margin-bottom: -2.5rem;
     margin-left: 2.8125rem;
+    @media (max-width: 75rem) {
+      font-size: 2.5rem;
+      line-height: 2.5rem;
+      margin-left: 0;
+      -webkit-text-stroke: 0.0625rem #caf200;
+      margin-bottom: -1rem;
+    }
   }
 `;
 
@@ -51,11 +67,19 @@ const ContentWrap = styled.div`
     z-index: -100;
     width: 23.75rem;
     height: 40.4375rem;
+    @media (max-width: 75rem) {
+      width: 6.4375rem;
+      height: 12.5rem;
+    }
   }
 
   .small-pic {
     width: 20.5rem;
     height: 14.4375rem;
+    @media (max-width: 75rem) {
+      width: 6.375rem;
+      height: 4.5rem;
+    }
   }
 
   .content-wrap {
@@ -63,6 +87,10 @@ const ContentWrap = styled.div`
     flex-direction: column;
     margin-left: 5rem;
     width: 42.5625rem;
+    @media (max-width: 75rem) {
+      width: 13.125rem;
+      margin-left: 0.4375rem;
+    }
   }
 
   .title-text {
@@ -70,12 +98,24 @@ const ContentWrap = styled.div`
     line-height: 4.29rem;
     margin-top: 2rem;
     width: 39.5625rem;
+    @media (max-width: 75rem) {
+      font-size: 0.875rem;
+      line-height: 1.25rem;
+      width: 13.125rem;
+      margin-top: 0.75rem;
+    }
   }
 
   .article {
     width: 37.4375rem;
     font-size: 1.5rem;
     margin-top: 1.3125rem;
+    @media (max-width: 75rem) {
+      font-size: 0.75rem;
+      line-height: 1.1875rem;
+      width: 13.125rem;
+      margin-top: 0.625rem;
+    }
   }
 `;
 

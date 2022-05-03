@@ -36,28 +36,12 @@ const Result = () => {
           </div>
         </TitleWrap>
         <ContainerWrap>
-          <div
-            style={{
-              border: "1px solid white",
-              padding: "2.5rem 0",
-            }}
-          >
+          <div className="top-box">
             <div>
               {/* result1 */}
-              <div
-                id="grid"
-                style={{ position: "relative", padding: "0 2.5rem" }}
-              >
-                <Circle style={{ borderRadius: "0 6rem 6rem 0" }} />
-                <div
-                  style={{
-                    border: "0.5px solid white",
-                    padding: "2.875rem",
-                    display: "flex",
-                    flexDirection: "column",
-                    justifyContent: "center",
-                  }}
-                >
+              <div id="grid" className="inside-box">
+                <Circle className="left-circle" />
+                <div className="text-wrap">
                   <div className="number">01</div>
                   <div className="title notoBold">
                     외주로 용돈 벌면서,
@@ -80,12 +64,9 @@ const Result = () => {
                     padding: "2.5rem 0",
                   }}
                 >
-                  <img
-                    src={mockup_a}
-                    style={{ width: "29.7369rem", height: "29.25rem" }}
-                  />
+                  <img src={mockup_a} className="mock-up" />
                 </div>
-                <Circle style={{ borderRadius: "6rem 0 0 6rem", right: "0" }} />
+                <Circle className="right-circle" />
               </div>
               <div id="grid">
                 <div
@@ -102,10 +83,7 @@ const Result = () => {
                 />
               </div>
               {/* result2 */}
-              <div
-                id="grid"
-                style={{ border: "0.5px solid white", padding: "0 2.5rem" }}
-              >
+              <div id="grid" className="inside-box">
                 <div
                   style={{
                     display: "flex",
@@ -115,20 +93,9 @@ const Result = () => {
                     padding: "2.5rem 0",
                   }}
                 >
-                  <img
-                    src={mockup_b}
-                    style={{ width: "29.7369rem", height: "29.25rem" }}
-                  />
+                  <img src={mockup_b} className="mock-up" />
                 </div>
-                <div
-                  style={{
-                    border: "0.5px solid white",
-                    padding: "2.875rem",
-                    display: "flex",
-                    flexDirection: "column",
-                    justifyContent: "center",
-                  }}
-                >
+                <div className="text-wrap">
                   <div className="number">02</div>
                   <div className="title notoBold">
                     실력이 되니까,
@@ -156,14 +123,11 @@ const Result = () => {
                   }}
                 />
               </div>
-              <div style={{ padding: "0 2.5313rem" }}>
+              <div className="inside-box">
                 <MiddleContainer />
               </div>
               {/* result3 */}
-              <div
-                id="grid"
-                style={{ border: "0.5px solid white", padding: "0 2.5rem" }}
-              >
+              <div id="grid" className="inside-box">
                 <div
                   style={{ height: "2.0456rem", borderLeft: "1px solid white" }}
                 />
@@ -174,20 +138,9 @@ const Result = () => {
                   }}
                 />
               </div>
-              <div
-                id="grid"
-                style={{ position: "relative", padding: "0 2.5313rem" }}
-              >
-                <Circle style={{ borderRadius: "0 6rem 6rem 0" }} />
-                <div
-                  style={{
-                    border: "0.5px solid white",
-                    padding: "2.875rem",
-                    display: "flex",
-                    flexDirection: "column",
-                    justifyContent: "center",
-                  }}
-                >
+              <div id="grid" className="inside-box">
+                <Circle className="left-circle" />
+                <div className="text-wrap">
                   <div className="number">03</div>
                   <div className="title notoBold">
                     네카라쿠배 취업?
@@ -212,12 +165,9 @@ const Result = () => {
                     padding: "2.5rem 0",
                   }}
                 >
-                  <img
-                    src={mockup_c}
-                    style={{ width: "29.7369rem", height: "29.25rem" }}
-                  />
+                  <img src={mockup_c} className="mock-up" />
                 </div>
-                <Circle style={{ borderRadius: "6rem 0 0 6rem", right: "0" }} />
+                <Circle className="right-circle" />
               </div>
               <div id="grid">
                 <div
@@ -228,10 +178,7 @@ const Result = () => {
                 />
               </div>
               {/* result4 */}
-              <div
-                id="grid"
-                style={{ border: "0.5px solid white", padding: "0 2.5rem" }}
-              >
+              <div id="grid" className="inside-box">
                 <div
                   style={{
                     display: "flex",
@@ -241,10 +188,7 @@ const Result = () => {
                     padding: "2.5rem 0",
                   }}
                 >
-                  <img
-                    src={mockup_d}
-                    style={{ width: "29.7369rem", height: "29.25rem" }}
-                  />
+                  <img src={mockup_d} className="mock-up" />
                 </div>
                 <div
                   style={{
@@ -269,10 +213,7 @@ const Result = () => {
                   </div>
                 </div>
               </div>
-              <div
-                id="grid"
-                style={{ border: "0.5px solid white", padding: "0 2.5rem" }}
-              >
+              <div id="grid" className="inside-box">
                 <div
                   style={{
                     height: "2.0456rem",
@@ -288,17 +229,11 @@ const Result = () => {
                   }}
                 />
               </div>
-              <div
-                id="grid"
-                style={{ border: "0.5px solid white", padding: "0 2.5rem" }}
-              >
+              <div id="grid" className="inside-box">
                 <Left2 />
                 <Right2 />
               </div>
-              <div
-                id="grid"
-                style={{ border: "0.5px solid white", padding: "0 2.5rem" }}
-              >
+              <div id="grid" className="inside-box">
                 <div
                   style={{
                     height: "2.0456rem",
@@ -314,7 +249,7 @@ const Result = () => {
                   }}
                 />
               </div>
-              <div id="grid" style={{ padding: "0 2.5313rem" }}>
+              <div id="grid" className="inside-box">
                 <Right3 />
                 <Left3 />
               </div>
@@ -329,7 +264,7 @@ const Result = () => {
 const MiddleContainer = () => {
   return (
     <MiddleContainerWrap className="notoBold">
-      <div style={{ marginTop: "3.75rem" }}>
+      <div className="top-text">
         여태까지
         <br />
         라이징 캠프와 함께한 분들이 이렇게 이뤄냈어요.
@@ -346,16 +281,12 @@ const MiddleContainer = () => {
         <div className="featureWrap">
           <div>수료생 외주 프로젝트 매칭 수</div>
           <div className="green-text">300건+</div>
-          <div className="notoRegular" style={{ fontSize: "1.125rem" }}>
-            22년도 상반기 누적
-          </div>
+          <div className="notoRegular accumulate">22년도 상반기 누적</div>
         </div>
         <div className="featureWrap">
           <div>수료생 외주 수익 분배금</div>
           <div className="green-text">4억 6천만원</div>
-          <div className="notoRegular" style={{ fontSize: "1.125rem" }}>
-            22년도 상반기 누적
-          </div>
+          <div className="notoRegular accumulate">22년도 상반기 누적</div>
         </div>
       </div>
     </MiddleContainerWrap>
@@ -364,40 +295,14 @@ const MiddleContainer = () => {
 
 const Left2 = () => {
   return (
-    <div
-      style={{
-        borderRight: "0.5px solid white",
-        borderLeft: "0.5px solid white",
-        padding: "2.875rem",
-        display: "flex",
-        flexDirection: "column",
-        justifyContent: "center",
-      }}
-    >
-      <div
-        style={{
-          fontSize: "1.75rem",
-          lineHeight: "2.5rem",
-          textAlign: "center",
-          color: "#CAF200",
-          marginBottom: "0.9375rem",
-        }}
-        className="notoBold"
-      >
+    <LeftContainer>
+      <div className="notoBold title">
         라이징 캠프와
         <br />
         함께 성장하는 환경
       </div>
       <ClubWrap>
-        <div
-          style={{
-            display: "flex",
-            flexDirection: "column",
-            textAlign: "center",
-            alignItems: "center",
-            width: "8.125rem",
-          }}
-        >
+        <div className="club-wrap">
           <div className="notoMedium club-box">딴딴클럽</div>
           <div className="notoRegular">
             루틴을 만들고
@@ -407,83 +312,50 @@ const Left2 = () => {
             챌린지
           </div>
         </div>
-        <div
-          style={{
-            display: "flex",
-            flexDirection: "column",
-            textAlign: "center",
-            alignItems: "center",
-            width: "9.625rem",
-          }}
-        >
+        <div className="club-wrap">
           <div className="notoMedium club-box">머신러닝</div>
           <div className="notoRegular">
             다양한 액티비티와
             <br />
-            운동을 함께하는<br/>커뮤니티
+            운동을 함께하는
+            <br />
+            커뮤니티
           </div>
         </div>
-        <div
-          style={{
-            display: "flex",
-            flexDirection: "column",
-            textAlign: "center",
-            alignItems: "center",
-            width: "9.625rem",
-          }}
-        >
+        <div className="club-wrap">
           <div className="notoMedium club-box">반딧불이 원정대</div>
           <div className="notoRegular">
-          1일 1커밋으로 <br/>깃허브를 초록색으로 <br/>채워나가는 챌린지
+            1일 1커밋으로 <br />
+            깃허브를 초록색으로 <br />
+            채워나가는 챌린지
           </div>
         </div>
-        <div
-          style={{
-            display: "flex",
-            flexDirection: "column",
-            textAlign: "center",
-            alignItems: "center",
-            width: "10rem",
-          }}
-        >
+        <div className="club-wrap">
           <div className="notoMedium club-box">위클리 스크럼</div>
           <div className="notoRegular">
-          같이 수강하는 팀원들과 <br/>데일리로 진행상황을 <br/>공유하는 회의
+            같이 수강하는 팀원들과 <br />
+            데일리로 진행상황을 <br />
+            공유하는 회의
           </div>
         </div>
-        <div
-          style={{
-            display: "flex",
-            flexDirection: "column",
-            textAlign: "center",
-            alignItems: "center",
-            width: "10rem",
-          }}
-        >
+        <div className="club-wrap">
           <div className="notoMedium club-box">알고리즘 캠프</div>
           <div className="notoRegular">
-          코딩테스트를 위한<br/>알고리즘 교육 프로그램
+            코딩테스트를 위한
+            <br />
+            알고리즘 교육 프로그램
           </div>
         </div>
       </ClubWrap>
-    </div>
+    </LeftContainer>
   );
 };
 
 const Right2 = () => {
   return (
-    <div
-      style={{
-        display: "flex",
-        alignItems: "center",
-        padding: "2.875rem 0",
-        justifyContent: "center",
-        borderRight: "0.5px solid white",
-        borderLeft: "0.5px solid white",
-      }}
-    >
-      <img src={activity} style={{ width: "29.0625rem", height: "22.25rem" }} />
-    </div>
+    <RightContainer>
+      <img src={activity} />
+    </RightContainer>
   );
 };
 
@@ -526,17 +398,13 @@ const Left3 = () => {
 
 const Right3 = () => {
   return (
-    <div
+    <RightContainer
       style={{
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "center",
         border: "0.5px solid white",
-        padding: "2.5rem 0",
       }}
     >
-      <img src={cmc} style={{ width: "29.0625rem", height: "22.25rem" }} />
-    </div>
+      <img src={cmc} />
+    </RightContainer>
   );
 };
 
@@ -561,9 +429,6 @@ const TitleWrap = styled.div`
   flex-direction: row;
   margin: 11rem 0 7.875rem 0;
   position: relative;
-  @media (max-width: 75rem) {
-    
-  }
 
   .title-text {
     font-size: 6rem;
@@ -572,9 +437,9 @@ const TitleWrap = styled.div`
 
     font-family: "Hanson";
     @media (max-width: 75rem) {
-    font-size: 1.375rem;
-    line-height: 1.4375rem;
-  }
+      font-size: 1.375rem;
+      line-height: 1.4375rem;
+    }
   }
 
   .title-right {
@@ -585,14 +450,43 @@ const TitleWrap = styled.div`
     flex-direction: column;
     color: #ffffff;
     @media (max-width: 75rem) {
-    right: 0;
-  }
+      font-size: 0.75rem;
+      right: 0;
+    }
   }
 `;
 
 const ContainerWrap = styled.div`
   width: 100%;
   margin-bottom: 12.5rem;
+
+  .top-box {
+    border: 1px solid white;
+    padding: 2.5rem 0;
+    @media (max-width: 75rem) {
+      padding: 0.625rem 0;
+    }
+  }
+
+  .inside-box {
+    position: relative;
+    padding: 0 2.5rem;
+    @media (max-width: 75rem) {
+      padding: 0 0.5625rem;
+    }
+  }
+
+  .text-wrap {
+    border: 0.5px solid white;
+    padding: 2.875rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    @media (max-width: 75rem) {
+      font-size: 1.5rem;
+      padding: 0.625rem;
+    }
+  }
 
   .number {
     width: fit-content;
@@ -603,12 +497,21 @@ const ContainerWrap = styled.div`
     line-height: 6rem;
     -webkit-text-stroke: 0.1062rem #caf200;
     color: transparent;
+
+    @media (max-width: 75rem) {
+      font-size: 1.5rem;
+      line-height: 1.5rem;
+    }
   }
 
   .title {
     font-size: 3rem;
     line-height: 3.8125rem;
     color: #caf200;
+    @media (max-width: 75rem) {
+      font-size: 1.25rem;
+      line-height: 1.5625rem;
+    }
   }
 
   .detail {
@@ -616,6 +519,21 @@ const ContainerWrap = styled.div`
     line-height: 2rem;
     color: #ffffff;
     margin-top: 1.1875rem;
+    @media (max-width: 75rem) {
+      font-size: 0.875rem;
+      line-height: 1.4375rem;
+      margin-top: 1.5625rem;
+    }
+  }
+
+  .mock-up {
+    width: 29.7369rem;
+    height: 29.25rem;
+
+    @media (max-width: 75rem) {
+      width: 13.8975rem;
+      height: 13.67rem;
+    }
   }
 `;
 
@@ -628,23 +546,94 @@ const MiddleContainerWrap = styled.div`
   text-align: center;
   border: 0.5px solid white;
   align-items: center;
+  @media (max-width: 75rem) {
+    font-size: 1rem;
+    line-height: 1.4375rem;
+  }
 
+  .top-text {
+    margin-top: 3.75rem;
+    @media (max-width: 75rem) {
+      width: 12.5rem;
+    }
+  }
   .featureWrap {
     display: flex;
     flex-direction: column;
     margin: 0 1.25rem;
+    @media (max-width: 75rem) {
+      font-size: 0.75rem;
+      margin: 0.5625rem 0;
+    }
   }
 
   .bottomContainerWrap {
     display: flex;
     flex-direction: row;
     margin: 2.125rem 0 4.375rem 0;
+    @media (max-width: 75rem) {
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+    }
+  }
+
+  .accumulate {
+    font-size: 1.125rem;
+    @media (max-width: 75rem) {
+      font-size: 0.75rem;
+    }
   }
 
   .green-text {
     font-size: 3rem;
     line-height: 4.8125rem;
     color: #caf200;
+    @media (max-width: 75rem) {
+      font-size: 1.25rem;
+      line-height: 2rem;
+    }
+  }
+`;
+
+const RightContainer = styled.div`
+  display: flex;
+  align-items: center;
+  padding: 2.875rem 0;
+  justify-content: center;
+  border: 0.5px solid white;
+
+  img {
+    width: 29.0625rem;
+    height: 22.25rem;
+    @media (max-width: 75rem) {
+      width: 16.625rem;
+      height: 12.6875rem;
+    }
+  }
+`;
+
+const LeftContainer = styled.div`
+  border-right: 0.5px solid white;
+  border-left: 0.5px solid white;
+  padding: 2.875rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  @media (max-width: 75rem) {
+    padding: 0.5625rem;
+  }
+
+  .title {
+    font-size: 1.75rem;
+    line-height: 2.5rem;
+    text-align: center;
+    color: #caf200;
+    margin-bottom: 0.9375rem;
+    @media (max-width: 75rem) {
+      margin-bottom: 0.625rem;
+      font-size: 0.875rem;
+      line-height: 1.25rem;
+    }
   }
 `;
 
@@ -656,6 +645,21 @@ const ClubWrap = styled.div`
   font-size: 1rem;
   justify-content: space-evenly;
 
+  @media (max-width: 75rem) {
+    font-size: 0.875rem;
+  }
+
+  .club-wrap {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    width: 8.125rem;
+    @media (max-width: 75rem) {
+      width: 8.6875rem;
+    }
+  }
+
   .club-box {
     height: 1.6875rem;
     background: #ffffff;
@@ -665,6 +669,12 @@ const ClubWrap = styled.div`
     color: #fe4a00;
     padding: 0.1875rem 0.375rem;
     margin: 1.5rem 0 0.4375rem 0;
+    @media (max-width: 75rem) {
+      font-size: 0.875rem;
+      line-height: 1.375rem;
+      height: 1.5625rem;
+      padding: 0.0625rem 0.5rem;
+    }
   }
 `;
 
@@ -676,6 +686,22 @@ const Circle = styled.div`
   border: 0.125rem solid #ffffff;
   box-sizing: border-box;
   bottom: -7rem;
+
+  .right-circle {
+    border-radius: 6rem 0 0 6rem;
+    right: 0;
+    @media (max-width: 75rem) {
+    }
+  }
+
+  .left-circle {
+    border-radius: 0 6rem 6rem 0;
+  }
+
+  @media (max-width: 75rem) {
+    height: 3.25rem;
+    width: 1.625rem;
+  }
 `;
 
 export default Result;

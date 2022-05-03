@@ -107,7 +107,7 @@ const ContentWrap = styled.div`
     color: #fe4a00;
     @media (max-width: 75rem) {
       font-size: 1.5rem;
-      margin-top: 0;
+      margin-top: 2.75rem;
     }
   }
 

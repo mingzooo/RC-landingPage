@@ -82,10 +82,17 @@ const Class = () => {
                 <span style={{ color: "#000000" }}>경험</span>
               </div>
               <div className="notoMedium box">
-                🗸 실무 일정&nbsp;<span style={{color:"#000000"}}>및 테스크 관리 경험</span>
+                🗸 실무 일정&nbsp;
+                <span style={{ color: "#000000" }}>및 테스크 관리 경험</span>
               </div>
-              <div className="notoMedium box">🗸 클라이언트와 소통<spans style={{color:"#000000"}}>하는 방법</spans></div>
-              <div className="notoMedium box">🗸 개발 작업 정리&nbsp; <span style={{color:"#000000"}}>방법</span></div>
+              <div className="notoMedium box">
+                🗸 클라이언트와 소통
+                <spans style={{ color: "#000000" }}>하는 방법</spans>
+              </div>
+              <div className="notoMedium box">
+                🗸 개발 작업 정리&nbsp;{" "}
+                <span style={{ color: "#000000" }}>방법</span>
+              </div>
             </BoxWrap>
           </div>
         </TuitionDetailWrap>
@@ -104,6 +111,9 @@ const ContentWrap = styled.div`
   width: 73.75rem;
   display: flex;
   flex-direction: column;
+  @media (max-width: 75rem) {
+    width: 22.5rem;
+  }
 `;
 
 const Title = styled.div`
@@ -113,30 +123,50 @@ const Title = styled.div`
   margin-top: 9rem;
   position: relative;
 
+  @media (max-width: 75rem) {
+    margin-top: 1.3125rem;
+    flex-direction: column;
+  }
+
   .title-text {
     font-family: "Hanson";
     color: #caf200;
     font-size: 6rem;
     line-height: 6rem;
     text-align: left;
+    @media (max-width: 75rem) {
+      font-size: 1.875rem;
+      line-height: 1.875rem;
+    }
   }
 
   .text-wrap {
     position: absolute;
     bottom: 0;
     right: 0;
+    @media (max-width: 75rem) {
+      position: relative;
+    }
   }
 
   .middle-text {
     font-size: 1.5rem;
     color: #4f4f4f;
     margin: 1.5rem 0 0.8125rem 0;
+    @media (max-width: 75rem) {
+      font-size: 0.75rem;
+      margin: 0.8125rem 0 0.375rem 0;
+    }
   }
 
   .bottom-text {
     font-size: 2.25rem;
     line-height: 3.6rem;
     text-align: left;
+    @media (max-width: 75rem) {
+      font-size: 0.875rem;
+      line-height: 1.375rem;
+    }
   }
 `;
 
@@ -148,6 +178,11 @@ const CompareBox = styled.div`
   margin-top: 6.375rem;
   position: relative;
 
+  @media (max-width: 75rem) {
+    flex-direction: column;
+    margin-top: 1.875rem;
+  }
+
   .red-box {
     display: flex;
     align-items: center;
@@ -157,6 +192,11 @@ const CompareBox = styled.div`
     background: #fe4a00;
     box-shadow: 0 0.25rem 0.875rem 0.25rem rgba(218, 218, 218, 0.25);
     border-radius: 1.25rem;
+    @media (max-width: 75rem) {
+      width: 19.5625rem;
+      height: 13.3125rem;
+      margin-bottom: 1.125rem;
+    }
   }
 
   .green-text {
@@ -167,6 +207,11 @@ const CompareBox = styled.div`
     font-size: 6rem;
     line-height: 6rem;
     z-index: 999;
+    @media (max-width: 75rem) {
+      left: 38%;
+      font-size: 2.5rem;
+      top: 10.5rem;
+    }
   }
 
   .white-box {
@@ -177,6 +222,10 @@ const CompareBox = styled.div`
     justify-content: center;
     background: #f7f7f7;
     border-radius: 1.25rem;
+    @media (max-width: 75rem) {
+      width: 19.5625rem;
+      height: 13.3125rem;
+    }
   }
 `;
 
@@ -195,6 +244,13 @@ const RedBox = styled.div`
     line-height: 3rem;
     color: #fe4a00;
     margin-bottom: 0.875rem;
+    @media (max-width: 75rem) {
+      width: 7.875rem;
+      height: 1.625rem;
+      font-size: 0.75rem;
+      line-height: 1.625rem;
+      margin-bottom: 0.5625rem;
+    }
   }
 
   .white-outline {
@@ -206,6 +262,13 @@ const RedBox = styled.div`
     font-size: 1.375rem;
     line-height: 3.9375rem;
     color: #ffffff;
+    @media (max-width: 75rem) {
+      width: 15.1875rem;
+      height: 1.625rem;
+      font-size: 0.75rem;
+      line-height: 1.625rem;
+      margin: 0 0 0.5625rem 0;
+    }
   }
 `;
 
@@ -219,6 +282,9 @@ const WhiteBox = styled.div`
     font-size: 1.25rem;
     color: #6c6c6c;
     margin-bottom: 0.8044rem;
+    @media (max-width: 75rem) {
+      font-size: 0.75rem;
+    }
   }
 
   .grey-box {
@@ -230,6 +296,13 @@ const WhiteBox = styled.div`
     font-size: 1rem;
     line-height: 2.4863rem;
     color: #000000;
+    @media (max-width: 75rem) {
+      width: 15.1875rem;
+      height: 1.625rem;
+      font-size: 0.75rem;
+      line-height: 1.625rem;
+      margin: 0 0 0.5625rem 0;
+    }
   }
 `;
 
@@ -239,11 +312,20 @@ const TuitionDetailWrap = styled.div`
   justify-content: space-between;
   color: #fe4a00;
   margin: 10rem 0 9.5rem 0;
+  @media (max-width: 75rem) {
+    flex-direction: column;
+    margin: 0.625rem 0 2.6875rem 0;
+  }
 
   .big-text {
     width: 18.0625rem;
     font-size: 3rem;
     line-height: 4.25rem;
+    @media (max-width: 75rem) {
+      font-size: 1.25rem;
+      line-height: 1.75rem;
+      margin-bottom: 0.625rem;
+    }
   }
 
   .small-text {
@@ -251,6 +333,11 @@ const TuitionDetailWrap = styled.div`
     font-size: 1.5rem;
     line-height: 2.6875rem;
     width: 48.6875rem;
+    @media (max-width: 75rem) {
+      width: 19.5625rem;
+      font-size: 0.875rem;
+      line-height: 1.5625rem;
+    }
   }
 `;
 
@@ -276,6 +363,12 @@ const BoxWrap = styled.div`
     display: flex;
     flex-direction: row;
     margin-bottom: 1.5625rem;
+    @media (max-width: 75rem) {
+      width: 19.5625rem;
+      height: 3.375rem;
+      font-size: 0.8125rem;
+      line-height: 3.375rem;
+    }
   }
 `;
 

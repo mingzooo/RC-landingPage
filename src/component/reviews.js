@@ -71,6 +71,10 @@ const ContentWrap = styled.div`
   width: 73.75rem;
   display: flex;
   flex-direction: column;
+  @media (max-width: 75rem) {
+    width: 22.5rem;
+    align-items: center;
+  }
 `;
 
 const Title = styled.div`
@@ -85,12 +89,20 @@ const Title = styled.div`
     font-size: 6rem;
     line-height: 6rem;
     text-align: left;
+    @media (max-width: 75rem) {
+      font-size: 1.875rem;
+      line-height: 1.875rem;
+    }
   }
 
   .middle-text {
     font-size: 1.5rem;
     color: #4f4f4f;
     margin: 1.5rem 0 0.8125rem 0;
+    @media (max-width: 75rem) {
+      font-size: 0.75rem;
+      margin: 0.8125rem 0 0.375rem 0;
+    }
   }
 
   .bottom-text {
@@ -98,6 +110,10 @@ const Title = styled.div`
     line-height: 3.6rem;
     text-align: left;
     margin-bottom: 2.5rem;
+    @media (max-width: 75rem) {
+      font-size: 0.875rem;
+      line-height: 1.375rem;
+    }
   }
 `;
 
