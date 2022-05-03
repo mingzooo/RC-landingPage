@@ -41,16 +41,14 @@ const Wrap = styled.div`
     font-family: "Hanson";
     font-style: normal;
     font-weight: 700;
-    font-size: 6rem;
-    line-height: 6rem;
+    font-size: 3.875rem;
+    line-height: 3.875rem;
     -webkit-text-stroke: 0.1437rem #caf200;
     color: transparent;
-    margin-bottom: -2.5rem;
-    margin-left: 2.8125rem;
+    margin-bottom: 0.8125rem;
     @media (max-width: 75rem) {
       font-size: 1.75rem;
       line-height: 1.75rem;
-      margin-left: 0;
       -webkit-text-stroke: 0.0625rem #caf200;
       margin-bottom: 0.5625rem;
     }

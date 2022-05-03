@@ -110,7 +110,7 @@ const FooterWrap = styled.div`
 
     @media (max-width: 75rem) {
       top: -5rem;
-      right: 12.5rem;
+      right: 0;
       width: 3.2656rem;
       height: 3.225rem;
     }
@@ -218,6 +218,7 @@ const FooterBottom = styled.div`
     font-size: 0.75rem;
     margin-left: auto;
     margin-top: 2.25rem;
+    margin-bottom: 3rem;
   }
 
   .right-text {

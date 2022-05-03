@@ -117,6 +117,7 @@ const Title = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 8.125rem;
   @media (max-width: 75rem) {
     margin-top: 1.875rem;
   }

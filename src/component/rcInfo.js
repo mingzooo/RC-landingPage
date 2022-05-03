@@ -42,7 +42,7 @@ const RcInfo = () => {
           </div>
           <img className="right-quote" src={quote_right} />
         </div>
-        <Box style={{ marginTop: "7.8125rem" }}>
+        <Box style={{ marginTop: "5rem" }}>
           <div className="text">
             <div className="notoBold red-text">
               01. 코딩, 과연 이론이 중요한 걸까요?
@@ -61,7 +61,7 @@ const RcInfo = () => {
             </div>
           </div>
         </Box>
-        <Box style={{ marginTop: "2.0625rem", marginBottom: "12.0625rem" }}>
+        <Box style={{marginBottom: "12.0625rem" }}>
           <div className="text">
             <div className="notoBold red-text">
               02. 코딩으로 먹고 살 수 있는
@@ -127,8 +127,8 @@ const ContentWrap = styled.div`
     width: 61.25rem;
     height: 34.5rem;
     @media (max-width: 75rem) {
-      width: 20rem;
-      height: 11.25rem;
+      width: 22.5rem;
+      height: 12.5rem;
     }
   }
 
@@ -172,6 +172,7 @@ const Box = styled.div`
   background-color: #ffffff;
   box-shadow: 1.125rem 1.5rem 3.75rem rgba(115, 115, 115, 0.1);
   border-radius: 1.25rem 1.25rem 1.25rem 0;
+  margin-top: 2.0625rem;
 
   .text {
     display: flex;

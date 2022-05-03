@@ -58,15 +58,15 @@ const ImgWrap = styled.div`
 `;
 
 const RegFloatingButton = styled.div`
-  width: 17.9169rem;
-  height: 5.375rem;
+  width: 13.0625rem;
+  height: 4.75rem;
   background-color: #000000;
   color: #ffffff;
   border-radius: 4.6875rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   z-index: 9999;
   cursor: pointer;
   position: absolute;

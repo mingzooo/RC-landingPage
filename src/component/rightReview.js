@@ -42,7 +42,6 @@ const Wrap = styled.div`
     line-height: 6rem;
     -webkit-text-stroke: 0.1437rem #caf200;
     color: transparent;
-    margin-bottom: -2.5rem;
     margin-left: auto;
     @media (max-width: 75rem) {
       font-size: 1.75rem;
