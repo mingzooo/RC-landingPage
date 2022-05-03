@@ -19,6 +19,7 @@ const Track = ({
   setIosClicked,
   setServerClicked,
   setWebClicked,
+  schedule_ios
 }) => {
   // const [isClicked,setIsClicked] = useState(false);
 
@@ -77,6 +78,9 @@ const Track = ({
         <BlackText web={web} className="notoRegular">
           {schedule}
         </BlackText>
+        <BlackText style={{color:"transparent"}}>
+          {schedule_ios}
+        </BlackText>
         <div className="notoBold red-text">주요언어</div>
         <div
           style={{
@@ -104,6 +108,7 @@ const Container = styled.div`
   background: ${(props) => (props.isClicked ? "#FFECE4" : "#ffffff")};
   border-radius: 20px;
   cursor: pointer;
+
   @media (max-width: 75rem) {
     margin-right: 1.125rem;
     width: 13.625rem;
@@ -141,6 +146,8 @@ const ContentWrap = styled.div`
     @media (max-width: 75rem) {
       font-size: 1.125rem;
       line-height: 1.125rem;
+      width: 6.875rem;
+      margin: 0.375rem 0 0.4375rem 0;
     }
   }
 
@@ -152,6 +159,7 @@ const ContentWrap = styled.div`
     @media (max-width: 75rem) {
       font-size: 0.875rem;
       line-height: 0.875rem;
+      margin-bottom: 0.125rem;
     }
   }
 
@@ -181,6 +189,7 @@ const BlackText = styled.div`
   @media (max-width: 75rem) {
     font-size: 0.75rem;
     line-height: 1.125rem;
+    margin-bottom: ${(props) => (props.web ? "0.625rem" : "0.3125rem")};
   }
 `;
 

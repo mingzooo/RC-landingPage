@@ -48,7 +48,7 @@ const Curriculum = () => {
             detail={
               "내가 만들어보고자 했던 서비스를 직접 구현해보며, 안드로이드 개발자로 성장해 나갑니다."
             }
-            schedule={"매주 월요일 / 화요일 수업 예정"}
+            schedule={"매주 월요일/화요일 수업 예정"}
             setTrack={setTrack}
             isClicked={aosClicked}
             setAosClicked={setAosClicked}
@@ -78,6 +78,7 @@ const Curriculum = () => {
             lang2={blank}
             lang3={blank}
             lang4={blank}
+            schedule_ios={"예정"}
           />
           <Track
             img={img_server}
@@ -86,7 +87,7 @@ const Curriculum = () => {
             detail={
               "서버를 직접 구축해보고 프론트엔드에게 알맞는 데이터를 제공하며, 서버에 대한 지식을 키워 나갑니다."
             }
-            schedule={"매주 월요일 / 토요일 수업 예정"}
+            schedule={"매주 월요일/토요일 수업 예정"}
             setTrack={setTrack}
             isClicked={serverClicked}
             setAosClicked={setAosClicked}
@@ -106,7 +107,7 @@ const Curriculum = () => {
             detail={
               "Web 서비스, 내가 만들어보고자 했던 서비스를 직접 구현해보며, 웹 개발자로 성장해 나갑니다."
             }
-            schedule={"매주 평일 저녁 / 주말 오전 오후 수업 예정"}
+            schedule={"매주 평일 저녁/주말 오전, 오후 수업 예정"}
             setTrack={setTrack}
             isClicked={webClicked}
             setAosClicked={setAosClicked}
