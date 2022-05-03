@@ -31,18 +31,10 @@ const Result = () => {
           </div>
         </TitleWrap>
         <ContainerWrap>
-          <div
-            style={{
-              border: "1px solid white",
-              padding: "2.5rem 0",
-            }}
-          >
+          <div className="top-box">
             <div>
               {/* result1 */}
-              <div
-                id="grid"
-                style={{ position: "relative", padding: "0 2.5rem" }}
-              >
+              <div id="grid" className="inside-box">
                 <Circle style={{ borderRadius: "0 6rem 6rem 0" }} />
                 <div
                   style={{
@@ -75,46 +67,22 @@ const Result = () => {
                     padding: "2.5rem 0",
                   }}
                 >
-                  <img
-                    src={mockup_a}
-                    style={{ width: "29.7369rem", height: "29.25rem" }}
-                  />
+                  <img src={mockup_a} className="mock-up" />
                 </div>
                 <Circle style={{ borderRadius: "6rem 0 0 6rem", right: "0" }} />
               </div>
               <div id="grid">
                 <div
+                  id="grid-left"
                   style={{
                     height: "2.0456rem",
                     borderRight: "0.5px solid white",
                   }}
                 />
-                <div
-                  style={{
-                    height: "2.0456rem",
-                    borderLeft: "0.5px solid white",
-                  }}
-                />
+                <div id="grid-right" className="grid-right-top" />
               </div>
               {/* result2 */}
-              <div
-                id="grid"
-                style={{ border: "0.5px solid white", padding: "0 2.5rem" }}
-              >
-                <div
-                  style={{
-                    display: "flex",
-                    alignItems: "center",
-                    justifyContent: "center",
-                    border: "0.5px solid white",
-                    padding: "2.5rem 0",
-                  }}
-                >
-                  <img
-                    src={mockup_b}
-                    style={{ width: "29.7369rem", height: "29.25rem" }}
-                  />
-                </div>
+              <div id="grid" className="inside-box">
                 <div
                   style={{
                     border: "0.5px solid white",
@@ -136,42 +104,40 @@ const Result = () => {
                     라이징캠프 수료생의 대표사례를 소개합니다.
                   </div>
                 </div>
-              </div>
-              <div
-                id="grid"
-                style={{ border: "0.5px solid white", padding: "0 2.5rem" }}
-              >
-                <div
-                  style={{ height: "2.0456rem", borderLeft: "1px solid white" }}
-                />
                 <div
                   style={{
-                    height: "2.0456rem",
-                    borderRight: "1px solid white",
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    border: "0.5px solid white",
+                    padding: "2.5rem 0",
                   }}
-                />
+                >
+                  <img src={mockup_b} className="mock-up" />
+                </div>
               </div>
-              <div style={{ padding: "0 2.5313rem" }}>
+              <div id="grid" className="inside-box">
+                <div
+                  id="grid-left"
+                  style={{ height: "2.0456rem", borderLeft: "1px solid white" }}
+                />
+                <div id="grid-right" className="grid-right-top" />
+              </div>
+              <div className="inside-box">
                 <MiddleContainer />
               </div>
               {/* result3 */}
-              <div
-                id="grid"
-                style={{ border: "0.5px solid white", padding: "0 2.5rem" }}
-              >
+              <div id="grid" className="inside-box">
                 <div
+                  id="grid-left"
                   style={{ height: "2.0456rem", borderLeft: "1px solid white" }}
                 />
-                <div
-                  style={{
-                    height: "2.0456rem",
-                    borderRight: "1px solid white",
-                  }}
-                />
+                <div id="grid-right" className="grid-right-top" />
               </div>
               <div
                 id="grid"
-                style={{ position: "relative", padding: "0 2.5313rem" }}
+                className="inside-box"
+                style={{ position: "relative" }}
               >
                 <Circle style={{ borderRadius: "0 6rem 6rem 0" }} />
                 <div
@@ -207,40 +173,19 @@ const Result = () => {
                     padding: "2.5rem 0",
                   }}
                 >
-                  <img
-                    src={mockup_c}
-                    style={{ width: "29.7369rem", height: "29.25rem" }}
-                  />
+                  <img src={mockup_c} className="mock-up" />
                 </div>
                 <Circle style={{ borderRadius: "6rem 0 0 6rem", right: "0" }} />
               </div>
               <div id="grid">
                 <div
+                  id="grid-left"
                   style={{ height: "2.0456rem", border: "0.5px solid white" }}
                 />
-                <div
-                  style={{ height: "2.0456rem", border: "0.5px solid white" }}
-                />
+                <div id="grid-right" className="grid-right-top" />
               </div>
               {/* result4 */}
-              <div
-                id="grid"
-                style={{ border: "0.5px solid white", padding: "0 2.5rem" }}
-              >
-                <div
-                  style={{
-                    display: "flex",
-                    alignItems: "center",
-                    justifyContent: "center",
-                    border: "0.5px solid white",
-                    padding: "2.5rem 0",
-                  }}
-                >
-                  <img
-                    src={mockup_d}
-                    style={{ width: "29.7369rem", height: "29.25rem" }}
-                  />
-                </div>
+              <div id="grid" className="inside-box">
                 <div
                   style={{
                     border: "0.5px solid white",
@@ -263,55 +208,59 @@ const Result = () => {
                     말고 함께 성장해요.
                   </div>
                 </div>
+                <div
+                  style={{
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    border: "0.5px solid white",
+                    padding: "2.5rem 0",
+                  }}
+                >
+                  <img src={mockup_d} className="mock-up" />
+                </div>
               </div>
               <div
                 id="grid"
-                style={{ border: "0.5px solid white", padding: "0 2.5rem" }}
+                className="inside-box"
+                style={{ border: "0.5px solid white" }}
               >
                 <div
+                  id="grid-left"
                   style={{
                     height: "2.0456rem",
                     borderRight: "0.5px solid white",
                     borderLeft: "1px solid white",
                   }}
                 />
-                <div
-                  style={{
-                    height: "2.0456rem",
-                    borderLeft: "0.5px solid white",
-                    borderRight: "1px solid white",
-                  }}
-                />
+                <div id="grid-right" className="grid-right" />
               </div>
               <div
                 id="grid"
-                style={{ border: "0.5px solid white", padding: "0 2.5rem" }}
+                className="inside-box"
+                style={{ border: "0.5px solid white" }}
               >
                 <Left2 />
                 <Right2 />
               </div>
-              <div
-                id="grid"
-                style={{ border: "0.5px solid white", padding: "0 2.5rem" }}
-              >
+              <div id="grid" className="inside-box">
                 <div
+                  id="grid-left"
                   style={{
                     height: "2.0456rem",
                     borderRight: "0.5px solid white",
                     borderLeft: "1.5px solid white",
                   }}
                 />
-                <div
-                  style={{
-                    height: "2.0456rem",
-                    borderLeft: "0.5px solid white",
-                    borderRight: "1px solid white",
-                  }}
-                />
+                <div id="grid-right" className="grid-right" />
               </div>
-              <div id="grid" style={{ padding: "0 2.5313rem" }}>
-                <Right3 />
+              <div
+                id="grid"
+                className="inside-box"
+                style={{ borderTop: "0.5px solid white" }}
+              >
                 <Left3 />
+                <Right3 />
               </div>
             </div>
           </div>
@@ -359,40 +308,14 @@ const MiddleContainer = () => {
 
 const Left2 = () => {
   return (
-    <div
-      style={{
-        borderRight: "0.5px solid white",
-        borderLeft: "0.5px solid white",
-        padding: "2.875rem",
-        display: "flex",
-        flexDirection: "column",
-        justifyContent: "center",
-      }}
-    >
-      <div
-        style={{
-          fontSize: "1.75rem",
-          lineHeight: "2.5rem",
-          textAlign: "center",
-          color: "#CAF200",
-          marginBottom: "0.9375rem",
-        }}
-        className="notoBold"
-      >
+    <LeftContainer>
+      <div className="notoBold title">
         라이징 캠프와
         <br />
         함께 성장하는 환경
       </div>
       <ClubWrap>
-        <div
-          style={{
-            display: "flex",
-            flexDirection: "column",
-            textAlign: "center",
-            alignItems: "center",
-            width: "8.125rem",
-          }}
-        >
+        <div className="club-wrap">
           <div className="notoMedium club-box">딴딴클럽</div>
           <div className="notoRegular">
             루틴을 만들고
@@ -402,15 +325,7 @@ const Left2 = () => {
             챌린지
           </div>
         </div>
-        <div
-          style={{
-            display: "flex",
-            flexDirection: "column",
-            textAlign: "center",
-            alignItems: "center",
-            width: "9.625rem",
-          }}
-        >
+        <div className="club-wrap">
           <div className="notoMedium club-box">머신러닝</div>
           <div className="notoRegular">
             다양한 액티비티와
@@ -420,15 +335,7 @@ const Left2 = () => {
             커뮤니티
           </div>
         </div>
-        <div
-          style={{
-            display: "flex",
-            flexDirection: "column",
-            textAlign: "center",
-            alignItems: "center",
-            width: "9.625rem",
-          }}
-        >
+        <div className="club-wrap">
           <div className="notoMedium club-box">반딧불이 원정대</div>
           <div className="notoRegular">
             1일 1커밋으로 <br />
@@ -436,15 +343,7 @@ const Left2 = () => {
             채워나가는 챌린지
           </div>
         </div>
-        <div
-          style={{
-            display: "flex",
-            flexDirection: "column",
-            textAlign: "center",
-            alignItems: "center",
-            width: "10rem",
-          }}
-        >
+        <div className="club-wrap">
           <div className="notoMedium club-box">위클리 스크럼</div>
           <div className="notoRegular">
             같이 수강하는 팀원들과 <br />
@@ -452,15 +351,7 @@ const Left2 = () => {
             공유하는 회의
           </div>
         </div>
-        <div
-          style={{
-            display: "flex",
-            flexDirection: "column",
-            textAlign: "center",
-            alignItems: "center",
-            width: "10rem",
-          }}
-        >
+        <div className="club-wrap">
           <div className="notoMedium club-box">알고리즘 캠프</div>
           <div className="notoRegular">
             코딩테스트를 위한
@@ -469,24 +360,15 @@ const Left2 = () => {
           </div>
         </div>
       </ClubWrap>
-    </div>
+    </LeftContainer>
   );
 };
 
 const Right2 = () => {
   return (
-    <div
-      style={{
-        display: "flex",
-        alignItems: "center",
-        padding: "2.875rem 0",
-        justifyContent: "center",
-        borderRight: "0.5px solid white",
-        borderLeft: "0.5px solid white",
-      }}
-    >
-      <img src={activity} style={{ width: "29.0625rem", height: "22.25rem" }} />
-    </div>
+    <RightContainer>
+      <img src={activity} />
+    </RightContainer>
   );
 };
 
@@ -529,17 +411,9 @@ const Left3 = () => {
 
 const Right3 = () => {
   return (
-    <div
-      style={{
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "center",
-        border: "0.5px solid white",
-        padding: "2.5rem 0",
-      }}
-    >
-      <img src={cmc} style={{ width: "29.0625rem", height: "22.25rem" }} />
-    </div>
+    <RightContainer>
+      <img src={cmc} />
+    </RightContainer>
   );
 };
 
@@ -615,6 +489,50 @@ const TitleWrap = styled.div`
 const ContainerWrap = styled.div`
   width: 100%;
   margin-bottom: 12.5rem;
+
+  @media (max-width: 75rem) {
+    #grid-left {
+      display: none;
+    }
+    #grid-right {
+      border: 0.5px solid white;
+    }
+  }
+
+  .grid-right-top {
+    height: 2.0456rem;
+    border-left: 0.5px solid white;
+    @media (max-width: 75rem) {
+      height: 0.5625rem;
+    }
+  }
+
+  .grid-right {
+    height: 2.0456rem;
+    border-left: 0.5px solid white;
+    border-right: 1px solid white;
+    @media (max-width: 75rem) {
+      height: 0.5625rem;
+      border-left: 0.1px solid white;
+      border-right: 0.1px solid white;
+    }
+  }
+
+  .top-box {
+    border: 1px solid white;
+    padding: 2.5rem 0;
+    @media (max-width: 75rem) {
+      padding: 0.625rem 0;
+    }
+  }
+  .inside-box {
+    position: relative;
+    padding: 0 2.5rem;
+    @media (max-width: 75rem) {
+      padding: 0 0.5625rem;
+    }
+  }
+
   .number {
     width: fit-content;
     font-family: "Hanson";
@@ -624,17 +542,39 @@ const ContainerWrap = styled.div`
     line-height: 6rem;
     -webkit-text-stroke: 0.1062rem #caf200;
     color: transparent;
+    @media (max-width: 75rem) {
+      font-size: 1.5rem;
+      line-height: 1.5rem;
+    }
   }
   .title {
     font-size: 3rem;
     line-height: 3.8125rem;
     color: #caf200;
+    @media (max-width: 75rem) {
+      font-size: 1.25rem;
+      line-height: 1.5625rem;
+    }
   }
   .detail {
     font-size: 1.25rem;
     line-height: 2rem;
     color: #ffffff;
     margin-top: 1.1875rem;
+    @media (max-width: 75rem) {
+      font-size: 0.875rem;
+      line-height: 1.4375rem;
+      margin-top: 1.5625rem;
+    }
+  }
+
+  .mock-up {
+    width: 29.7369rem;
+    height: 29.25rem;
+    @media (max-width: 75rem) {
+      width: 13.8975rem;
+      height: 13.67rem;
+    }
   }
 `;
 
@@ -647,20 +587,88 @@ const MiddleContainerWrap = styled.div`
   text-align: center;
   border: 0.5px solid white;
   align-items: center;
+  @media (max-width: 75rem) {
+    font-size: 1rem;
+    line-height: 1.4375rem;
+  }
+  .top-text {
+    margin-top: 3.75rem;
+    @media (max-width: 75rem) {
+      width: 12.5rem;
+    }
+  }
   .featureWrap {
     display: flex;
     flex-direction: column;
     margin: 0 1.25rem;
+    @media (max-width: 75rem) {
+      font-size: 0.75rem;
+      margin: 0.5625rem 0;
+    }
   }
   .bottomContainerWrap {
     display: flex;
     flex-direction: row;
     margin: 2.125rem 0 4.375rem 0;
+    @media (max-width: 75rem) {
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+    }
+  }
+  .accumulate {
+    font-size: 1.125rem;
+    @media (max-width: 75rem) {
+      font-size: 0.75rem;
+    }
   }
   .green-text {
     font-size: 3rem;
     line-height: 4.8125rem;
     color: #caf200;
+    @media (max-width: 75rem) {
+      font-size: 1.25rem;
+      line-height: 2rem;
+    }
+  }
+`;
+
+const LeftContainer = styled.div`
+  border-right: 0.5px solid white;
+  border-left: 0.5px solid white;
+  padding: 2.875rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  @media (max-width: 75rem) {
+    padding: 0.5625rem;
+  }
+  .title {
+    font-size: 1.75rem;
+    line-height: 2.5rem;
+    text-align: center;
+    color: #caf200;
+    margin-bottom: 0.9375rem;
+    @media (max-width: 75rem) {
+      margin-bottom: 0.625rem;
+      font-size: 0.875rem;
+      line-height: 1.25rem;
+    }
+  }
+`;
+
+const RightContainer = styled.div`
+  display: flex;
+  align-items: center;
+  padding: 2.875rem 0;
+  justify-content: center;
+  border: 0.5px solid white;
+  img {
+    width: 29.0625rem;
+    height: 22.25rem;
+    @media (max-width: 75rem) {
+      width: 16.625rem;
+      height: 12.6875rem;
+    }
   }
 `;
 
@@ -671,6 +679,21 @@ const ClubWrap = styled.div`
   color: #ffffff;
   font-size: 1rem;
   justify-content: space-evenly;
+  @media (max-width: 75rem) {
+    font-size: 0.875rem;
+  }
+
+  .club-wrap {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    width: 8.125rem;
+    @media (max-width: 75rem) {
+      width: 8.6875rem;
+    }
+  }
+
   .club-box {
     height: 1.6875rem;
     background: #ffffff;
@@ -680,6 +703,12 @@ const ClubWrap = styled.div`
     color: #fe4a00;
     padding: 0.1875rem 0.375rem;
     margin: 1.5rem 0 0.4375rem 0;
+    @media (max-width: 75rem) {
+      font-size: 0.875rem;
+      line-height: 1.375rem;
+      height: 1.5625rem;
+      padding: 0.0625rem 0.5rem;
+    }
   }
 `;
 
@@ -691,6 +720,12 @@ const Circle = styled.div`
   border: 0.125rem solid #ffffff;
   box-sizing: border-box;
   bottom: -7rem;
+  z-index: 999;
+  @media (max-width: 75rem) {
+    width: 1.625rem;
+    height: 3.25rem;
+    bottom: -2rem;
+  }
 `;
 
 export default Result;

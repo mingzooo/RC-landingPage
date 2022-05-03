@@ -20,7 +20,7 @@ const RisingTest = () => {
         </Title>
         <TestWrap>
           <div className="notoBold red-text">
-            라이징<br/> 테스트란?
+            라이징<br/>테스트란?
           </div>
           <div className="notoRegular black-text">
             라이징테스트는 쏘카, 배민 등 실제 서비스를&nbsp;
