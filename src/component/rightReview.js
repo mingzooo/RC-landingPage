@@ -28,6 +28,7 @@ const RightReview = ({ name, img_a, img_b, img_c, title, detail, who }) => {
 
 const Wrap = styled.div`
   margin-top: 5.5625rem;
+  white-space: pre-wrap;
   @media (max-width: 73.75rem) {
     margin-top: 2.4375rem;
     margin-bottom: 3.4375rem;

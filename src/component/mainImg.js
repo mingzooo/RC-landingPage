@@ -1,10 +1,23 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import styled from "styled-components";
+import axios from "axios";
 
 import main from "../assets/img_banner.png";
 import main_m from "../assets/_img_m_banner.png";
 
 const MainImg = () => {
+  const [data, setData] = useState({});
+
+  useEffect(() => {
+    axios
+      .get("http://api-dev.neordinary.co/web/landing/education/rising-camp")
+      .then((response) => {
+        if (response.data.code == 1000) {
+          setData(response.data.result[0]);
+        }
+      });
+  }, []);
+
   return (
     <ImgWrap>
       <img id="pc-img" src={main} className="img-pc" />
@@ -12,10 +25,10 @@ const MainImg = () => {
       <RegFloatingButton
         className="notoBold"
         onClick={() =>
-          window.open("https://forms.gle/NcFCngiVvRfoM6t6A ", "_blank")
+          window.open(`${data.productApplyUrl}`, "_blank")
         }
       >
-        6기 신청하기
+        {data.productLandingName}
       </RegFloatingButton>
     </ImgWrap>
   );

@@ -1,9 +1,24 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import styled from "styled-components";
+import axios from "axios";
 
 import rc_logo from "../assets/img_risingcamp_logo_pc.png";
 
 const Header = () => {
+  const [data, setData] = useState({});
+
+  useEffect(() => {
+    axios
+      .get("http://api-dev.neordinary.co/web/landing/education/rising-camp")
+      .then((response) => {
+        console.log(response);
+        if (response.data.code == 1000) {
+          setData(response.data.result[0]);
+        }
+      });
+      console.log(data);
+  }, []);
+
   return (
     <HeaderWrap>
       <MainHeader>
@@ -11,20 +26,13 @@ const Header = () => {
         <div className="header-right notoBold">
           <div
             className="one-track"
-            onClick={() =>
-              window.open(
-                "https://www.notion.so/softsquared/1-1-992d14e2d0ac4398b3a9972c8550af4f#72724ecbeca9431cadff3d53e4bd6806 ",
-                "_blank"
-              )
-            }
+            onClick={() => window.open(`${data.oneToOneTrackLink}`, "_blank")}
           >
             1:1 TRACK
           </div>
           <div
             className="reg-button"
-            onClick={() =>
-              window.open("https://forms.gle/NcFCngiVvRfoM6t6A ", "_blank")
-            }
+            onClick={() => window.open(`${data.productApplyUrl}`, "_blank")}
           >
             신청하기
           </div>
