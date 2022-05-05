@@ -11,12 +11,10 @@ const Header = () => {
     axios
       .get("http://api-dev.neordinary.co/web/landing/education/rising-camp")
       .then((response) => {
-        console.log(response);
         if (response.data.code == 1000) {
-          setData(response.data.result[0]);
+          setData(response.data.result[response.data.result.length - 1]);
         }
       });
-      console.log(data);
   }, []);
 
   return (

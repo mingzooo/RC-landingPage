@@ -78,9 +78,9 @@ const Track = ({
         <BlackText web={web} className="notoRegular">
           {schedule}
         </BlackText>
-        <BlackText style={{color:"transparent"}}>
+        <Space_ios>
           {schedule_ios}
-        </BlackText>
+        </Space_ios>
         <div className="notoBold red-text">주요언어</div>
         <div
           style={{
@@ -187,6 +187,19 @@ const BlackText = styled.div`
   color: #272727;
   margin-bottom: ${(props) => (props.web ? "0.625rem" : "1.875rem")};
   @media (max-width: 73.75rem) {
+    font-size: 0.75rem;
+    line-height: 1.125rem;
+    margin-bottom: ${(props) => (props.web ? "0.625rem" : "0.3125rem")};
+  }
+`;
+
+const Space_ios = styled.div`
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: transparent;
+  display: none;
+  @media (max-width: 73.75rem) {
+    display:block;
     font-size: 0.75rem;
     line-height: 1.125rem;
     margin-bottom: ${(props) => (props.web ? "0.625rem" : "0.3125rem")};

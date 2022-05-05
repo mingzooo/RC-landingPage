@@ -13,7 +13,7 @@ const MainImg = () => {
       .get("http://api-dev.neordinary.co/web/landing/education/rising-camp")
       .then((response) => {
         if (response.data.code == 1000) {
-          setData(response.data.result[0]);
+          setData(response.data.result[response.data.result.length - 1]);
         }
       });
   }, []);
@@ -24,9 +24,7 @@ const MainImg = () => {
       <img id="mobile-img" src={main_m} className="img-m" />
       <RegFloatingButton
         className="notoBold"
-        onClick={() =>
-          window.open(`${data.productApplyUrl}`, "_blank")
-        }
+        onClick={() => window.open(`${data.productApplyUrl}`, "_blank")}
       >
         {data.productLandingName}
       </RegFloatingButton>

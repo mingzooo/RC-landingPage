@@ -142,6 +142,7 @@ export const PageWrap = styled.div`
   top: 0;
   left: 0;
   right: 0;
+  margin: 0 auto;
   @media (max-width: 73.75rem) {
     width: 22.5rem;
     width: 100%;
