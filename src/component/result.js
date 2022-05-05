@@ -35,7 +35,7 @@ const Result = () => {
             <div>
               {/* result1 */}
               <div id="grid" className="inside-box">
-                <Circle style={{ borderRadius: "0 6rem 6rem 0" }} />
+                <Circle style={{ borderRadius: "0 6rem 6rem 0", left:"-0.0625rem" }} />
                 <div
                   style={{
                     border: "0.5px solid white",
@@ -69,7 +69,7 @@ const Result = () => {
                 >
                   <img src={mockup_a} className="mock-up" />
                 </div>
-                <Circle style={{ borderRadius: "6rem 0 0 6rem", right: "0" }} />
+                <Circle style={{ borderRadius: "6rem 0 0 6rem", right: "-0.0625rem" }} />
               </div>
               <div id="grid">
                 <div
@@ -139,7 +139,7 @@ const Result = () => {
                 className="inside-box"
                 style={{ position: "relative" }}
               >
-                <Circle style={{ borderRadius: "0 6rem 6rem 0" }} />
+                <Circle style={{ borderRadius: "0 6rem 6rem 0", left:"-0.0625rem"}} />
                 <div
                   style={{
                     border: "0.5px solid white",
@@ -175,7 +175,7 @@ const Result = () => {
                 >
                   <img src={mockup_c} className="mock-up" />
                 </div>
-                <Circle style={{ borderRadius: "6rem 0 0 6rem", right: "0" }} />
+                <Circle style={{ borderRadius: "6rem 0 0 6rem", right: "-0.0625rem" }} />
               </div>
               <div id="grid">
                 <div
@@ -699,7 +699,7 @@ const ClubWrap = styled.div`
     flex-direction: column;
     text-align: center;
     align-items: center;
-    width: 8.125rem;
+    width: 10rem;
     @media (max-width: 73.75rem) {
       width: 8.6875rem;
     }
